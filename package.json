@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/wisniewski94/Keyboard-UI/issues"
   },
-  "homepage": "https://github.com/wisniewski94/Keyboard-UI#readme"
+  "homepage": "https://github.com/wisniewski94/Keyboard-UI#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
 }
