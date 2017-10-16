@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+button.ui {
+  padding: 10px 31px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #9c9c9c, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+  color: #8f8f8f; }
+  button.ui:hover {
+    background-color: #fafafa; }
+  button.ui:active {
+    box-shadow: 0px 0px 0px #cacaca, inset 0 -1px 1px 0 white;
+    background-color: white; }
+
+.section1 {
+  background-color: #b7b9ad; }
+  .section1 button.ui.transparent {
+    background-color: #b7b9ad;
+    border: 1px solid #a4a697;
+    box-shadow: inset 0px 1px 0px #c3c5bb, inset 0 -1px 1px 0 #5e6153, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    color: #515347; }
+    .section1 button.ui.transparent:hover {
+      background-color: #bcbeb3; }
+    .section1 button.ui.transparent:active {
+      box-shadow: 0px 0px 0px #8e917e, inset 0 -1px 1px 0 #c3c5bb;
+      background-color: #c3c5bb; }
+
+.section2 {
+  background-color: #5d6a71; }
+  .section2 button.ui.transparent {
+    background-color: #5d6a71;
+    border: 1px solid #4b555b;
+    box-shadow: inset 0px 1px 0px #69777f, inset 0 -1px 1px 0 #0c0e0f, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    color: #010101; }
+    .section2 button.ui.transparent:hover {
+      background-color: #626f77; }
+    .section2 button.ui.transparent:active {
+      box-shadow: 0px 0px 0px #363d41, inset 0 -1px 1px 0 #69777f;
+      background-color: #69777f; }
+
+.section3 {
+  background-color: #3a4558; }
+  .section3 button.ui.transparent {
+    background-color: #3a4558;
+    border: 1px solid #2a323f;
+    box-shadow: inset 0px 1px 0px #445167, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    color: black; }
+    .section3 button.ui.transparent:hover {
+      background-color: #3e4a5e; }
+    .section3 button.ui.transparent:active {
+      box-shadow: 0px 0px 0px #181c24, inset 0 -1px 1px 0 #445167;
+      background-color: #445167; }
+
+.section4 {
+  background-color: #262e3f; }
+  .section4 button.ui.transparent {
+    background-color: #262e3f;
+    border: 1px solid #171b26;
+    box-shadow: inset 0px 1px 0px #303a4f, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    color: black; }
+    .section4 button.ui.transparent:hover {
+      background-color: #2a3345; }
+    .section4 button.ui.transparent:active {
+      box-shadow: 0px 0px 0px #050709, inset 0 -1px 1px 0 #303a4f;
+      background-color: #303a4f; }
+
+.section5 {
+  background-color: #1a1c28; }
+  .section5 button.ui.transparent {
+    background-color: #1a1c28;
+    border: 1px solid #0a0b0f;
+    box-shadow: inset 0px 1px 0px #242737, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    color: black; }
+    .section5 button.ui.transparent:hover {
+      background-color: #1e202e; }
+    .section5 button.ui.transparent:active {
+      box-shadow: 0px 0px 0px black, inset 0 -1px 1px 0 #242737;
+      background-color: #242737; }
+
+div {
+  height: 120px;
+  position: relative; }
+  div button.ui.transparent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+body {
+  background-color: #1a1c28; }

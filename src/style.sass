@@ -1,0 +1,44 @@
+@import "keyui"
+
+$section1: #b7b9ad
+$section2: #5d6a71
+$section3: #3a4558
+$section4: #262e3f
+$section5: #1a1c28
+
+.section1
+    background-color: $section1
+    button.ui.transparent
+        @include transparent-btn($section1)
+            
+.section2
+    background-color: $section2
+    button.ui.transparent
+        @include transparent-btn($section2)
+            
+.section3
+    background-color: $section3
+    button.ui.transparent
+        @include transparent-btn($section3)
+
+.section4
+    background-color: $section4
+    button.ui.transparent
+        @include transparent-btn($section4)
+            
+.section5
+    background-color: $section5
+    button.ui.transparent
+        @include transparent-btn($section5)
+
+div
+    height: 120px
+    position: relative
+    button.ui.transparent
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    
+body
+    background-color: $section5
