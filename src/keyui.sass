@@ -2,16 +2,26 @@
 
 $def: #f5f5f5
 
+@mixin contrast($n)
+    $color-brightness: round((red($n)*290) + (green($n)*587) + (blue($n)*114)/1000)
+    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff)*114)/1000)
+    
+    @if abs($color-brightness) < ($light-color/2)
+        color: lighten($n, 30%)
+    @else
+        color: darken($n, 40%)
+    
 @mixin transparent-btn($color)
     background-color: $color
     border: 1px solid darken($color, 8%)
     box-shadow: inset 0px 1px 0px lighten($color, 5%), inset 0 -1px 1px 0 darken($color, 35%), 0 1px 3px 0 rgba(0, 0, 0, 0.13)
-    color: darken($color, 40%)
+    //color: darken($color, 40%)
+    @include contrast($color)
     &:hover
-        background-color: lighten($color, 2%)
+        background-color: lighten($color, 5%)
     &:active
         box-shadow: 0px 0px 0px darken($color, 17%), inset 0 -1px 1px 0 lighten($color, 5%)
-        background-color: lighten($color, 5%)
+        background-color: lighten($color, 8%)
 
 button.ui
     padding: 10px 31px

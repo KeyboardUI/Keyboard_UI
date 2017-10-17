@@ -8,14 +8,8 @@ html(lang="en")
         link(rel="stylesheet" href="css/keyui.css")
         link(rel="stylesheet" href="css/style.css")
     body
-        .section1
-            button.ui.transparent Transparent
-        .section2
-            button.ui.transparent Transparent
-        .section3
-            button.ui.transparent Transparent
-        .section4
-            button.ui.transparent Transparent
-        .section5
-            button.ui.transparent Transparent
+        - var sections = 1
+        while sections <= 15 
+            div(class="section" + sections++)
+                button.ui.transparent Transparent
         //script(src="js/keyui.js")

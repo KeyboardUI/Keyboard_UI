@@ -1,35 +1,12 @@
 @import "keyui"
 
-$section1: #b7b9ad
-$section2: #5d6a71
-$section3: #3a4558
-$section4: #262e3f
-$section5: #1a1c28
+$sections: #ffffff #ebdfc7 #bfb6a3 #27292b #bf4122 #cf4232 #eb7f23 #fac023 #068675 #6b202e #165873 #124c59 #428c5c #4ea64b #add96c
 
-.section1
-    background-color: $section1
-    button.ui.transparent
-        @include transparent-btn($section1)
-            
-.section2
-    background-color: $section2
-    button.ui.transparent
-        @include transparent-btn($section2)
-            
-.section3
-    background-color: $section3
-    button.ui.transparent
-        @include transparent-btn($section3)
-
-.section4
-    background-color: $section4
-    button.ui.transparent
-        @include transparent-btn($section4)
-            
-.section5
-    background-color: $section5
-    button.ui.transparent
-        @include transparent-btn($section5)
+@for $i from 1 to length($sections) + 1
+    .section#{$i}
+        background-color: nth($sections, $i)
+        button.ui.transparent
+            @include transparent-btn(nth($sections, $i))
 
 div
     height: 120px
@@ -41,4 +18,4 @@ div
         transform: translate(-50%, -50%)
     
 body
-    background-color: $section5
+    background-color: nth($sections, 5)
