@@ -1,19 +1,29 @@
 @import "keyui"
 
-$sections: #ffffff #ebdfc7 #bfb6a3 #27292b #bf4122 #cf4232 #eb7f23 #fac023 #068675 #6b202e #165873 #124c59 #428c5c #4ea64b #add96c
+$sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #068675 #6b202e #165873 #124c59 #428c5c #4ea64b #add96c
 
 @for $i from 1 to length($sections) + 1
     .section#{$i}
         background-color: nth($sections, $i)
         button.ui.transparent
             @include transparent-btn(nth($sections, $i))
+        .input
+            //position: relative
+            //left: 50%
+            &.transparent
+                @include transparent-input(nth($sections, $i))
 
 div
-    height: 120px
+    height: 190px
     position: relative
     button.ui.transparent
         position: absolute
-        top: 50%
+        top: 30%
+        left: 50%
+        transform: translate(-50%, -50%)
+    .input
+        position: absolute
+        top: 70%
         left: 50%
         transform: translate(-50%, -50%)
     

@@ -1,34 +1,116 @@
+//
+    KEYBOARD UI v0.0.0
+    VISIT GITHUB: github.com/wisniewski94/Keyboard-UI
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+//
+    --------------------------
+            DEFAULTS
+    --------------------------
 
 $def: #f5f5f5
 
-@mixin contrast($n)
-    $color-brightness: round((red($n)*290) + (green($n)*587) + (blue($n)*114)/1000)
-    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff)*114)/1000)
-    
-    @if abs($color-brightness) < ($light-color/2)
-        color: lighten($n, 30%)
+//
+    --------------------------
+            FUNCTIONS
+    --------------------------
+@function contrast($n)
+    @return round((red($n)*290) + (green($n)*587) + (blue($n)*114)/1000)
+
+//
+    --------------------------
+            BUTTONS
+    --------------------------
+@mixin transparent-btn($n)
+    background-color: $n
+    border: 1px solid darken($n, 8%)
+    box-shadow: inset 0px 1px 0px lighten($n, 5%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 3px 0 rgba(0, 0, 0, 0.13)
+    &:active
+        border: 1px solid darken($n, 15%)
+    @if abs(contrast($n)) < 112980
+        color: lighten($n, 55%)
+        &:hover, &:focus
+            background-color: lighten($n, 8%)
+        &:active
+            box-shadow: inset 0 -1px 1px 0 lighten($n, 5%)
+            background-color: lighten($n, 8%)
     @else
         color: darken($n, 40%)
+        &:hover, &:focus
+            background-color: darken($n, 8%)
+        &:active
+            box-shadow: inset 0 -1px 1px 0 darken($n, 5%)
+            background-color: darken($n, 8%)
     
-@mixin transparent-btn($color)
-    background-color: $color
-    border: 1px solid darken($color, 8%)
-    box-shadow: inset 0px 1px 0px lighten($color, 5%), inset 0 -1px 1px 0 darken($color, 35%), 0 1px 3px 0 rgba(0, 0, 0, 0.13)
-    //color: darken($color, 40%)
-    @include contrast($color)
-    &:hover
-        background-color: lighten($color, 5%)
-    &:active
-        box-shadow: 0px 0px 0px darken($color, 17%), inset 0 -1px 1px 0 lighten($color, 5%)
-        background-color: lighten($color, 8%)
-
 button.ui
+    @include transparent-btn($def)
     padding: 10px 31px
-    outline: none
     cursor: pointer
     border-radius: 3px
     font-size: 14px
     font-weight: 600
     font-family: 'Noto Sans', sans-serif
-    @include transparent-btn($def)
+    outline: none
+    user-select: none
+    -webkit-transition: background-color .15s ease-in-out
+    -moz-transition: background-color .15s ease-in-out
+    -ms-transition: background-color .15s ease-in-out
+    -o-transition: background-color .15s ease-in-out
+    transition: background-color .15s ease-in-out
+ 
+//
+    --------------------------
+        TEXT INPUT FIELDS
+    --------------------------
+@mixin transparent-input($n)
+    input
+        border: 1px solid darken($n, 8%)
+        background-color: lighten($n, 5%)
+        box-shadow: 0 1px 5px darken($n, 10%) inset
+    @if abs(contrast($n)) < 112980
+        //dark
+        -webkit-text-fill-color: lighten($n, 55%)
+        input
+            &:hover
+                background-color: lighten($n, 10%)
+            &:focus
+                border: 1px solid #1d94ff;
+                box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+                transition: border .05s ease-in-out
+    @else
+        -webkit-text-fill-color: darken($n, 55%)
+        input
+            &:hover
+                background-color: darken($n, 2%)
+            &:focus
+                border: 1px solid rgb(0,102,255)
+                box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8)
+.input
+    @include transparent-input($def)
+    height: 41px
+    width: 250px
+    -webkit-text-fill-color: #8a8ea0
+    input
+        border-radius: 3px
+        position: relative
+        z-index: 1
+        box-sizing: border-box
+        height: 100%
+        width: 100%
+        padding: 0 14px
+        font-size: 14px
+        outline: none
+        -webkit-transition: all .15s ease-in-out
+        -moz-transition: all .15s ease-in-out
+        -ms-transition: all .15s ease-in-out
+        -o-transition: all .15s ease-in-out
+        transition: all .15s ease-in-out
+        &:focus
+            &::placeholder
+                opacity: 1
+        &::placeholder
+            opacity: 0.6
+    input[type=submit]
+        -webkit-text-fill-color: #515876
+        color: #515876
