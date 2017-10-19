@@ -17,6 +17,9 @@ button.ui {
   -ms-transition: background-color .15s ease-in-out;
   -o-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out; }
+  button.ui.focus:focus, button.ui.focus input:focus {
+    border: 1px solid #0066ff;
+    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   button.ui:active {
     border: 1px solid #cfcfcf; }
   button.ui:hover, button.ui:focus {
@@ -30,15 +33,15 @@ button.ui {
   height: 41px;
   width: 250px;
   -webkit-text-fill-color: #8a8ea0; }
+  .input.focus:focus, .input.focus input:focus {
+    border: 1px solid #0066ff;
+    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   .input input {
     border: 1px solid #e1e1e1;
     background-color: white;
     box-shadow: 0 1px 5px gainsboro inset; }
   .input input:hover {
     background-color: #f0f0f0; }
-  .input input:focus {
-    border: 1px solid #0066ff;
-    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   .input input {
     border-radius: 3px;
     position: relative;
@@ -69,6 +72,9 @@ button.ui {
     border: 1px solid #ebebeb;
     box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #999999; }
+    .section1 button.ui.transparent.focus:focus, .section1 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section1 button.ui.transparent:active {
       border: 1px solid #d9d9d9; }
     .section1 button.ui.transparent:hover, .section1 button.ui.transparent:focus {
@@ -78,15 +84,15 @@ button.ui {
       background-color: #ebebeb; }
   .section1 .input.transparent {
     -webkit-text-fill-color: #737373; }
+    .section1 .input.transparent.focus:focus, .section1 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section1 .input.transparent input {
       border: 1px solid #ebebeb;
       background-color: white;
       box-shadow: 0 1px 5px #e6e6e6 inset; }
     .section1 .input.transparent input:hover {
       background-color: #fafafa; }
-    .section1 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 .section2 {
   background-color: #ebdfc7; }
@@ -95,6 +101,9 @@ button.ui {
     border: 1px solid #e0cea9;
     box-shadow: inset 0px 1px 0px #f2eada, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #a9853d; }
+    .section2 button.ui.transparent.focus:focus, .section2 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section2 button.ui.transparent:active {
       border: 1px solid #d7bf8f; }
     .section2 button.ui.transparent:hover, .section2 button.ui.transparent:focus {
@@ -104,15 +113,15 @@ button.ui {
       background-color: #e0cea9; }
   .section2 .input.transparent {
     -webkit-text-fill-color: #715928; }
+    .section2 .input.transparent.focus:focus, .section2 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section2 .input.transparent input {
       border: 1px solid #e0cea9;
-      background-color: #f2eada;
+      background-color: white;
       box-shadow: 0 1px 5px #decaa1 inset; }
     .section2 .input.transparent input:hover {
       background-color: #e8dbbf; }
-    .section2 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 .section3 {
   background-color: #bfb6a3; }
@@ -121,6 +130,9 @@ button.ui {
     border: 1px solid #aea38b;
     box-shadow: inset 0px 1px 0px #c9c2b2, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #58503e; }
+    .section3 button.ui.transparent.focus:focus, .section3 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section3 button.ui.transparent:active {
       border: 1px solid #a09276; }
     .section3 button.ui.transparent:hover, .section3 button.ui.transparent:focus {
@@ -130,15 +142,15 @@ button.ui {
       background-color: #aea38b; }
   .section3 .input.transparent {
     -webkit-text-fill-color: #2b271e; }
+    .section3 .input.transparent.focus:focus, .section3 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section3 .input.transparent input {
       border: 1px solid #aea38b;
-      background-color: #c9c2b2;
+      background-color: #dedad0;
       box-shadow: 0 1px 5px #aa9e85 inset; }
     .section3 .input.transparent input:hover {
       background-color: #bbb19d; }
-    .section3 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 .section4 {
   background-color: #454545; }
@@ -147,6 +159,10 @@ button.ui {
     border: 1px solid #313131;
     box-shadow: inset 0px 1px 0px #525252, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #d1d1d1; }
+    .section4 button.ui.transparent.focus:focus, .section4 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section4 button.ui.transparent:active {
       border: 1px solid #1f1f1f; }
     .section4 button.ui.transparent:hover, .section4 button.ui.transparent:focus {
@@ -156,16 +172,16 @@ button.ui {
       background-color: #595959; }
   .section4 .input.transparent {
     -webkit-text-fill-color: #d1d1d1; }
-    .section4 .input.transparent input {
-      border: 1px solid #313131;
-      background-color: #525252;
-      box-shadow: 0 1px 5px #2c2c2c inset; }
-    .section4 .input.transparent input:hover {
-      background-color: #5f5f5f; }
-    .section4 .input.transparent input:focus {
+    .section4 .input.transparent.focus:focus, .section4 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section4 .input.transparent input {
+      border: 1px solid #313131;
+      background-color: #6b6b6b;
+      box-shadow: 0 1px 5px #2c2c2c inset; }
+    .section4 .input.transparent input:hover {
+      background-color: #787878; }
 
 .section5 {
   background-color: #bf4122; }
@@ -174,6 +190,10 @@ button.ui {
     border: 1px solid #9c351c;
     box-shadow: inset 0px 1px 0px #d54826, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #fefcfb; }
+    .section5 button.ui.transparent.focus:focus, .section5 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section5 button.ui.transparent:active {
       border: 1px solid #7e2b16; }
     .section5 button.ui.transparent:hover, .section5 button.ui.transparent:focus {
@@ -183,16 +203,16 @@ button.ui {
       background-color: #da5130; }
   .section5 .input.transparent {
     -webkit-text-fill-color: #fefcfb; }
-    .section5 .input.transparent input {
-      border: 1px solid #9c351c;
-      background-color: #d54826;
-      box-shadow: 0 1px 5px #94321a inset; }
-    .section5 .input.transparent input:hover {
-      background-color: #dc5938; }
-    .section5 .input.transparent input:focus {
+    .section5 .input.transparent.focus:focus, .section5 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section5 .input.transparent input {
+      border: 1px solid #9c351c;
+      background-color: #df6b4e;
+      box-shadow: 0 1px 5px #94321a inset; }
+    .section5 .input.transparent input:hover {
+      background-color: #e37d64; }
 
 .section6 {
   background-color: #cf4232; }
@@ -201,6 +221,10 @@ button.ui {
     border: 1px solid #af3729;
     box-shadow: inset 0px 1px 0px #d45547, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: white; }
+    .section6 button.ui.transparent.focus:focus, .section6 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section6 button.ui.transparent:active {
       border: 1px solid #922e22; }
     .section6 button.ui.transparent:hover, .section6 button.ui.transparent:focus {
@@ -210,16 +234,16 @@ button.ui {
       background-color: #d76053; }
   .section6 .input.transparent {
     -webkit-text-fill-color: white; }
-    .section6 .input.transparent input {
-      border: 1px solid #af3729;
-      background-color: #d45547;
-      box-shadow: 0 1px 5px #a73427 inset; }
-    .section6 .input.transparent input:hover {
-      background-color: #d9685b; }
-    .section6 .input.transparent input:focus {
+    .section6 .input.transparent.focus:focus, .section6 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section6 .input.transparent input {
+      border: 1px solid #af3729;
+      background-color: #de7b70;
+      box-shadow: 0 1px 5px #a73427 inset; }
+    .section6 .input.transparent input:hover {
+      background-color: #e28e85; }
 
 .section7 {
   background-color: #eb7f23; }
@@ -228,6 +252,9 @@ button.ui {
     border: 1px solid #d26b13;
     box-shadow: inset 0px 1px 0px #ed8d3a, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #3d1f06; }
+    .section7 button.ui.transparent.focus:focus, .section7 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section7 button.ui.transparent:active {
       border: 1px solid #b15a10; }
     .section7 button.ui.transparent:hover, .section7 button.ui.transparent:focus {
@@ -237,15 +264,15 @@ button.ui {
       background-color: #d26b13; }
   .section7 .input.transparent {
     -webkit-text-fill-color: black; }
+    .section7 .input.transparent.focus:focus, .section7 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section7 .input.transparent input {
       border: 1px solid #d26b13;
-      background-color: #ed8d3a;
+      background-color: #f1a869;
       box-shadow: 0 1px 5px #c96612 inset; }
     .section7 .input.transparent input:hover {
       background-color: #ea7a1a; }
-    .section7 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 .section8 {
   background-color: #fac023; }
@@ -254,6 +281,9 @@ button.ui {
     border: 1px solid #efb005;
     box-shadow: inset 0px 1px 0px #fbc73c, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #4f3a02; }
+    .section8 button.ui.transparent.focus:focus, .section8 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section8 button.ui.transparent:active {
       border: 1px solid #cc9605; }
     .section8 button.ui.transparent:hover, .section8 button.ui.transparent:focus {
@@ -263,15 +293,15 @@ button.ui {
       background-color: #efb005; }
   .section8 .input.transparent {
     -webkit-text-fill-color: #040300; }
+    .section8 .input.transparent.focus:focus, .section8 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section8 .input.transparent input {
       border: 1px solid #efb005;
-      background-color: #fbc73c;
+      background-color: #fcd56e;
       box-shadow: 0 1px 5px #e5a805 inset; }
     .section8 .input.transparent input:hover {
       background-color: #fabd19; }
-    .section8 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 .section9 {
   background-color: #068675; }
@@ -280,6 +310,10 @@ button.ui {
     border: 1px solid #045f53;
     box-shadow: inset 0px 1px 0px #079e8a, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #a9fbf0; }
+    .section9 button.ui.transparent.focus:focus, .section9 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section9 button.ui.transparent:active {
       border: 1px solid #033d35; }
     .section9 button.ui.transparent:hover, .section9 button.ui.transparent:focus {
@@ -289,16 +323,16 @@ button.ui {
       background-color: #08ad97; }
   .section9 .input.transparent {
     -webkit-text-fill-color: #a9fbf0; }
-    .section9 .input.transparent input {
-      border: 1px solid #045f53;
-      background-color: #079e8a;
-      box-shadow: 0 1px 5px #04554a inset; }
-    .section9 .input.transparent input:hover {
-      background-color: #08b7a0; }
-    .section9 .input.transparent input:focus {
+    .section9 .input.transparent.focus:focus, .section9 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section9 .input.transparent input {
+      border: 1px solid #045f53;
+      background-color: #09cfb5;
+      box-shadow: 0 1px 5px #04554a inset; }
+    .section9 .input.transparent input:hover {
+      background-color: #0ae8ca; }
 
 .section10 {
   background-color: #6b202e; }
@@ -307,6 +341,10 @@ button.ui {
     border: 1px solid #4c1720;
     box-shadow: inset 0px 1px 0px #7f2636, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #eab9c2; }
+    .section10 button.ui.transparent.focus:focus, .section10 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section10 button.ui.transparent:active {
       border: 1px solid #300e15; }
     .section10 button.ui.transparent:hover, .section10 button.ui.transparent:focus {
@@ -316,16 +354,16 @@ button.ui {
       background-color: #8a293c; }
   .section10 .input.transparent {
     -webkit-text-fill-color: #eab9c2; }
-    .section10 .input.transparent input {
-      border: 1px solid #4c1720;
-      background-color: #7f2636;
-      box-shadow: 0 1px 5px #44141d inset; }
-    .section10 .input.transparent input:hover {
-      background-color: #922c3f; }
-    .section10 .input.transparent input:focus {
+    .section10 .input.transparent.focus:focus, .section10 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section10 .input.transparent input {
+      border: 1px solid #4c1720;
+      background-color: #a63247;
+      box-shadow: 0 1px 5px #44141d inset; }
+    .section10 .input.transparent input:hover {
+      background-color: #ba3750; }
 
 .section11 {
   background-color: #165873; }
@@ -334,6 +372,10 @@ button.ui {
     border: 1px solid #0f3e51;
     box-shadow: inset 0px 1px 0px #1a6888, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #b1def0; }
+    .section11 button.ui.transparent.focus:focus, .section11 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section11 button.ui.transparent:active {
       border: 1px solid #0a2733; }
     .section11 button.ui.transparent:hover, .section11 button.ui.transparent:focus {
@@ -343,16 +385,16 @@ button.ui {
       background-color: #1d7295; }
   .section11 .input.transparent {
     -webkit-text-fill-color: #b1def0; }
-    .section11 .input.transparent input {
-      border: 1px solid #0f3e51;
-      background-color: #1a6888;
-      box-shadow: 0 1px 5px #0e3748 inset; }
-    .section11 .input.transparent input:hover {
-      background-color: #1e799e; }
-    .section11 .input.transparent input:focus {
+    .section11 .input.transparent.focus:focus, .section11 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section11 .input.transparent input {
+      border: 1px solid #0f3e51;
+      background-color: #2289b3;
+      box-shadow: 0 1px 5px #0e3748 inset; }
+    .section11 .input.transparent input:hover {
+      background-color: #269ac9; }
 
 .section12 {
   background-color: #124c59; }
@@ -361,6 +403,10 @@ button.ui {
     border: 1px solid #0b2f37;
     box-shadow: inset 0px 1px 0px #165e6e, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #99dcea; }
+    .section12 button.ui.transparent.focus:focus, .section12 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section12 button.ui.transparent:active {
       border: 1px solid #051619; }
     .section12 button.ui.transparent:hover, .section12 button.ui.transparent:focus {
@@ -370,16 +416,16 @@ button.ui {
       background-color: #19697b; }
   .section12 .input.transparent {
     -webkit-text-fill-color: #99dcea; }
-    .section12 .input.transparent input {
-      border: 1px solid #0b2f37;
-      background-color: #165e6e;
-      box-shadow: 0 1px 5px #09282f inset; }
-    .section12 .input.transparent input:hover {
-      background-color: #1b7083; }
-    .section12 .input.transparent input:focus {
+    .section12 .input.transparent.focus:focus, .section12 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section12 .input.transparent input {
+      border: 1px solid #0b2f37;
+      background-color: #1f8299;
+      box-shadow: 0 1px 5px #09282f inset; }
+    .section12 .input.transparent input:hover {
+      background-color: #2394ae; }
 
 .section13 {
   background-color: #428c5c; }
@@ -388,6 +434,10 @@ button.ui {
     border: 1px solid #35704a;
     box-shadow: inset 0px 1px 0px #4a9d67, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #eff7f2; }
+    .section13 button.ui.transparent.focus:focus, .section13 button.ui.transparent.focus input:focus {
+      border: 1px solid #1d94ff;
+      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+      transition: border .05s ease-in-out; }
     .section13 button.ui.transparent:active {
       border: 1px solid #29583a; }
     .section13 button.ui.transparent:hover, .section13 button.ui.transparent:focus {
@@ -397,16 +447,16 @@ button.ui {
       background-color: #4fa86e; }
   .section13 .input.transparent {
     -webkit-text-fill-color: #eff7f2; }
-    .section13 .input.transparent input {
-      border: 1px solid #35704a;
-      background-color: #4a9d67;
-      box-shadow: 0 1px 5px #326945 inset; }
-    .section13 .input.transparent input:hover {
-      background-color: #53ae73; }
-    .section13 .input.transparent input:focus {
+    .section13 .input.transparent.focus:focus, .section13 .input.transparent.focus input:focus {
       border: 1px solid #1d94ff;
       box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
       transition: border .05s ease-in-out; }
+    .section13 .input.transparent input {
+      border: 1px solid #35704a;
+      background-color: #64b681;
+      box-shadow: 0 1px 5px #326945 inset; }
+    .section13 .input.transparent input:hover {
+      background-color: #76be8f; }
 
 .section14 {
   background-color: #4ea64b; }
@@ -415,6 +465,9 @@ button.ui {
     border: 1px solid #418a3e;
     box-shadow: inset 0px 1px 0px #5ab357, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #0c190c; }
+    .section14 button.ui.transparent.focus:focus, .section14 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section14 button.ui.transparent:active {
       border: 1px solid #357133; }
     .section14 button.ui.transparent:hover, .section14 button.ui.transparent:focus {
@@ -424,15 +477,15 @@ button.ui {
       background-color: #418a3e; }
   .section14 .input.transparent {
     -webkit-text-fill-color: black; }
+    .section14 .input.transparent.focus:focus, .section14 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section14 .input.transparent input {
       border: 1px solid #418a3e;
-      background-color: #5ab357;
+      background-color: #7dc37a;
       box-shadow: 0 1px 5px #3d833b inset; }
     .section14 .input.transparent input:hover {
       background-color: #4b9f48; }
-    .section14 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 .section15 {
   background-color: #add96c; }
@@ -441,6 +494,9 @@ button.ui {
     border: 1px solid #9bd14c;
     box-shadow: inset 0px 1px 0px #b8de80, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
     color: #436019; }
+    .section15 button.ui.transparent.focus:focus, .section15 button.ui.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section15 button.ui.transparent:active {
       border: 1px solid #8ac533; }
     .section15 button.ui.transparent:hover, .section15 button.ui.transparent:focus {
@@ -450,15 +506,15 @@ button.ui {
       background-color: #9bd14c; }
   .section15 .input.transparent {
     -webkit-text-fill-color: #192309; }
+    .section15 .input.transparent.focus:focus, .section15 .input.transparent.focus input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section15 .input.transparent input {
       border: 1px solid #9bd14c;
-      background-color: #b8de80;
+      background-color: #cfe9a9;
       box-shadow: 0 1px 5px #96cf43 inset; }
     .section15 .input.transparent input:hover {
       background-color: #a8d764; }
-    .section15 .input.transparent input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
 
 div {
   height: 190px;
