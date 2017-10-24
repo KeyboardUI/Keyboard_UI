@@ -17,7 +17,7 @@ button.ui {
   -ms-transition: background-color .15s ease-in-out;
   -o-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out; }
-  button.ui.focus:focus, button.ui.focus input:focus {
+  button.ui:focus {
     border: 1px solid #0066ff;
     box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   button.ui:active {
@@ -33,15 +33,15 @@ button.ui {
   height: 41px;
   width: 250px;
   -webkit-text-fill-color: #8a8ea0; }
-  .input.focus:focus, .input.focus input:focus {
-    border: 1px solid #0066ff;
-    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   .input input {
     border: 1px solid #e1e1e1;
     background-color: white;
     box-shadow: 0 1px 5px gainsboro inset; }
-  .input input:hover {
-    background-color: #f0f0f0; }
+    .input input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
+  .input input:hover, .input input:focus {
+    background-color: white; }
   .input input {
     border-radius: 3px;
     position: relative;

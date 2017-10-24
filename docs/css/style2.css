@@ -17,7 +17,7 @@ button.ui {
   -ms-transition: background-color .15s ease-in-out;
   -o-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out; }
-  button.ui.focus:focus, button.ui.focus input:focus {
+  button.ui:focus {
     border: 1px solid #0066ff;
     box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   button.ui:active {
@@ -33,15 +33,15 @@ button.ui {
   height: 41px;
   width: 250px;
   -webkit-text-fill-color: #8a8ea0; }
-  .input.focus:focus, .input.focus input:focus {
-    border: 1px solid #0066ff;
-    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
   .input input {
     border: 1px solid #e1e1e1;
     background-color: white;
     box-shadow: 0 1px 5px gainsboro inset; }
-  .input input:hover {
-    background-color: #f0f0f0; }
+    .input input:focus {
+      border: 1px solid #0066ff;
+      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
+  .input input:hover, .input input:focus {
+    background-color: white; }
   .input input {
     border-radius: 3px;
     position: relative;
@@ -77,7 +77,7 @@ button.ui {
       border: 1px solid #ebebeb;
       box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
       color: #999999; }
-      .section1 button.ui.transparent.focus:focus, .section1 button.ui.transparent.focus input:focus {
+      .section1 button.ui.transparent:focus {
         border: 1px solid #0066ff;
         box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
       .section1 button.ui.transparent:active {
@@ -93,15 +93,15 @@ button.ui {
     margin-left: 30%; }
     .section1 .input.transparent {
       -webkit-text-fill-color: #737373; }
-      .section1 .input.transparent.focus:focus, .section1 .input.transparent.focus input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
       .section1 .input.transparent input {
         border: 1px solid #ebebeb;
         background-color: white;
         box-shadow: 0 1px 5px #e6e6e6 inset; }
-      .section1 .input.transparent input:hover {
-        background-color: #fafafa; }
+        .section1 .input.transparent input:focus {
+          border: 1px solid #0066ff;
+          box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
+      .section1 .input.transparent input:hover, .section1 .input.transparent input:focus {
+        background-color: white; }
 
 .section2 {
   background-color: #454545;
@@ -115,7 +115,7 @@ button.ui {
       border: 1px solid #313131;
       box-shadow: inset 0px 1px 0px #525252, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
       color: #d1d1d1; }
-      .section2 button.ui.transparent.focus:focus, .section2 button.ui.transparent.focus input:focus {
+      .section2 button.ui.transparent:focus {
         border: 1px solid #1d94ff;
         box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
         transition: border .05s ease-in-out; }
@@ -132,15 +132,15 @@ button.ui {
     margin-left: 30%; }
     .section2 .input.transparent {
       -webkit-text-fill-color: #d1d1d1; }
-      .section2 .input.transparent.focus:focus, .section2 .input.transparent.focus input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
       .section2 .input.transparent input {
         border: 1px solid #313131;
         background-color: #6b6b6b;
         box-shadow: 0 1px 5px #2c2c2c inset; }
-      .section2 .input.transparent input:hover {
+        .section2 .input.transparent input:focus {
+          border: 1px solid #1d94ff;
+          box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
+          transition: border .05s ease-in-out; }
+      .section2 .input.transparent input:hover, .section2 .input.transparent input:focus {
         background-color: #787878; }
 
 body {
