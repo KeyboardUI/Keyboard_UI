@@ -1,91 +1,105 @@
-body
-    background-color: rgb(242, 245, 247)
-    margin-left: 50px
-    margin-right: 50px
-    margin-top: 30px
+//
+    KEYBOARD UI v0.0.0
+    VISIT GITHUB: github.com/wisniewski94/Keyboard-UI
 
-.header
-  text-align: center
-  img
-    max-width: 100%
-    max-height: 100%
-    display: block
-    margin: auto auto
-  h1
-    margin-top: 15px
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
-.section
-  margin-top: 30px
+//
+    --------------------------
+            DEFAULTS
+    --------------------------
 
-.section3
-    margin-top: 30px
-    margin: 0 auto
-    width: 250px
-    div
-        margin-top: 8px;
+$def: #f5f5f5
 
-.col
-  display: inline-block
-  vertical-align: top
+//
+    --------------------------
+            FUNCTIONS
+    --------------------------
+@function contrast($n)
+    @return round((red($n)*290) + (green($n)*587) + (blue($n)*114)/1000)
 
-.col14
-  width: 20%
+//
+    --------------------------
+            BASIC
+    --------------------------
+@mixin outline($n)
+    @if abs(contrast($n)) < 112980
+        &:focus
+            border: 1px solid #1d94ff;
+            box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4)
+            transition: border .05s ease-in-out
+    @else
+         &:focus
+            border: 1px solid rgb(0,102,255)
+            box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8)
 
-.col34
-  width: auto
+//
+    --------------------------
+            BUTTONS
+    --------------------------
 
-.minisection
-  margin-top: 15px
-
-.css span
-  font-weight: 600
-
-/*******************
- *   FRAMEWORK PART
- ******************/
-
-body
-  font-family: 'Roboto', sans-serif
-
-h1
-  font-size: 2em
-  font-weight: 900
-  color: #3f3f3f
-  letter-spacing: 0.02em
-
-h2
-  font-size: 1.5em
-  font-weight: 900
-  color: #8a8ea0
-
-h3
-  font-size: 1.17em
-  font-weight: 900
-  color: #34495E
-
-h4
-  font-size: 1em
-
-h5
-  font-size: 0.83em
-
-h6
-  font-size: 0.67em
-
-.highlight
-    &:hover
-        background-color: rgb(246, 250, 251)
+@mixin transparent-btn($n)
+    @include outline($n)
+    background-color: $n
+    border: 1px solid darken($n, 8%)
+    box-shadow: inset 0px 1px 0px lighten($n, 5%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 3px 0 rgba(0, 0, 0, 0.13)
+    &:active
+        border: 1px solid darken($n, 15%)
+    @if abs(contrast($n)) < 112980
+        color: lighten($n, 55%)
+        &:hover, &:focus
+            background-color: lighten($n, 8%)
+        &:active
+            box-shadow: inset 0 -1px 1px 0 lighten($n, 5%)
+            background-color: lighten($n, 8%)
+    @else
+        color: darken($n, 40%)
+        &:hover, &:focus
+            background-color: darken($n, 8%)
+        &:active
+            box-shadow: inset 0 -1px 1px 0 darken($n, 5%)
+            background-color: darken($n, 8%)
     
-.click
+button.ui
+    @include transparent-btn($def)
+    padding: 10px 31px
     cursor: pointer
+    border-radius: 3px
+    font-size: 14px
+    font-weight: 600
+    font-family: 'Noto Sans', sans-serif
+    outline: none
+    user-select: none
+    -webkit-transition: background-color .15s ease-in-out
+    -moz-transition: background-color .15s ease-in-out
+    -ms-transition: background-color .15s ease-in-out
+    -o-transition: background-color .15s ease-in-out
+    transition: background-color .15s ease-in-out
+ 
+//
+    --------------------------
+        TEXT INPUT FIELDS
+    --------------------------
+@mixin transparent-input($n)
+    input
+        @include outline($n)
+        border: 1px solid darken($n, 8%)
+        background-color: lighten($n, 15%)
+        box-shadow: 0 1px 5px darken($n, 10%) inset
+    @if abs(contrast($n)) < 112980
+        //dark
+        -webkit-text-fill-color: lighten($n, 55%)
+        input
+            &:hover, &:focus
+                background-color: lighten($n, 20%)
+    @else
+        -webkit-text-fill-color: darken($n, 55%)
+        input
+            &:hover, &:focus
+                background-color: lighten($n, 10%)
 
-/************* INPUTS
-$red03: rgba(175, 26, 26, 0.3)
-$red06: rgba(175, 26, 26, 0.6)
-$red08: rgba(175, 26, 26, 0.8)
-$red1: #e32c2c
-
-.input 
+.input
+    @include transparent-input($def)
     height: 41px
     width: 250px
     -webkit-text-fill-color: #8a8ea0
@@ -93,15 +107,10 @@ $red1: #e32c2c
         border-radius: 3px
         position: relative
         z-index: 1
-        box-shadow: none
-        border: 1px solid rgb(242, 245, 247)
-        color: #4790ff
         box-sizing: border-box
         height: 100%
         width: 100%
         padding: 0 14px
-        background-color: white
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.17) inset, 0px 1px white
         font-size: 14px
         outline: none
         -webkit-transition: all .15s ease-in-out
@@ -110,237 +119,10 @@ $red1: #e32c2c
         -o-transition: all .15s ease-in-out
         transition: all .15s ease-in-out
         &:focus
-            border: 1px solid rgba(0,102,255,0.72)
-            box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.45)
             &::placeholder
                 opacity: 1
-        &:hover
-            background-color: rgb(246, 250, 251)
         &::placeholder
             opacity: 0.6
     input[type=submit]
         -webkit-text-fill-color: #515876
         color: #515876
-        
-.input.blue input[type=submit]
-    -webkit-text-fill-color: #fff
-    color: #fff
-    
-
-.focus input
-    border: 1px solid rgba(0,102,255,0.72)
-    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.45)
-
-.disabled input
-    opacity: 0.5
-    pointer-events: none
-    user-select: none
-
-.false input
-    background-color: #fff6f4
-    border: 1px solid rgb(236, 101, 68)
-    color: rgb(236, 101, 68)
-    -webkit-text-fill-color: rgb(255, 61, 0)
-    &:focus
-        box-shadow: 0 0px 0px 2px rgba(227, 44, 44, 0.16)
-        border: 1px solid $red1
-        &::placeholder
-            color: $red08
-    &:hover
-        background-color: white
-    &::placeholder
-        color: $red06
-
-.true input
-    background-color: rgb(252, 255, 249)
-    border: 1px solid #7faf1a
-    color: #7faf1a
-    -webkit-text-fill-color: #626475
-    &:focus
-        box-shadow: 0 0px 0px 2px rgba(149, 227, 44, 0.16)
-        border: 1px solid #7da434
-        &::placeholder
-            color: rgba(70, 175, 26, 0.8)
-    &:hover
-        background-color: #f5ffef
-    &::placeholder
-        color: rgba(70, 175, 26, 0.6)
-    
-/************* BUTTONS
-.button, input[type=submit]
-    padding: 10px 31px
-    font-size: 14px
-    border-radius: 3px
-    border: 1px solid #e2e2e2
-    outline: none
-    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 rgb(148, 159, 167), 0 1px 3px 0 rgba(0, 0, 0, 0.13)
-    background-color: #f2f5f7
-    &:hover
-        background-color: #f7f9fa
-    &:active
-        box-shadow: 0px 0px 0px #cbcbcb, inset 0 -1px 1px 0 white
-        background-color: white
-    color: #515876
-    font-weight: 600
-    font-family: 'Noto Sans', sans-serif
-        
-.button.blue, input[type=submit]
-    background-color: #5599fe
-    color: white
-    box-shadow: inset 0px 1px 0px #93ceff, inset 0 -1px 1px 0 rgb(50, 113, 207), 0 1px 3px 0 rgba(0, 0, 0, 0.2)
-    &:hover
-        background-color: #67a5ff
-    &:active
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.45)
-        background-color: #a2c7ff
-        border: 1px solid #8bbcdd
-        
-.css
-    font-family: 'Courier New', monospace
-    font-size: 0.9em
-    color: #67809F
-
-.bar
-    background-color: rgba(0, 0, 0, 0.15)
-    height: 1px
-    content: ''
-    margin: 1.5rem 0
-    
-/************* CHECKBOX
-.checkbox input[type=checkbox]
-    visibility: hidden
-    &:checked + label:after
-        opacity: 1
-
-.checkbox
-    position: relative
-    label
-        top: 0px
-        position: absolute
-        cursor: pointer
-        color: #515876
-        -webkit-user-select: none
-        -moz-user-select: none
-        -ms-user-select: none
-        user-select: none
-        &:before
-            content: ""
-            background: #fff
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.17) inset, 0px 1px white
-            width: 17px
-            height: 17px
-            position: absolute
-            border-radius: 3px
-            left: -24px
-        &:after
-            opacity: 0
-            content: ""
-            position: absolute
-            width: 9px
-            height: 4px
-            top: 4px
-            left: -22px
-            background: transparent
-            border: 3px solid #5599fe
-            border-top: none
-            border-right: none
-            transform: rotate(-45deg)
-    &:hover > label:after
-        opacity: 0.5
-
-.checkbox.blue input[type=checkbox]:checked + label
-    &:before
-        background: #5599fe
-    &:after
-        border: 3px solid #fff
-        border-top: none
-        border-right: none
-
-/************* DROPDOWNS
-
-.drp
-    position: relative
-    display: inline-block
-    width: 100%
-    height: 39px
-    .drp-txt
-        box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 rgb(148, 159, 167), 0 1px 3px 0 rgba(0, 0, 0, 0.1)
-        border: 1px solid #e2e2e2
-        border-radius: 3px
-        width: 100%
-        height: 39px
-        outline: none
-        background-color: white
-        color: #8a8ea0
-        line-height: 37px
-        text-indent: 14px
-        position: absolute
-        -webkit-transition: all .25s ease
-        -moz-transition: all .25s ease
-        -ms-transition: all .25s ease
-        -o-transition: all .25s ease
-        transition: all .25s ease
-        &:after
-            position: absolute
-            right: 6px
-            top: 18px
-            content: ''
-            width: 0px
-            height: 0px
-            border-style: solid
-            border-width: 5px 4px 0 4px
-            border-color: #555 transparent transparent transparent  
-    ul
-        visibility: hidden
-        position: absolute
-        top: 40px
-        cursor: pointer
-        box-shadow: inset 0 -1px 1px 0 rgba(148, 159, 167, 0.17), 0 1px 3px 0 rgba(0,0,0,0.2)
-        z-index: 5
-        opacity: 0
-        width: 100%
-        -webkit-transition: opacity .25s, visibility .4s ease
-        -moz-transition: opacity .25s, visibility .4s ease
-        -ms-transition: opacity .25s, visibility .4s ease
-        -o-transition: opacity .25s, visibility .4s ease
-        transition: opacity .25s, visibility .4s ease
-        li
-            background-color: white
-            border-top: 1px solid #efefef;
-            width: 100%
-            color: #8a8ea0
-            line-height: 37px
-            text-indent: 14px
-            &:hover
-                background-color: rgb(246, 250, 251)
-    input
-        z-index: 2
-        cursor: pointer
-        position: absolute
-        border: none
-        background: transparent
-        text-indent: -10px
-        font-size: 0
-        height: 39px
-        width: 100%
-        outline: none
-        &:hover + .drp-txt
-            background-color: rgb(246, 250, 251)
-        &:focus ~ ul
-            visibility: visible
-            opacity: 1
-        &:focus ~ .drp-txt
-            box-shadow: 0 0px 0px 2px rgba(165,201,227,0.45)
-            border: 1px solid rgba(0,102,255,0.72)
-
-/************* SEGMENTS
-.segment
-    background: white
-    border-radius: 3px
-    border: 1px solid #e2e2e2
-    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #949fa7, 0 1px 3px 0 rgba(0,0,0,0.13)
-
-
-/*
- *font-family: 'Roboto', sans-serif;
- *font-family: 'Noto Sans', sans-serif;

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title Keyboard UI
+        meta(charset="utf-8")
+        meta(name="description" content="Lorem ipsum dolor sit amet.")
+        link(rel="stylesheet" href="css/reset.css")
+        link(rel="stylesheet" href="css/keyui.css")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        - var sections = 1
+        while sections <= 15 
+            div(class="section" + sections++)
+                button.ui.transparent Transparent
+                .input.transparent
+                    input(size="35", value="")
+        script(src="js/keyui.js")
