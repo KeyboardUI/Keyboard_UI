@@ -1,3 +1,5 @@
 ![logo](keyboard_ui.jpg)
 
-Awesome sass elements kit. Work in progress.
+Awesome Sass elements kit. Work in progress.
+
+**Please check out `develop` branch for more details!**
