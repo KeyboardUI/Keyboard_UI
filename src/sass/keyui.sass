@@ -10,7 +10,33 @@
     --------------------------
 
 @import _globals
+@import _reset
+@mixin devmode()
+    *
+        background-color: rgba(255, 0, 0, 0.2)
+        outline: 1px solid blue
+        *
+            background-color: rgba(0, 255, 0, 0.2)
+            *
+                background-color: rgba(0, 0, 255, 0.2)
+                *
+                    background-color: rgba(255, 0, 255, 0.2)
+                    *
+                        background-color: rgba(0, 255, 255, 0.2)
+                        *
+                            background-color: rgba(255, 255, 0, 0.2)
+                            *
+                                background-color: rgba(255, 0, 0, 0.2)
+                                *
+                                    background-color: rgba(0, 255, 0, 0.2)
+                                    *
+                                        background-color: rgba(0, 0, 255, 0.2)
+                                        *
+                                            background-color: rgba(0, 10, 255, 0.2)
+                                            *
+                                                background-color: rgba(0, 10, 200, 0.2)
 
+@include devmode()
 //
     --------------------------
             FUNCTIONS
@@ -75,12 +101,13 @@
         &:focus:enabled
             @include outline($n, "")
 
-@mixin btn
+%btn
     cursor: pointer
+    padding: 10px 31px
     border-radius: 3px
     font-size: 14px
-    font-weight: 600
-    font-family: 'Noto Sans', sans-serif
+    font-weight: 400
+    font-family: 'Roboto', sans-serif
     outline: none
     user-select: none
     -webkit-transition: all .15s ease-in-out
@@ -89,44 +116,43 @@
     -o-transition: all .15s ease-in-out
     transition: all .15s ease-in-out
     transition-property: background-color, opacity
+    &:focus, &:active
+        padding: 9px 30px
     
 button.ui
     @include transparent-btn($def)
-    @include btn
-    padding: 10px 31px
-    &:focus, &:active
-        padding: 9px 30px
+    @extend %btn
 
-
- 
 //
     --------------------------
         TEXT INPUT FIELDS
     --------------------------
 @mixin transparent-input($n)
-    border: 2px solid darken($n, 15%)
-    background-color: lighten($n, 15%)
-    box-shadow: 0 0px 3px darken($n, 10%) inset
-    &:focus
-        @include outline($n, "")
-    @if abs(contrast($n)) < 112980
-        //dark
-        -webkit-text-fill-color: lighten($n, 55%)
-        &:hover, &:focus
-            background-color: lighten($n, 20%)
-    @else
-        -webkit-text-fill-color: darken($n, 55%)
-        &:hover, &:focus
-            background-color: darken($n, 2%)
+    input, select, textarea
+        border: 1px solid darken($n, 15%)
+        background-color: lighten($n, 15%)
+        box-shadow: 0 0px 3px darken($n, 10%) inset
+        &:focus
+            @include outline($n, "")
+            padding: 12px
+        @if abs(contrast($n)) < 112980
+            //dark
+            -webkit-text-fill-color: lighten($n, 55%)
+            &:hover, &:focus
+                background-color: lighten($n, 20%)
+        @else
+            -webkit-text-fill-color: darken($n, 55%)
+            &:hover, &:focus
+                background-color: darken($n, 2%)
 
 .ui.input
+    @include transparent-input($def)
     $transition: box-shadow, opacity, background-color, border, padding
     input, label, select, textarea
         display: block
     label
         font-weight: 600
     input, select, textarea
-        @include transparent-input($def)
         -webkit-text-fill-color: #8a8ea0
         border-radius: 3px
         padding: 8px
@@ -160,7 +186,7 @@ button.ui
             //pointer-events: none
         input, select
             box-shadow: none
-            border: 2px solid darken($def, 20%)
+            border: 1px solid darken($def, 20%)
             &:focus, &:active
                 padding: 8px !important
 
