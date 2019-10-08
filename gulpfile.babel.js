@@ -1,26 +1,66 @@
-import gulp from "gulp";
+import gulp, { series, src, dest } from "gulp";
 import sass from "gulp-sass";
 import pug from "gulp-pug";
+import browserSync from "browser-sync";
+const server = browserSync.create();
 
-gulp.task("sass", () => {
-  return gulp
-    .src("src/sass/**/*.sass")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
-});
+const config = {
+  src: {
+    sass: "./src/sass/**/*.sass"
+  },
+  test: {
+    pug: "./test/views/*.pug",
+    sass: "./test/views/sass/*.sass",
+    css: "./test/out/css",
+    out: "./test/out"
+  },
+  out: {
+    css: "./css"
+  }
+};
 
-gulp.task("pug", () => {
-  return gulp
-    .src("test/views/*.pug")
+const reload = done => {
+  server.reload();
+  done();
+};
+
+const serve = done => {
+  server.init({
+    server: {
+      baseDir: config.test.out
+    }
+  });
+  done();
+};
+
+const observe = () => {
+  gulp
+    .watch(config.src.sass, series(reload, pugTest, testSass))
+    .on("change", browserSync.reload);
+};
+
+const srcComp = done => {
+  src(config.src.sass)
+    .pipe(dest(config.out.css))
+    .pipe(browserSync.stream());
+  done();
+};
+
+const pugTest = done => {
+  src(config.test.pug)
     .pipe(pug())
-    .pipe(gulp.dest("./test/out"));
-});
+    .pipe(dest(config.test.out))
+    .pipe(browserSync.stream(config.test.out));
+  done();
+};
 
-gulp.task("test sass", () => {
-  return gulp
-    .src("./test/views/sass/*.sass")
+const testSass = done => {
+  src(config.test.sass)
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./test/out/css"));
-});
+    .pipe(dest(config.test.css));
+  done();
+};
 
-gulp.task("test", gulp.series("pug", "test sass"));
+const dev = series(pugTest, testSass);
+const watch = series(serve, observe);
+export { dev, testSass, srcComp, watch };

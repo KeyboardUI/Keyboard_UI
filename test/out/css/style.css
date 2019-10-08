@@ -1,186 +1,464 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  background-color: rgba(255, 0, 0, 0.2);
+  outline: 1px solid blue; }
+  * * {
+    background-color: rgba(0, 255, 0, 0.2); }
+    * * * {
+      background-color: rgba(0, 0, 255, 0.2); }
+      * * * * {
+        background-color: rgba(255, 0, 255, 0.2); }
+        * * * * * {
+          background-color: rgba(0, 255, 255, 0.2); }
+          * * * * * * {
+            background-color: rgba(255, 255, 0, 0.2); }
+            * * * * * * * {
+              background-color: rgba(255, 0, 0, 0.2); }
+              * * * * * * * * {
+                background-color: rgba(0, 255, 0, 0.2); }
+                * * * * * * * * * {
+                  background-color: rgba(0, 0, 255, 0.2); }
+                  * * * * * * * * * * {
+                    background-color: rgba(0, 10, 255, 0.2); }
+                    * * * * * * * * * * * {
+                      background-color: rgba(0, 10, 200, 0.2); }
+
 button.ui {
-  background-color: #f5f5f5;
-  border: 1px solid #e1e1e1;
-  box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #9c9c9c, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-  color: #8f8f8f;
-  padding: 10px 31px;
   cursor: pointer;
+  padding: 10px 31px;
   border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  user-select: none;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  transition-property: background-color, opacity; }
+  button.ui:focus, button.ui:active {
+    padding: 9px 30px; }
+
+button.ui {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+  color: #999999; }
+  button.ui:active {
+    border: 2px solid #d9d9d9; }
+  button.ui:disabled {
+    opacity: 0.5;
+    cursor: default;
+    box-shadow: none; }
+  button.ui:hover:enabled, button.ui:focus:enabled {
+    background-color: #ebebeb; }
+  button.ui:active:enabled {
+    box-shadow: inset 0 -1px 1px 0 #f2f2f2;
+    background-color: #ebebeb; }
+  button.ui:focus:enabled {
+    border: 2px solid #ff4e27;
+    box-shadow: 0 0 0 2px #ffe0da; }
+
+.ui.input input, .ui.input select, .ui.input textarea {
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  box-shadow: 0 0px 3px #e6e6e6 inset;
+  -webkit-text-fill-color: #737373; }
+  .ui.input input:focus, .ui.input select:focus, .ui.input textarea:focus {
+    border: 2px solid #ff4e27;
+    box-shadow: 0 0 0 2px #ffe0da;
+    padding: 12px; }
+  .ui.input input:hover, .ui.input input:focus, .ui.input select:hover, .ui.input select:focus, .ui.input textarea:hover, .ui.input textarea:focus {
+    background-color: #fafafa; }
+
+.ui.input input, .ui.input label, .ui.input select, .ui.input textarea {
+  display: block; }
+
+.ui.input label {
+  font-weight: 600; }
+
+.ui.input input, .ui.input select, .ui.input textarea {
+  -webkit-text-fill-color: #8a8ea0;
+  border-radius: 3px;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  transition-property: box-shadow, opacity, background-color, border, padding; }
+  .ui.input input:focus::placeholder, .ui.input select:focus::placeholder, .ui.input textarea:focus::placeholder {
+    opacity: 1; }
+  .ui.input input::placeholder, .ui.input select::placeholder, .ui.input textarea::placeholder {
+    opacity: 0.6; }
+
+.ui.input input[type=submit], .ui.input select[type=submit] {
+  -webkit-text-fill-color: #515876;
+  color: #515876; }
+
+.ui.input.error input {
+  border: 2px solid #0066ff;
+  box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+  .ui.input.error input:focus {
+    background-color: #fff5f5 !important; }
+
+.ui.input.disabled label, .ui.input.disabled div, .ui.input.disabled input, .ui.input.disabled select {
+  opacity: 0.5; }
+
+.ui.input.disabled input, .ui.input.disabled select {
+  box-shadow: none;
+  border: 1px solid #cccccc; }
+  .ui.input.disabled input:focus, .ui.input.disabled input:active, .ui.input.disabled select:focus, .ui.input.disabled select:active {
+    padding: 8px !important; }
+
+.ui.pag {
+  display: inline-block;
   font-size: 14px;
   font-weight: 600;
   font-family: 'Noto Sans', sans-serif;
   outline: none;
   user-select: none;
-  -webkit-transition: background-color .15s ease-in-out;
-  -moz-transition: background-color .15s ease-in-out;
-  -ms-transition: background-color .15s ease-in-out;
-  -o-transition: background-color .15s ease-in-out;
-  transition: background-color .15s ease-in-out; }
-  button.ui:focus {
-    border: 1px solid #0066ff;
-    box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-  button.ui:active {
-    border: 1px solid #cfcfcf; }
-  button.ui:hover, button.ui:focus {
-    background-color: #e1e1e1; }
-  button.ui:active {
-    box-shadow: inset 0 -1px 1px 0 #e8e8e8;
-    background-color: #e1e1e1; }
-
-.input {
-  -webkit-text-fill-color: dimgray;
-  height: 41px;
-  width: 250px;
-  -webkit-text-fill-color: #8a8ea0; }
-  .input input {
-    border: 1px solid #e1e1e1;
-    background-color: white;
-    box-shadow: 0 1px 5px gainsboro inset; }
-    .input input:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-  .input input:hover, .input input:focus {
-    background-color: white; }
-  .input input {
+  padding: 2px 0; }
+  .ui.pag input {
+    width: 45px;
+    text-align: right;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+    padding: 8px 8px 7px; }
+  .ui.pag input[type=number]::-webkit-inner-spin-button,
+  .ui.pag input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .ui.pag span:first-of-type {
+    padding: 7px; }
+  .ui.pag button {
     border-radius: 3px;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    padding: 0 14px;
-    font-size: 14px;
-    outline: none;
-    -webkit-transition: all .15s ease-in-out;
-    -moz-transition: all .15s ease-in-out;
-    -ms-transition: all .15s ease-in-out;
-    -o-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out; }
-    .input input:focus::placeholder {
+    margin: 0 15px 0 15px; }
+    .ui.pag button i {
+      margin-bottom: 1px; }
+  .ui.pag.transparent {
+    background-color: #ffffff;
+    color: #999999; }
+    .ui.pag.transparent:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+    .ui.pag.transparent button i.ui.arrow {
+      border-right: 0.2em solid #999999;
+      border-top: 0.2em solid #999999; }
+    .ui.pag.transparent button:hover, .ui.pag.transparent button:focus {
+      background-color: #ebebeb; }
+    .ui.pag.transparent button:active {
+      background-color: #ebebeb; }
+    .ui.pag.transparent button {
+      background-color: #ffffff;
+      background-color: #ffffff;
+      border: 1px solid #ebebeb;
+      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: #999999; }
+      .ui.pag.transparent button:active {
+        border: 2px solid #d9d9d9; }
+      .ui.pag.transparent button:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .ui.pag.transparent button:hover:enabled, .ui.pag.transparent button:focus:enabled {
+        background-color: #ebebeb; }
+      .ui.pag.transparent button:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #f2f2f2;
+        background-color: #ebebeb; }
+      .ui.pag.transparent button:focus:enabled {
+        border: 2px solid #ff4e27;
+        box-shadow: 0 0 0 2px #ffe0da; }
+    .ui.pag.transparent button {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      height: 36px;
+      font-family: 'Noto Sans', sans-serif;
+      outline: none;
+      user-select: none;
+      -webkit-transition: background-color .15s ease-in-out;
+      -moz-transition: background-color .15s ease-in-out;
+      -ms-transition: background-color .15s ease-in-out;
+      -o-transition: background-color .15s ease-in-out;
+      transition: background-color .15s ease-in-out;
+      padding: 5px 10px;
+      border: none; }
+      .ui.pag.transparent button:focus, .ui.pag.transparent button:active {
+        padding: 8px 8px; }
+
+i.ui {
+  display: inline-block;
+  font-style: normal;
+  position: relative; }
+  i.ui.arrow {
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid black;
+    border-top: 0.2em solid black; }
+    i.ui.arrow.r {
+      transform: rotate(45deg); }
+    i.ui.arrow.l {
+      transform: rotate(225deg); }
+
+.ui.checkbox {
+  position: relative; }
+  .ui.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    margin: 0;
+    z-index: 1; }
+    .ui.checkbox input[type="checkbox"] + label {
+      text-indent: 28px;
+      text-align: justify;
+      display: block;
+      font-weight: 500; }
+      .ui.checkbox input[type="checkbox"] + label::before {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        content: '';
+        border-radius: 3px; }
+        .ui.checkbox input[type="checkbox"] + label::before input, .ui.checkbox input[type="checkbox"] + label::before select, .ui.checkbox input[type="checkbox"] + label::before textarea {
+          border: 1px solid #d9d9d9;
+          background-color: white;
+          box-shadow: 0 0px 3px #e6e6e6 inset;
+          -webkit-text-fill-color: #737373; }
+          .ui.checkbox input[type="checkbox"] + label::before input:focus, .ui.checkbox input[type="checkbox"] + label::before select:focus, .ui.checkbox input[type="checkbox"] + label::before textarea:focus {
+            border: 2px solid #ff4e27;
+            box-shadow: 0 0 0 2px #ffe0da;
+            padding: 12px; }
+          .ui.checkbox input[type="checkbox"] + label::before input:hover, .ui.checkbox input[type="checkbox"] + label::before input:focus, .ui.checkbox input[type="checkbox"] + label::before select:hover, .ui.checkbox input[type="checkbox"] + label::before select:focus, .ui.checkbox input[type="checkbox"] + label::before textarea:hover, .ui.checkbox input[type="checkbox"] + label::before textarea:focus {
+            background-color: #fafafa; }
+      .ui.checkbox input[type="checkbox"] + label::after {
+        content: '';
+        opacity: 0;
+        background-color: transparent;
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        width: 4px;
+        border-bottom: 4px solid #0066ff;
+        height: 10px;
+        border-right: 4px solid #2e84ff;
+        transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); }
+    .ui.checkbox input[type="checkbox"]:focus + label::before {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+    .ui.checkbox input[type="checkbox"]:checked + label::after {
       opacity: 1; }
-    .input input::placeholder {
-      opacity: 0.6; }
-  .input input[type=submit] {
-    -webkit-text-fill-color: #515876;
-    color: #515876; }
+
+.ui .error {
+  position: relative;
+  animation: append .15s ease-in-out; }
+  .ui .error p {
+    color: red !important;
+    text-align: initial;
+    text-indent: initial;
+    padding: 0 3px 8px 3px; }
+
+@keyframes append {
+  0% {
+    opacity: 0;
+    height: 0; }
+  100% {
+    opacity: 1;
+    height: 30px; } }
 
 .section1 {
   background-color: #ffffff; }
   .section1 button.ui.transparent {
     background-color: #ffffff;
     border: 1px solid #ebebeb;
-    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #999999; }
-    .section1 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section1 button.ui.transparent:active {
-      border: 1px solid #d9d9d9; }
-    .section1 button.ui.transparent:hover, .section1 button.ui.transparent:focus {
+      border: 2px solid #d9d9d9; }
+    .section1 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section1 button.ui.transparent:hover:enabled, .section1 button.ui.transparent:focus:enabled {
       background-color: #ebebeb; }
-    .section1 button.ui.transparent:active {
+    .section1 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #f2f2f2;
       background-color: #ebebeb; }
-  .section1 .input.transparent {
+    .section1 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section1 .input.transparent input, .section1 .input.transparent select, .section1 .input.transparent textarea {
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    box-shadow: 0 0px 3px #e6e6e6 inset;
     -webkit-text-fill-color: #737373; }
-    .section1 .input.transparent input {
-      border: 1px solid #ebebeb;
-      background-color: white;
-      box-shadow: 0 1px 5px #e6e6e6 inset; }
-      .section1 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section1 .input.transparent input:hover, .section1 .input.transparent input:focus {
-      background-color: white; }
+    .section1 .input.transparent input:focus, .section1 .input.transparent select:focus, .section1 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section1 .input.transparent input:hover, .section1 .input.transparent input:focus, .section1 .input.transparent select:hover, .section1 .input.transparent select:focus, .section1 .input.transparent textarea:hover, .section1 .input.transparent textarea:focus {
+      background-color: #fafafa; }
 
 .section2 {
   background-color: #ebdfc7; }
   .section2 button.ui.transparent {
     background-color: #ebdfc7;
     border: 1px solid #e0cea9;
-    box-shadow: inset 0px 1px 0px #f2eada, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #a9853d; }
-    .section2 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section2 button.ui.transparent:active {
-      border: 1px solid #d7bf8f; }
-    .section2 button.ui.transparent:hover, .section2 button.ui.transparent:focus {
+      border: 2px solid #d7bf8f; }
+    .section2 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section2 button.ui.transparent:hover:enabled, .section2 button.ui.transparent:focus:enabled {
       background-color: #e0cea9; }
-    .section2 button.ui.transparent:active {
+    .section2 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #e4d4b4;
       background-color: #e0cea9; }
-  .section2 .input.transparent {
+    .section2 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section2 .input.transparent input, .section2 .input.transparent select, .section2 .input.transparent textarea {
+    border: 1px solid #d7bf8f;
+    background-color: white;
+    box-shadow: 0 0px 3px #decaa1 inset;
     -webkit-text-fill-color: #715928; }
-    .section2 .input.transparent input {
-      border: 1px solid #e0cea9;
-      background-color: white;
-      box-shadow: 0 1px 5px #decaa1 inset; }
-      .section2 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section2 .input.transparent input:hover, .section2 .input.transparent input:focus {
-      background-color: #f8f4ed; }
+    .section2 .input.transparent input:focus, .section2 .input.transparent select:focus, .section2 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section2 .input.transparent input:hover, .section2 .input.transparent input:focus, .section2 .input.transparent select:hover, .section2 .input.transparent select:focus, .section2 .input.transparent textarea:hover, .section2 .input.transparent textarea:focus {
+      background-color: #e8dbbf; }
 
 .section3 {
   background-color: #bfb6a3; }
   .section3 button.ui.transparent {
     background-color: #bfb6a3;
     border: 1px solid #aea38b;
-    box-shadow: inset 0px 1px 0px #c9c2b2, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px #dedad0, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #58503e; }
-    .section3 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section3 button.ui.transparent:active {
-      border: 1px solid #a09276; }
-    .section3 button.ui.transparent:hover, .section3 button.ui.transparent:focus {
+      border: 2px solid #a09276; }
+    .section3 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section3 button.ui.transparent:hover:enabled, .section3 button.ui.transparent:focus:enabled {
       background-color: #aea38b; }
-    .section3 button.ui.transparent:active {
+    .section3 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #b5aa94;
       background-color: #aea38b; }
-  .section3 .input.transparent {
+    .section3 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section3 .input.transparent input, .section3 .input.transparent select, .section3 .input.transparent textarea {
+    border: 1px solid #a09276;
+    background-color: #dedad0;
+    box-shadow: 0 0px 3px #aa9e85 inset;
     -webkit-text-fill-color: #2b271e; }
-    .section3 .input.transparent input {
-      border: 1px solid #aea38b;
-      background-color: #dedad0;
-      box-shadow: 0 1px 5px #aa9e85 inset; }
-      .section3 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section3 .input.transparent input:hover, .section3 .input.transparent input:focus {
-      background-color: #d4cec1; }
+    .section3 .input.transparent input:focus, .section3 .input.transparent select:focus, .section3 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section3 .input.transparent input:hover, .section3 .input.transparent input:focus, .section3 .input.transparent select:hover, .section3 .input.transparent select:focus, .section3 .input.transparent textarea:hover, .section3 .input.transparent textarea:focus {
+      background-color: #bbb19d; }
 
 .section4 {
   background-color: #454545; }
   .section4 button.ui.transparent {
     background-color: #454545;
     border: 1px solid #313131;
-    box-shadow: inset 0px 1px 0px #525252, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #d1d1d1; }
-    .section4 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #6b6b6b, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #d1d1d1;
+    box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(18, 18, 18, 0.5); }
     .section4 button.ui.transparent:active {
-      border: 1px solid #1f1f1f; }
-    .section4 button.ui.transparent:hover, .section4 button.ui.transparent:focus {
-      background-color: #595959; }
-    .section4 button.ui.transparent:active {
+      border: 2px solid #1f1f1f; }
+    .section4 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section4 button.ui.transparent:hover:enabled, .section4 button.ui.transparent:focus:enabled {
+      background-color: #646464; }
+    .section4 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #525252;
-      background-color: #595959; }
-  .section4 .input.transparent {
+      background-color: #646464; }
+    .section4 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section4 .input.transparent input, .section4 .input.transparent select, .section4 .input.transparent textarea {
+    border: 1px solid #1f1f1f;
+    background-color: #6b6b6b;
+    box-shadow: 0 0px 3px #2c2c2c inset;
     -webkit-text-fill-color: #d1d1d1; }
-    .section4 .input.transparent input {
-      border: 1px solid #313131;
-      background-color: #6b6b6b;
-      box-shadow: 0 1px 5px #2c2c2c inset; }
-      .section4 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section4 .input.transparent input:hover, .section4 .input.transparent input:focus {
+    .section4 .input.transparent input:focus, .section4 .input.transparent select:focus, .section4 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section4 .input.transparent input:hover, .section4 .input.transparent input:focus, .section4 .input.transparent select:hover, .section4 .input.transparent select:focus, .section4 .input.transparent textarea:hover, .section4 .input.transparent textarea:focus {
       background-color: #787878; }
 
 .section5 {
@@ -188,30 +466,33 @@ button.ui {
   .section5 button.ui.transparent {
     background-color: #bf4122;
     border: 1px solid #9c351c;
-    box-shadow: inset 0px 1px 0px #d54826, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #fefcfb; }
-    .section5 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #df6b4e, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #fefcfb;
+    box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(104, 36, 19, 0.5); }
     .section5 button.ui.transparent:active {
-      border: 1px solid #7e2b16; }
-    .section5 button.ui.transparent:hover, .section5 button.ui.transparent:focus {
-      background-color: #da5130; }
-    .section5 button.ui.transparent:active {
+      border: 2px solid #7e2b16; }
+    .section5 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section5 button.ui.transparent:hover:enabled, .section5 button.ui.transparent:focus:enabled {
+      background-color: #dd6041; }
+    .section5 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #d54826;
-      background-color: #da5130; }
-  .section5 .input.transparent {
+      background-color: #dd6041; }
+    .section5 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section5 .input.transparent input, .section5 .input.transparent select, .section5 .input.transparent textarea {
+    border: 1px solid #7e2b16;
+    background-color: #df6b4e;
+    box-shadow: 0 0px 3px #94321a inset;
     -webkit-text-fill-color: #fefcfb; }
-    .section5 .input.transparent input {
-      border: 1px solid #9c351c;
-      background-color: #df6b4e;
-      box-shadow: 0 1px 5px #94321a inset; }
-      .section5 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section5 .input.transparent input:hover, .section5 .input.transparent input:focus {
+    .section5 .input.transparent input:focus, .section5 .input.transparent select:focus, .section5 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section5 .input.transparent input:hover, .section5 .input.transparent input:focus, .section5 .input.transparent select:hover, .section5 .input.transparent select:focus, .section5 .input.transparent textarea:hover, .section5 .input.transparent textarea:focus {
       background-color: #e37d64; }
 
 .section6 {
@@ -219,30 +500,33 @@ button.ui {
   .section6 button.ui.transparent {
     background-color: #cf4232;
     border: 1px solid #af3729;
-    box-shadow: inset 0px 1px 0px #d45547, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: white; }
-    .section6 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #de7b70, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: white;
+    box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(126, 39, 29, 0.5); }
     .section6 button.ui.transparent:active {
-      border: 1px solid #922e22; }
-    .section6 button.ui.transparent:hover, .section6 button.ui.transparent:focus {
-      background-color: #d76053; }
-    .section6 button.ui.transparent:active {
+      border: 2px solid #922e22; }
+    .section6 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section6 button.ui.transparent:hover:enabled, .section6 button.ui.transparent:focus:enabled {
+      background-color: #db7064; }
+    .section6 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #d45547;
-      background-color: #d76053; }
-  .section6 .input.transparent {
+      background-color: #db7064; }
+    .section6 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section6 .input.transparent input, .section6 .input.transparent select, .section6 .input.transparent textarea {
+    border: 1px solid #922e22;
+    background-color: #de7b70;
+    box-shadow: 0 0px 3px #a73427 inset;
     -webkit-text-fill-color: white; }
-    .section6 .input.transparent input {
-      border: 1px solid #af3729;
-      background-color: #de7b70;
-      box-shadow: 0 1px 5px #a73427 inset; }
-      .section6 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section6 .input.transparent input:hover, .section6 .input.transparent input:focus {
+    .section6 .input.transparent input:focus, .section6 .input.transparent select:focus, .section6 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section6 .input.transparent input:hover, .section6 .input.transparent input:focus, .section6 .input.transparent select:hover, .section6 .input.transparent select:focus, .section6 .input.transparent textarea:hover, .section6 .input.transparent textarea:focus {
       background-color: #e28e85; }
 
 .section7 {
@@ -250,88 +534,99 @@ button.ui {
   .section7 button.ui.transparent {
     background-color: #eb7f23;
     border: 1px solid #d26b13;
-    box-shadow: inset 0px 1px 0px #ed8d3a, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px #f1a869, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #3d1f06; }
-    .section7 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section7 button.ui.transparent:active {
-      border: 1px solid #b15a10; }
-    .section7 button.ui.transparent:hover, .section7 button.ui.transparent:focus {
+      border: 2px solid #b15a10; }
+    .section7 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section7 button.ui.transparent:hover:enabled, .section7 button.ui.transparent:focus:enabled {
       background-color: #d26b13; }
-    .section7 button.ui.transparent:active {
+    .section7 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #e07214;
       background-color: #d26b13; }
-  .section7 .input.transparent {
+    .section7 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section7 .input.transparent input, .section7 .input.transparent select, .section7 .input.transparent textarea {
+    border: 1px solid #b15a10;
+    background-color: #f1a869;
+    box-shadow: 0 0px 3px #c96612 inset;
     -webkit-text-fill-color: black; }
-    .section7 .input.transparent input {
-      border: 1px solid #d26b13;
-      background-color: #f1a869;
-      box-shadow: 0 1px 5px #c96612 inset; }
-      .section7 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section7 .input.transparent input:hover, .section7 .input.transparent input:focus {
-      background-color: #ef9a52; }
+    .section7 .input.transparent input:focus, .section7 .input.transparent select:focus, .section7 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section7 .input.transparent input:hover, .section7 .input.transparent input:focus, .section7 .input.transparent select:hover, .section7 .input.transparent select:focus, .section7 .input.transparent textarea:hover, .section7 .input.transparent textarea:focus {
+      background-color: #ea7a1a; }
 
 .section8 {
   background-color: #fac023; }
   .section8 button.ui.transparent {
     background-color: #fac023;
     border: 1px solid #efb005;
-    box-shadow: inset 0px 1px 0px #fbc73c, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px #fcd56e, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #4f3a02; }
-    .section8 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section8 button.ui.transparent:active {
-      border: 1px solid #cc9605; }
-    .section8 button.ui.transparent:hover, .section8 button.ui.transparent:focus {
+      border: 2px solid #cc9605; }
+    .section8 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section8 button.ui.transparent:hover:enabled, .section8 button.ui.transparent:focus:enabled {
       background-color: #efb005; }
-    .section8 button.ui.transparent:active {
+    .section8 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #f9b90a;
       background-color: #efb005; }
-  .section8 .input.transparent {
+    .section8 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section8 .input.transparent input, .section8 .input.transparent select, .section8 .input.transparent textarea {
+    border: 1px solid #cc9605;
+    background-color: #fcd56e;
+    box-shadow: 0 0px 3px #e5a805 inset;
     -webkit-text-fill-color: #040300; }
-    .section8 .input.transparent input {
-      border: 1px solid #efb005;
-      background-color: #fcd56e;
-      box-shadow: 0 1px 5px #e5a805 inset; }
-      .section8 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section8 .input.transparent input:hover, .section8 .input.transparent input:focus {
-      background-color: #fbce55; }
+    .section8 .input.transparent input:focus, .section8 .input.transparent select:focus, .section8 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section8 .input.transparent input:hover, .section8 .input.transparent input:focus, .section8 .input.transparent select:hover, .section8 .input.transparent select:focus, .section8 .input.transparent textarea:hover, .section8 .input.transparent textarea:focus {
+      background-color: #fabd19; }
 
 .section9 {
   background-color: #068675; }
   .section9 button.ui.transparent {
     background-color: #068675;
     border: 1px solid #045f53;
-    box-shadow: inset 0px 1px 0px #079e8a, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #a9fbf0; }
-    .section9 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #09cfb5, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #a9fbf0;
+    box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(2, 36, 32, 0.5); }
     .section9 button.ui.transparent:active {
-      border: 1px solid #033d35; }
-    .section9 button.ui.transparent:hover, .section9 button.ui.transparent:focus {
-      background-color: #08ad97; }
-    .section9 button.ui.transparent:active {
+      border: 2px solid #033d35; }
+    .section9 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section9 button.ui.transparent:hover:enabled, .section9 button.ui.transparent:focus:enabled {
+      background-color: #09c1a8; }
+    .section9 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #079e8a;
-      background-color: #08ad97; }
-  .section9 .input.transparent {
+      background-color: #09c1a8; }
+    .section9 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section9 .input.transparent input, .section9 .input.transparent select, .section9 .input.transparent textarea {
+    border: 1px solid #033d35;
+    background-color: #09cfb5;
+    box-shadow: 0 0px 3px #04554a inset;
     -webkit-text-fill-color: #a9fbf0; }
-    .section9 .input.transparent input {
-      border: 1px solid #045f53;
-      background-color: #09cfb5;
-      box-shadow: 0 1px 5px #04554a inset; }
-      .section9 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section9 .input.transparent input:hover, .section9 .input.transparent input:focus {
+    .section9 .input.transparent input:focus, .section9 .input.transparent select:focus, .section9 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section9 .input.transparent input:hover, .section9 .input.transparent input:focus, .section9 .input.transparent select:hover, .section9 .input.transparent select:focus, .section9 .input.transparent textarea:hover, .section9 .input.transparent textarea:focus {
       background-color: #0ae8ca; }
 
 .section10 {
@@ -339,30 +634,33 @@ button.ui {
   .section10 button.ui.transparent {
     background-color: #6b202e;
     border: 1px solid #4c1720;
-    box-shadow: inset 0px 1px 0px #7f2636, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #eab9c2; }
-    .section10 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #a63247, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #eab9c2;
+    box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(28, 9, 12, 0.5); }
     .section10 button.ui.transparent:active {
-      border: 1px solid #300e15; }
-    .section10 button.ui.transparent:hover, .section10 button.ui.transparent:focus {
-      background-color: #8a293c; }
-    .section10 button.ui.transparent:active {
+      border: 2px solid #300e15; }
+    .section10 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section10 button.ui.transparent:hover:enabled, .section10 button.ui.transparent:focus:enabled {
+      background-color: #9a2e42; }
+    .section10 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #7f2636;
-      background-color: #8a293c; }
-  .section10 .input.transparent {
+      background-color: #9a2e42; }
+    .section10 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section10 .input.transparent input, .section10 .input.transparent select, .section10 .input.transparent textarea {
+    border: 1px solid #300e15;
+    background-color: #a63247;
+    box-shadow: 0 0px 3px #44141d inset;
     -webkit-text-fill-color: #eab9c2; }
-    .section10 .input.transparent input {
-      border: 1px solid #4c1720;
-      background-color: #a63247;
-      box-shadow: 0 1px 5px #44141d inset; }
-      .section10 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section10 .input.transparent input:hover, .section10 .input.transparent input:focus {
+    .section10 .input.transparent input:focus, .section10 .input.transparent select:focus, .section10 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section10 .input.transparent input:hover, .section10 .input.transparent input:focus, .section10 .input.transparent select:hover, .section10 .input.transparent select:focus, .section10 .input.transparent textarea:hover, .section10 .input.transparent textarea:focus {
       background-color: #ba3750; }
 
 .section11 {
@@ -370,30 +668,33 @@ button.ui {
   .section11 button.ui.transparent {
     background-color: #165873;
     border: 1px solid #0f3e51;
-    box-shadow: inset 0px 1px 0px #1a6888, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #b1def0; }
-    .section11 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #2289b3, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #b1def0;
+    box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(6, 22, 29, 0.5); }
     .section11 button.ui.transparent:active {
-      border: 1px solid #0a2733; }
-    .section11 button.ui.transparent:hover, .section11 button.ui.transparent:focus {
-      background-color: #1d7295; }
-    .section11 button.ui.transparent:active {
+      border: 2px solid #0a2733; }
+    .section11 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section11 button.ui.transparent:hover:enabled, .section11 button.ui.transparent:focus:enabled {
+      background-color: #207fa6; }
+    .section11 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #1a6888;
-      background-color: #1d7295; }
-  .section11 .input.transparent {
+      background-color: #207fa6; }
+    .section11 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section11 .input.transparent input, .section11 .input.transparent select, .section11 .input.transparent textarea {
+    border: 1px solid #0a2733;
+    background-color: #2289b3;
+    box-shadow: 0 0px 3px #0e3748 inset;
     -webkit-text-fill-color: #b1def0; }
-    .section11 .input.transparent input {
-      border: 1px solid #0f3e51;
-      background-color: #2289b3;
-      box-shadow: 0 1px 5px #0e3748 inset; }
-      .section11 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section11 .input.transparent input:hover, .section11 .input.transparent input:focus {
+    .section11 .input.transparent input:focus, .section11 .input.transparent select:focus, .section11 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section11 .input.transparent input:hover, .section11 .input.transparent input:focus, .section11 .input.transparent select:hover, .section11 .input.transparent select:focus, .section11 .input.transparent textarea:hover, .section11 .input.transparent textarea:focus {
       background-color: #269ac9; }
 
 .section12 {
@@ -401,30 +702,33 @@ button.ui {
   .section12 button.ui.transparent {
     background-color: #124c59;
     border: 1px solid #0b2f37;
-    box-shadow: inset 0px 1px 0px #165e6e, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #99dcea; }
-    .section12 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #1f8299, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #99dcea;
+    box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(1, 4, 4, 0.5); }
     .section12 button.ui.transparent:active {
-      border: 1px solid #051619; }
-    .section12 button.ui.transparent:hover, .section12 button.ui.transparent:focus {
-      background-color: #19697b; }
-    .section12 button.ui.transparent:active {
+      border: 2px solid #051619; }
+    .section12 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section12 button.ui.transparent:hover:enabled, .section12 button.ui.transparent:focus:enabled {
+      background-color: #1c778c; }
+    .section12 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #165e6e;
-      background-color: #19697b; }
-  .section12 .input.transparent {
+      background-color: #1c778c; }
+    .section12 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section12 .input.transparent input, .section12 .input.transparent select, .section12 .input.transparent textarea {
+    border: 1px solid #051619;
+    background-color: #1f8299;
+    box-shadow: 0 0px 3px #09282f inset;
     -webkit-text-fill-color: #99dcea; }
-    .section12 .input.transparent input {
-      border: 1px solid #0b2f37;
-      background-color: #1f8299;
-      box-shadow: 0 1px 5px #09282f inset; }
-      .section12 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section12 .input.transparent input:hover, .section12 .input.transparent input:focus {
+    .section12 .input.transparent input:focus, .section12 .input.transparent select:focus, .section12 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section12 .input.transparent input:hover, .section12 .input.transparent input:focus, .section12 .input.transparent select:hover, .section12 .input.transparent select:focus, .section12 .input.transparent textarea:hover, .section12 .input.transparent textarea:focus {
       background-color: #2394ae; }
 
 .section13 {
@@ -432,30 +736,33 @@ button.ui {
   .section13 button.ui.transparent {
     background-color: #428c5c;
     border: 1px solid #35704a;
-    box-shadow: inset 0px 1px 0px #4a9d67, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
-    color: #eff7f2; }
-    .section13 button.ui.transparent:focus {
-      border: 1px solid #1d94ff;
-      box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-      transition: border .05s ease-in-out; }
+    box-shadow: inset 0px 1px 0px #64b681, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+    color: #eff7f2;
+    box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(33, 71, 46, 0.5); }
     .section13 button.ui.transparent:active {
-      border: 1px solid #29583a; }
-    .section13 button.ui.transparent:hover, .section13 button.ui.transparent:focus {
-      background-color: #4fa86e; }
-    .section13 button.ui.transparent:active {
+      border: 2px solid #29583a; }
+    .section13 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section13 button.ui.transparent:hover:enabled, .section13 button.ui.transparent:focus:enabled {
+      background-color: #5ab179; }
+    .section13 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #4a9d67;
-      background-color: #4fa86e; }
-  .section13 .input.transparent {
+      background-color: #5ab179; }
+    .section13 button.ui.transparent:focus:enabled {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669; }
+  .section13 .input.transparent input, .section13 .input.transparent select, .section13 .input.transparent textarea {
+    border: 1px solid #29583a;
+    background-color: #64b681;
+    box-shadow: 0 0px 3px #326945 inset;
     -webkit-text-fill-color: #eff7f2; }
-    .section13 .input.transparent input {
-      border: 1px solid #35704a;
-      background-color: #64b681;
-      box-shadow: 0 1px 5px #326945 inset; }
-      .section13 .input.transparent input:focus {
-        border: 1px solid #1d94ff;
-        box-shadow: 0 0px 0px 2px rgba(17, 136, 222, 0.4);
-        transition: border .05s ease-in-out; }
-    .section13 .input.transparent input:hover, .section13 .input.transparent input:focus {
+    .section13 .input.transparent input:focus, .section13 .input.transparent select:focus, .section13 .input.transparent textarea:focus {
+      border: 2px solid #e74c3c;
+      box-shadow: 0 0 0 2px #ed7669;
+      padding: 12px; }
+    .section13 .input.transparent input:hover, .section13 .input.transparent input:focus, .section13 .input.transparent select:hover, .section13 .input.transparent select:focus, .section13 .input.transparent textarea:hover, .section13 .input.transparent textarea:focus {
       background-color: #76be8f; }
 
 .section14 {
@@ -463,68 +770,76 @@ button.ui {
   .section14 button.ui.transparent {
     background-color: #4ea64b;
     border: 1px solid #418a3e;
-    box-shadow: inset 0px 1px 0px #5ab357, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px #7dc37a, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #0c190c; }
-    .section14 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section14 button.ui.transparent:active {
-      border: 1px solid #357133; }
-    .section14 button.ui.transparent:hover, .section14 button.ui.transparent:focus {
+      border: 2px solid #357133; }
+    .section14 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section14 button.ui.transparent:hover:enabled, .section14 button.ui.transparent:focus:enabled {
       background-color: #418a3e; }
-    .section14 button.ui.transparent:active {
+    .section14 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #469443;
       background-color: #418a3e; }
-  .section14 .input.transparent {
+    .section14 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section14 .input.transparent input, .section14 .input.transparent select, .section14 .input.transparent textarea {
+    border: 1px solid #357133;
+    background-color: #7dc37a;
+    box-shadow: 0 0px 3px #3d833b inset;
     -webkit-text-fill-color: black; }
-    .section14 .input.transparent input {
-      border: 1px solid #418a3e;
-      background-color: #7dc37a;
-      box-shadow: 0 1px 5px #3d833b inset; }
-      .section14 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section14 .input.transparent input:hover, .section14 .input.transparent input:focus {
-      background-color: #6cbb69; }
+    .section14 .input.transparent input:focus, .section14 .input.transparent select:focus, .section14 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section14 .input.transparent input:hover, .section14 .input.transparent input:focus, .section14 .input.transparent select:hover, .section14 .input.transparent select:focus, .section14 .input.transparent textarea:hover, .section14 .input.transparent textarea:focus {
+      background-color: #4b9f48; }
 
 .section15 {
   background-color: #add96c; }
   .section15 button.ui.transparent {
     background-color: #add96c;
     border: 1px solid #9bd14c;
-    box-shadow: inset 0px 1px 0px #b8de80, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 1px 0px #cfe9a9, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
     color: #436019; }
-    .section15 button.ui.transparent:focus {
-      border: 1px solid #0066ff;
-      box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
     .section15 button.ui.transparent:active {
-      border: 1px solid #8ac533; }
-    .section15 button.ui.transparent:hover, .section15 button.ui.transparent:focus {
+      border: 2px solid #8ac533; }
+    .section15 button.ui.transparent:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none; }
+    .section15 button.ui.transparent:hover:enabled, .section15 button.ui.transparent:focus:enabled {
       background-color: #9bd14c; }
-    .section15 button.ui.transparent:active {
+    .section15 button.ui.transparent:active:enabled {
       box-shadow: inset 0 -1px 1px 0 #a2d458;
       background-color: #9bd14c; }
-  .section15 .input.transparent {
+    .section15 button.ui.transparent:focus:enabled {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da; }
+  .section15 .input.transparent input, .section15 .input.transparent select, .section15 .input.transparent textarea {
+    border: 1px solid #8ac533;
+    background-color: #cfe9a9;
+    box-shadow: 0 0px 3px #96cf43 inset;
     -webkit-text-fill-color: #192309; }
-    .section15 .input.transparent input {
-      border: 1px solid #9bd14c;
-      background-color: #cfe9a9;
-      box-shadow: 0 1px 5px #96cf43 inset; }
-      .section15 .input.transparent input:focus {
-        border: 1px solid #0066ff;
-        box-shadow: 0 0px 0px 2px rgba(165, 201, 227, 0.8); }
-    .section15 .input.transparent input:hover, .section15 .input.transparent input:focus {
-      background-color: #c4e395; }
+    .section15 .input.transparent input:focus, .section15 .input.transparent select:focus, .section15 .input.transparent textarea:focus {
+      border: 2px solid #ff4e27;
+      box-shadow: 0 0 0 2px #ffe0da;
+      padding: 12px; }
+    .section15 .input.transparent input:hover, .section15 .input.transparent input:focus, .section15 .input.transparent select:hover, .section15 .input.transparent select:focus, .section15 .input.transparent textarea:hover, .section15 .input.transparent textarea:focus {
+      background-color: #a8d764; }
 
-div {
+.section {
   height: 190px;
   position: relative; }
-  div button.ui.transparent {
+  .section button.ui.transparent {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  div .input {
+  .section .input {
     position: absolute;
     top: 70%;
     left: 50%;
