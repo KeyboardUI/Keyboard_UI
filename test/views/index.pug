@@ -4,8 +4,7 @@ html(lang="en")
         title Keyboard UI
         meta(charset="utf-8")
         meta(name="description" content="Lorem ipsum dolor sit amet.")
-        link(rel="stylesheet" href="../css/keyui.css")
-        link(rel="stylesheet" href="./css/style.css")
+        link(rel="stylesheet" href="./test/out/css/style.css")
     body
         - var sections = 1
         while sections <= 15 
@@ -23,4 +22,4 @@ html(lang="en")
                         label Error example
                         div And this is some tip
                         input(size="45", value="")
-        script(src="./keyui.js")
+        script(type="module" src="./js/keyui.js")

@@ -2,11 +2,15 @@ import gulp, { series, src, dest } from "gulp";
 import sass from "gulp-sass";
 import pug from "gulp-pug";
 import browserSync from "browser-sync";
+import browserify from "browserify";
+import babel from "babelify";
+import fs from "fs";
 const server = browserSync.create();
 
 const config = {
   src: {
-    sass: "./src/sass/**/*.sass"
+    sass: "./src/sass/**/*.sass",
+    js: "./src/keyui.js"
   },
   test: {
     pug: "./test/views/*.pug",
@@ -15,8 +19,17 @@ const config = {
     out: "./test/out"
   },
   out: {
-    css: "./css"
+    css: "./css",
+    js: "./js"
   }
+};
+
+const browser = done => {
+  browserify(config.src.js, { debug: true })
+    .transform(babel)
+    .bundle()
+    .pipe(fs.createWriteStream("./js/keyui.js"));
+  done();
 };
 
 const reload = done => {
@@ -27,7 +40,8 @@ const reload = done => {
 const serve = done => {
   server.init({
     server: {
-      baseDir: config.test.out
+      baseDir: "./",
+      index: "./test/out/index.html"
     }
   });
   done();
@@ -35,13 +49,19 @@ const serve = done => {
 
 const observe = () => {
   gulp
-    .watch(config.src.sass, series(reload, pugTest, testSass))
+    .watch(config.src.sass, series(reload, pugTest, testSass, srcComp, browser))
     .on("change", browserSync.reload);
   gulp
-    .watch(config.test.pug, series(reload, pugTest, testSass))
+    .watch(config.test.pug, series(reload, pugTest, testSass, srcComp, browser))
     .on("change", browserSync.reload);
   gulp
-    .watch(config.test.sass, series(reload, pugTest, testSass))
+    .watch(
+      config.test.sass,
+      series(reload, pugTest, testSass, srcComp, browser)
+    )
+    .on("change", browserSync.reload);
+  gulp
+    .watch(config.src.js, series(reload, pugTest, testSass, srcComp, browser))
     .on("change", browserSync.reload);
 };
 
@@ -67,6 +87,6 @@ const testSass = done => {
   done();
 };
 
-const dev = series(pugTest, testSass);
+const dev = series(pugTest, testSass, srcComp);
 const watch = series(serve, observe);
-export { dev, testSass, srcComp, watch };
+export { dev, testSass, srcComp, watch, browser };
