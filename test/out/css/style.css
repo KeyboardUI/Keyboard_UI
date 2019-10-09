@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+  font-family: 'Roboto', sans-serif; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain) */
@@ -44,37 +48,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-* {
-  background-color: rgba(255, 0, 0, 0.2);
-  outline: 1px solid blue; }
-  * * {
-    background-color: rgba(0, 255, 0, 0.2); }
-    * * * {
-      background-color: rgba(0, 0, 255, 0.2); }
-      * * * * {
-        background-color: rgba(255, 0, 255, 0.2); }
-        * * * * * {
-          background-color: rgba(0, 255, 255, 0.2); }
-          * * * * * * {
-            background-color: rgba(255, 255, 0, 0.2); }
-            * * * * * * * {
-              background-color: rgba(255, 0, 0, 0.2); }
-              * * * * * * * * {
-                background-color: rgba(0, 255, 0, 0.2); }
-                * * * * * * * * * {
-                  background-color: rgba(0, 0, 255, 0.2); }
-                  * * * * * * * * * * {
-                    background-color: rgba(0, 10, 255, 0.2); }
-                    * * * * * * * * * * * {
-                      background-color: rgba(0, 10, 200, 0.2); }
-
-button.ui {
+.section1 .wrapper button.ui.transparent, .section2 .wrapper button.ui.transparent, .section3 .wrapper button.ui.transparent, .section4 .wrapper button.ui.transparent, .section5 .wrapper button.ui.transparent, .section6 .wrapper button.ui.transparent, .section7 .wrapper button.ui.transparent, .section8 .wrapper button.ui.transparent, .section9 .wrapper button.ui.transparent, .section10 .wrapper button.ui.transparent, .section11 .wrapper button.ui.transparent, .section12 .wrapper button.ui.transparent, .section13 .wrapper button.ui.transparent, .section14 .wrapper button.ui.transparent, .section15 .wrapper button.ui.transparent {
   cursor: pointer;
   padding: 10px 31px;
+  display: block;
   border-radius: 3px;
   font-size: 14px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-family: "Roboto";
   outline: none;
   user-select: none;
   -webkit-transition: all .15s ease-in-out;
@@ -83,48 +64,27 @@ button.ui {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   transition-property: background-color, opacity; }
-  button.ui:focus, button.ui:active {
+  .section1 .wrapper button.ui.transparent:focus, .section2 .wrapper button.ui.transparent:focus, .section3 .wrapper button.ui.transparent:focus, .section4 .wrapper button.ui.transparent:focus, .section5 .wrapper button.ui.transparent:focus, .section6 .wrapper button.ui.transparent:focus, .section7 .wrapper button.ui.transparent:focus, .section8 .wrapper button.ui.transparent:focus, .section9 .wrapper button.ui.transparent:focus, .section10 .wrapper button.ui.transparent:focus, .section11 .wrapper button.ui.transparent:focus, .section12 .wrapper button.ui.transparent:focus, .section13 .wrapper button.ui.transparent:focus, .section14 .wrapper button.ui.transparent:focus, .section15 .wrapper button.ui.transparent:focus, .section1 .wrapper button.ui.transparent:active, .section2 .wrapper button.ui.transparent:active, .section3 .wrapper button.ui.transparent:active, .section4 .wrapper button.ui.transparent:active, .section5 .wrapper button.ui.transparent:active, .section6 .wrapper button.ui.transparent:active, .section7 .wrapper button.ui.transparent:active, .section8 .wrapper button.ui.transparent:active, .section9 .wrapper button.ui.transparent:active, .section10 .wrapper button.ui.transparent:active, .section11 .wrapper button.ui.transparent:active, .section12 .wrapper button.ui.transparent:active, .section13 .wrapper button.ui.transparent:active, .section14 .wrapper button.ui.transparent:active, .section15 .wrapper button.ui.transparent:active {
     padding: 9px 30px; }
 
-button.ui {
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-  color: #999999; }
-  button.ui:active {
-    border: 2px solid #d9d9d9; }
-  button.ui:disabled {
-    opacity: 0.5;
-    cursor: default;
-    box-shadow: none; }
-  button.ui:hover:enabled, button.ui:focus:enabled {
-    background-color: #ebebeb; }
-  button.ui:active:enabled {
-    box-shadow: inset 0 -1px 1px 0 #f2f2f2;
-    background-color: #ebebeb; }
-  button.ui:focus:enabled {
-    border: 2px solid #ff4e27;
-    box-shadow: 0 0 0 2px #ffe0da; }
-
-.ui.input input, .ui.input select, .ui.input textarea {
-  border: 1px solid #d9d9d9;
-  background-color: white;
-  box-shadow: 0 0px 3px #e6e6e6 inset;
-  -webkit-text-fill-color: #737373; }
-  .ui.input input:focus, .ui.input select:focus, .ui.input textarea:focus {
-    border: 2px solid #ff4e27;
-    box-shadow: 0 0 0 2px #ffe0da;
-    padding: 12px; }
-  .ui.input input:hover, .ui.input input:focus, .ui.input select:hover, .ui.input select:focus, .ui.input textarea:hover, .ui.input textarea:focus {
-    background-color: #fafafa; }
-
-.ui.input input, .ui.input label, .ui.input select, .ui.input textarea {
+.section1 .wrapper .input input, .section2 .wrapper .input input, .section3 .wrapper .input input, .section4 .wrapper .input input, .section5 .wrapper .input input, .section6 .wrapper .input input, .section7 .wrapper .input input, .section8 .wrapper .input input, .section9 .wrapper .input input, .section10 .wrapper .input input, .section11 .wrapper .input input, .section12 .wrapper .input input, .section13 .wrapper .input input, .section14 .wrapper .input input, .section15 .wrapper .input input, .section1 .wrapper .input label, .section2 .wrapper .input label, .section3 .wrapper .input label, .section4 .wrapper .input label, .section5 .wrapper .input label, .section6 .wrapper .input label, .section7 .wrapper .input label, .section8 .wrapper .input label, .section9 .wrapper .input label, .section10 .wrapper .input label, .section11 .wrapper .input label, .section12 .wrapper .input label, .section13 .wrapper .input label, .section14 .wrapper .input label, .section15 .wrapper .input label, .section1 .wrapper .input select, .section2 .wrapper .input select, .section3 .wrapper .input select, .section4 .wrapper .input select, .section5 .wrapper .input select, .section6 .wrapper .input select, .section7 .wrapper .input select, .section8 .wrapper .input select, .section9 .wrapper .input select, .section10 .wrapper .input select, .section11 .wrapper .input select, .section12 .wrapper .input select, .section13 .wrapper .input select, .section14 .wrapper .input select, .section15 .wrapper .input select, .section1 .wrapper .input textarea, .section2 .wrapper .input textarea, .section3 .wrapper .input textarea, .section4 .wrapper .input textarea, .section5 .wrapper .input textarea, .section6 .wrapper .input textarea, .section7 .wrapper .input textarea, .section8 .wrapper .input textarea, .section9 .wrapper .input textarea, .section10 .wrapper .input textarea, .section11 .wrapper .input textarea, .section12 .wrapper .input textarea, .section13 .wrapper .input textarea, .section14 .wrapper .input textarea, .section15 .wrapper .input textarea {
+  font-family: "Roboto";
   display: block; }
 
-.ui.input label {
-  font-weight: 600; }
+.section1 .wrapper .input label, .section2 .wrapper .input label, .section3 .wrapper .input label, .section4 .wrapper .input label, .section5 .wrapper .input label, .section6 .wrapper .input label, .section7 .wrapper .input label, .section8 .wrapper .input label, .section9 .wrapper .input label, .section10 .wrapper .input label, .section11 .wrapper .input label, .section12 .wrapper .input label, .section13 .wrapper .input label, .section14 .wrapper .input label, .section15 .wrapper .input label, .section1 .wrapper .input label + *:not(input), .section2 .wrapper .input label + *:not(input), .section3 .wrapper .input label + *:not(input), .section4 .wrapper .input label + *:not(input), .section5 .wrapper .input label + *:not(input), .section6 .wrapper .input label + *:not(input), .section7 .wrapper .input label + *:not(input), .section8 .wrapper .input label + *:not(input), .section9 .wrapper .input label + *:not(input), .section10 .wrapper .input label + *:not(input), .section11 .wrapper .input label + *:not(input), .section12 .wrapper .input label + *:not(input), .section13 .wrapper .input label + *:not(input), .section14 .wrapper .input label + *:not(input), .section15 .wrapper .input label + *:not(input) {
+  line-height: 25px;
+  margin-left: 3px; }
 
-.ui.input input, .ui.input select, .ui.input textarea {
+.section1 .wrapper .input label, .section2 .wrapper .input label, .section3 .wrapper .input label, .section4 .wrapper .input label, .section5 .wrapper .input label, .section6 .wrapper .input label, .section7 .wrapper .input label, .section8 .wrapper .input label, .section9 .wrapper .input label, .section10 .wrapper .input label, .section11 .wrapper .input label, .section12 .wrapper .input label, .section13 .wrapper .input label, .section14 .wrapper .input label, .section15 .wrapper .input label {
+  font-weight: 600;
+  font-size: 14px; }
+  .section1 .wrapper .input label + *:not(input), .section2 .wrapper .input label + *:not(input), .section3 .wrapper .input label + *:not(input), .section4 .wrapper .input label + *:not(input), .section5 .wrapper .input label + *:not(input), .section6 .wrapper .input label + *:not(input), .section7 .wrapper .input label + *:not(input), .section8 .wrapper .input label + *:not(input), .section9 .wrapper .input label + *:not(input), .section10 .wrapper .input label + *:not(input), .section11 .wrapper .input label + *:not(input), .section12 .wrapper .input label + *:not(input), .section13 .wrapper .input label + *:not(input), .section14 .wrapper .input label + *:not(input), .section15 .wrapper .input label + *:not(input) {
+    font-family: "Roboto";
+    font-size: 14px; }
+
+.section1 .wrapper .input input, .section2 .wrapper .input input, .section3 .wrapper .input input, .section4 .wrapper .input input, .section5 .wrapper .input input, .section6 .wrapper .input input, .section7 .wrapper .input input, .section8 .wrapper .input input, .section9 .wrapper .input input, .section10 .wrapper .input input, .section11 .wrapper .input input, .section12 .wrapper .input input, .section13 .wrapper .input input, .section14 .wrapper .input input, .section15 .wrapper .input input, .section1 .wrapper .input select, .section2 .wrapper .input select, .section3 .wrapper .input select, .section4 .wrapper .input select, .section5 .wrapper .input select, .section6 .wrapper .input select, .section7 .wrapper .input select, .section8 .wrapper .input select, .section9 .wrapper .input select, .section10 .wrapper .input select, .section11 .wrapper .input select, .section12 .wrapper .input select, .section13 .wrapper .input select, .section14 .wrapper .input select, .section15 .wrapper .input select, .section1 .wrapper .input textarea, .section2 .wrapper .input textarea, .section3 .wrapper .input textarea, .section4 .wrapper .input textarea, .section5 .wrapper .input textarea, .section6 .wrapper .input textarea, .section7 .wrapper .input textarea, .section8 .wrapper .input textarea, .section9 .wrapper .input textarea, .section10 .wrapper .input textarea, .section11 .wrapper .input textarea, .section12 .wrapper .input textarea, .section13 .wrapper .input textarea, .section14 .wrapper .input textarea, .section15 .wrapper .input textarea {
+  margin-top: 5px;
+  width: 100%;
   -webkit-text-fill-color: #8a8ea0;
   border-radius: 3px;
   padding: 8px;
@@ -138,29 +98,24 @@ button.ui {
   -ms-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  transition-property: box-shadow, opacity, background-color, border, padding; }
-  .ui.input input:focus::placeholder, .ui.input select:focus::placeholder, .ui.input textarea:focus::placeholder {
+  transition-property: box-shadow, opacity, background-color; }
+  .section1 .wrapper .input input:focus::placeholder, .section2 .wrapper .input input:focus::placeholder, .section3 .wrapper .input input:focus::placeholder, .section4 .wrapper .input input:focus::placeholder, .section5 .wrapper .input input:focus::placeholder, .section6 .wrapper .input input:focus::placeholder, .section7 .wrapper .input input:focus::placeholder, .section8 .wrapper .input input:focus::placeholder, .section9 .wrapper .input input:focus::placeholder, .section10 .wrapper .input input:focus::placeholder, .section11 .wrapper .input input:focus::placeholder, .section12 .wrapper .input input:focus::placeholder, .section13 .wrapper .input input:focus::placeholder, .section14 .wrapper .input input:focus::placeholder, .section15 .wrapper .input input:focus::placeholder, .section1 .wrapper .input select:focus::placeholder, .section2 .wrapper .input select:focus::placeholder, .section3 .wrapper .input select:focus::placeholder, .section4 .wrapper .input select:focus::placeholder, .section5 .wrapper .input select:focus::placeholder, .section6 .wrapper .input select:focus::placeholder, .section7 .wrapper .input select:focus::placeholder, .section8 .wrapper .input select:focus::placeholder, .section9 .wrapper .input select:focus::placeholder, .section10 .wrapper .input select:focus::placeholder, .section11 .wrapper .input select:focus::placeholder, .section12 .wrapper .input select:focus::placeholder, .section13 .wrapper .input select:focus::placeholder, .section14 .wrapper .input select:focus::placeholder, .section15 .wrapper .input select:focus::placeholder, .section1 .wrapper .input textarea:focus::placeholder, .section2 .wrapper .input textarea:focus::placeholder, .section3 .wrapper .input textarea:focus::placeholder, .section4 .wrapper .input textarea:focus::placeholder, .section5 .wrapper .input textarea:focus::placeholder, .section6 .wrapper .input textarea:focus::placeholder, .section7 .wrapper .input textarea:focus::placeholder, .section8 .wrapper .input textarea:focus::placeholder, .section9 .wrapper .input textarea:focus::placeholder, .section10 .wrapper .input textarea:focus::placeholder, .section11 .wrapper .input textarea:focus::placeholder, .section12 .wrapper .input textarea:focus::placeholder, .section13 .wrapper .input textarea:focus::placeholder, .section14 .wrapper .input textarea:focus::placeholder, .section15 .wrapper .input textarea:focus::placeholder {
     opacity: 1; }
-  .ui.input input::placeholder, .ui.input select::placeholder, .ui.input textarea::placeholder {
+  .section1 .wrapper .input input::placeholder, .section2 .wrapper .input input::placeholder, .section3 .wrapper .input input::placeholder, .section4 .wrapper .input input::placeholder, .section5 .wrapper .input input::placeholder, .section6 .wrapper .input input::placeholder, .section7 .wrapper .input input::placeholder, .section8 .wrapper .input input::placeholder, .section9 .wrapper .input input::placeholder, .section10 .wrapper .input input::placeholder, .section11 .wrapper .input input::placeholder, .section12 .wrapper .input input::placeholder, .section13 .wrapper .input input::placeholder, .section14 .wrapper .input input::placeholder, .section15 .wrapper .input input::placeholder, .section1 .wrapper .input select::placeholder, .section2 .wrapper .input select::placeholder, .section3 .wrapper .input select::placeholder, .section4 .wrapper .input select::placeholder, .section5 .wrapper .input select::placeholder, .section6 .wrapper .input select::placeholder, .section7 .wrapper .input select::placeholder, .section8 .wrapper .input select::placeholder, .section9 .wrapper .input select::placeholder, .section10 .wrapper .input select::placeholder, .section11 .wrapper .input select::placeholder, .section12 .wrapper .input select::placeholder, .section13 .wrapper .input select::placeholder, .section14 .wrapper .input select::placeholder, .section15 .wrapper .input select::placeholder, .section1 .wrapper .input textarea::placeholder, .section2 .wrapper .input textarea::placeholder, .section3 .wrapper .input textarea::placeholder, .section4 .wrapper .input textarea::placeholder, .section5 .wrapper .input textarea::placeholder, .section6 .wrapper .input textarea::placeholder, .section7 .wrapper .input textarea::placeholder, .section8 .wrapper .input textarea::placeholder, .section9 .wrapper .input textarea::placeholder, .section10 .wrapper .input textarea::placeholder, .section11 .wrapper .input textarea::placeholder, .section12 .wrapper .input textarea::placeholder, .section13 .wrapper .input textarea::placeholder, .section14 .wrapper .input textarea::placeholder, .section15 .wrapper .input textarea::placeholder {
     opacity: 0.6; }
 
-.ui.input input[type=submit], .ui.input select[type=submit] {
+.section1 .wrapper .input input[type=submit], .section2 .wrapper .input input[type=submit], .section3 .wrapper .input input[type=submit], .section4 .wrapper .input input[type=submit], .section5 .wrapper .input input[type=submit], .section6 .wrapper .input input[type=submit], .section7 .wrapper .input input[type=submit], .section8 .wrapper .input input[type=submit], .section9 .wrapper .input input[type=submit], .section10 .wrapper .input input[type=submit], .section11 .wrapper .input input[type=submit], .section12 .wrapper .input input[type=submit], .section13 .wrapper .input input[type=submit], .section14 .wrapper .input input[type=submit], .section15 .wrapper .input input[type=submit], .section1 .wrapper .input select[type=submit], .section2 .wrapper .input select[type=submit], .section3 .wrapper .input select[type=submit], .section4 .wrapper .input select[type=submit], .section5 .wrapper .input select[type=submit], .section6 .wrapper .input select[type=submit], .section7 .wrapper .input select[type=submit], .section8 .wrapper .input select[type=submit], .section9 .wrapper .input select[type=submit], .section10 .wrapper .input select[type=submit], .section11 .wrapper .input select[type=submit], .section12 .wrapper .input select[type=submit], .section13 .wrapper .input select[type=submit], .section14 .wrapper .input select[type=submit], .section15 .wrapper .input select[type=submit] {
   -webkit-text-fill-color: #515876;
   color: #515876; }
 
-.ui.input.error input {
-  border: 2px solid #0066ff;
-  box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
-  .ui.input.error input:focus {
-    background-color: #fff5f5 !important; }
+.section1 .wrapper .input.disabled label, .section2 .wrapper .input.disabled label, .section3 .wrapper .input.disabled label, .section4 .wrapper .input.disabled label, .section5 .wrapper .input.disabled label, .section6 .wrapper .input.disabled label, .section7 .wrapper .input.disabled label, .section8 .wrapper .input.disabled label, .section9 .wrapper .input.disabled label, .section10 .wrapper .input.disabled label, .section11 .wrapper .input.disabled label, .section12 .wrapper .input.disabled label, .section13 .wrapper .input.disabled label, .section14 .wrapper .input.disabled label, .section15 .wrapper .input.disabled label, .section1 .wrapper .input.disabled div, .section2 .wrapper .input.disabled div, .section3 .wrapper .input.disabled div, .section4 .wrapper .input.disabled div, .section5 .wrapper .input.disabled div, .section6 .wrapper .input.disabled div, .section7 .wrapper .input.disabled div, .section8 .wrapper .input.disabled div, .section9 .wrapper .input.disabled div, .section10 .wrapper .input.disabled div, .section11 .wrapper .input.disabled div, .section12 .wrapper .input.disabled div, .section13 .wrapper .input.disabled div, .section14 .wrapper .input.disabled div, .section15 .wrapper .input.disabled div, .section1 .wrapper .input.disabled input, .section2 .wrapper .input.disabled input, .section3 .wrapper .input.disabled input, .section4 .wrapper .input.disabled input, .section5 .wrapper .input.disabled input, .section6 .wrapper .input.disabled input, .section7 .wrapper .input.disabled input, .section8 .wrapper .input.disabled input, .section9 .wrapper .input.disabled input, .section10 .wrapper .input.disabled input, .section11 .wrapper .input.disabled input, .section12 .wrapper .input.disabled input, .section13 .wrapper .input.disabled input, .section14 .wrapper .input.disabled input, .section15 .wrapper .input.disabled input, .section1 .wrapper .input.disabled select, .section2 .wrapper .input.disabled select, .section3 .wrapper .input.disabled select, .section4 .wrapper .input.disabled select, .section5 .wrapper .input.disabled select, .section6 .wrapper .input.disabled select, .section7 .wrapper .input.disabled select, .section8 .wrapper .input.disabled select, .section9 .wrapper .input.disabled select, .section10 .wrapper .input.disabled select, .section11 .wrapper .input.disabled select, .section12 .wrapper .input.disabled select, .section13 .wrapper .input.disabled select, .section14 .wrapper .input.disabled select, .section15 .wrapper .input.disabled select {
+  opacity: 0.5;
+  pointer-events: none; }
 
-.ui.input.disabled label, .ui.input.disabled div, .ui.input.disabled input, .ui.input.disabled select {
-  opacity: 0.5; }
-
-.ui.input.disabled input, .ui.input.disabled select {
+.section1 .wrapper .input.disabled input, .section2 .wrapper .input.disabled input, .section3 .wrapper .input.disabled input, .section4 .wrapper .input.disabled input, .section5 .wrapper .input.disabled input, .section6 .wrapper .input.disabled input, .section7 .wrapper .input.disabled input, .section8 .wrapper .input.disabled input, .section9 .wrapper .input.disabled input, .section10 .wrapper .input.disabled input, .section11 .wrapper .input.disabled input, .section12 .wrapper .input.disabled input, .section13 .wrapper .input.disabled input, .section14 .wrapper .input.disabled input, .section15 .wrapper .input.disabled input, .section1 .wrapper .input.disabled select, .section2 .wrapper .input.disabled select, .section3 .wrapper .input.disabled select, .section4 .wrapper .input.disabled select, .section5 .wrapper .input.disabled select, .section6 .wrapper .input.disabled select, .section7 .wrapper .input.disabled select, .section8 .wrapper .input.disabled select, .section9 .wrapper .input.disabled select, .section10 .wrapper .input.disabled select, .section11 .wrapper .input.disabled select, .section12 .wrapper .input.disabled select, .section13 .wrapper .input.disabled select, .section14 .wrapper .input.disabled select, .section15 .wrapper .input.disabled select {
   box-shadow: none;
   border: 1px solid #cccccc; }
-  .ui.input.disabled input:focus, .ui.input.disabled input:active, .ui.input.disabled select:focus, .ui.input.disabled select:active {
+  .section1 .wrapper .input.disabled input:focus, .section2 .wrapper .input.disabled input:focus, .section3 .wrapper .input.disabled input:focus, .section4 .wrapper .input.disabled input:focus, .section5 .wrapper .input.disabled input:focus, .section6 .wrapper .input.disabled input:focus, .section7 .wrapper .input.disabled input:focus, .section8 .wrapper .input.disabled input:focus, .section9 .wrapper .input.disabled input:focus, .section10 .wrapper .input.disabled input:focus, .section11 .wrapper .input.disabled input:focus, .section12 .wrapper .input.disabled input:focus, .section13 .wrapper .input.disabled input:focus, .section14 .wrapper .input.disabled input:focus, .section15 .wrapper .input.disabled input:focus, .section1 .wrapper .input.disabled input:active, .section2 .wrapper .input.disabled input:active, .section3 .wrapper .input.disabled input:active, .section4 .wrapper .input.disabled input:active, .section5 .wrapper .input.disabled input:active, .section6 .wrapper .input.disabled input:active, .section7 .wrapper .input.disabled input:active, .section8 .wrapper .input.disabled input:active, .section9 .wrapper .input.disabled input:active, .section10 .wrapper .input.disabled input:active, .section11 .wrapper .input.disabled input:active, .section12 .wrapper .input.disabled input:active, .section13 .wrapper .input.disabled input:active, .section14 .wrapper .input.disabled input:active, .section15 .wrapper .input.disabled input:active, .section1 .wrapper .input.disabled select:focus, .section2 .wrapper .input.disabled select:focus, .section3 .wrapper .input.disabled select:focus, .section4 .wrapper .input.disabled select:focus, .section5 .wrapper .input.disabled select:focus, .section6 .wrapper .input.disabled select:focus, .section7 .wrapper .input.disabled select:focus, .section8 .wrapper .input.disabled select:focus, .section9 .wrapper .input.disabled select:focus, .section10 .wrapper .input.disabled select:focus, .section11 .wrapper .input.disabled select:focus, .section12 .wrapper .input.disabled select:focus, .section13 .wrapper .input.disabled select:focus, .section14 .wrapper .input.disabled select:focus, .section15 .wrapper .input.disabled select:focus, .section1 .wrapper .input.disabled select:active, .section2 .wrapper .input.disabled select:active, .section3 .wrapper .input.disabled select:active, .section4 .wrapper .input.disabled select:active, .section5 .wrapper .input.disabled select:active, .section6 .wrapper .input.disabled select:active, .section7 .wrapper .input.disabled select:active, .section8 .wrapper .input.disabled select:active, .section9 .wrapper .input.disabled select:active, .section10 .wrapper .input.disabled select:active, .section11 .wrapper .input.disabled select:active, .section12 .wrapper .input.disabled select:active, .section13 .wrapper .input.disabled select:active, .section14 .wrapper .input.disabled select:active, .section15 .wrapper .input.disabled select:active {
     padding: 8px !important; }
 
 .ui.pag {
@@ -192,9 +147,6 @@ button.ui {
   .ui.pag.transparent {
     background-color: #ffffff;
     color: #999999; }
-    .ui.pag.transparent:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
     .ui.pag.transparent button i.ui.arrow {
       border-right: 0.2em solid #999999;
       border-top: 0.2em solid #999999; }
@@ -207,7 +159,7 @@ button.ui {
       background-color: #ffffff;
       border: 1px solid #ebebeb;
       box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-      color: #999999; }
+      color: #666666; }
       .ui.pag.transparent button:active {
         border: 2px solid #d9d9d9; }
       .ui.pag.transparent button:disabled {
@@ -220,8 +172,8 @@ button.ui {
         box-shadow: inset 0 -1px 1px 0 #f2f2f2;
         background-color: #ebebeb; }
       .ui.pag.transparent button:focus:enabled {
-        border: 2px solid #ff4e27;
-        box-shadow: 0 0 0 2px #ffe0da; }
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .ui.pag.transparent button {
       cursor: pointer;
       font-size: 14px;
@@ -284,12 +236,14 @@ i.ui {
           background-color: white;
           box-shadow: 0 0px 3px #e6e6e6 inset;
           -webkit-text-fill-color: #737373; }
-          .ui.checkbox input[type="checkbox"] + label::before input:focus, .ui.checkbox input[type="checkbox"] + label::before select:focus, .ui.checkbox input[type="checkbox"] + label::before textarea:focus {
-            border: 2px solid #ff4e27;
-            box-shadow: 0 0 0 2px #ffe0da;
-            padding: 12px; }
+          .ui.checkbox input[type="checkbox"] + label::before input:focus:not(.error), .ui.checkbox input[type="checkbox"] + label::before select:focus:not(.error), .ui.checkbox input[type="checkbox"] + label::before textarea:focus:not(.error) {
+            border: 2px solid #0066ff;
+            box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+            padding: 7px; }
           .ui.checkbox input[type="checkbox"] + label::before input:hover, .ui.checkbox input[type="checkbox"] + label::before input:focus, .ui.checkbox input[type="checkbox"] + label::before select:hover, .ui.checkbox input[type="checkbox"] + label::before select:focus, .ui.checkbox input[type="checkbox"] + label::before textarea:hover, .ui.checkbox input[type="checkbox"] + label::before textarea:focus {
-            background-color: #fafafa; }
+            background-color: white; }
+        .ui.checkbox input[type="checkbox"] + label::before label, .ui.checkbox input[type="checkbox"] + label::before label + * {
+          color: #666666; }
       .ui.checkbox input[type="checkbox"] + label::after {
         content: '';
         opacity: 0;
@@ -305,9 +259,6 @@ i.ui {
         -o-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -webkit-transform: rotate(45deg); }
-    .ui.checkbox input[type="checkbox"]:focus + label::before {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
     .ui.checkbox input[type="checkbox"]:checked + label::after {
       opacity: 1; }
 
@@ -329,521 +280,916 @@ i.ui {
     height: 30px; } }
 
 .section1 {
+  height: 490px;
   background-color: #ffffff; }
-  .section1 button.ui.transparent {
-    background-color: #ffffff;
-    border: 1px solid #ebebeb;
-    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #999999; }
-    .section1 button.ui.transparent:active {
-      border: 2px solid #d9d9d9; }
-    .section1 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section1 button.ui.transparent:hover:enabled, .section1 button.ui.transparent:focus:enabled {
-      background-color: #ebebeb; }
-    .section1 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #f2f2f2;
-      background-color: #ebebeb; }
-    .section1 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section1 .input.transparent input, .section1 .input.transparent select, .section1 .input.transparent textarea {
-    border: 1px solid #d9d9d9;
-    background-color: white;
-    box-shadow: 0 0px 3px #e6e6e6 inset;
-    -webkit-text-fill-color: #737373; }
-    .section1 .input.transparent input:focus, .section1 .input.transparent select:focus, .section1 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section1 .input.transparent input:hover, .section1 .input.transparent input:focus, .section1 .input.transparent select:hover, .section1 .input.transparent select:focus, .section1 .input.transparent textarea:hover, .section1 .input.transparent textarea:focus {
-      background-color: #fafafa; }
+  .section1 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section1 .wrapper * {
+      margin: auto; }
+    .section1 .wrapper button.ui.transparent {
+      background-color: #ffffff;
+      border: 1px solid #ebebeb;
+      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: #666666; }
+      .section1 .wrapper button.ui.transparent:active {
+        border: 2px solid #d9d9d9; }
+      .section1 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section1 .wrapper button.ui.transparent:hover:enabled, .section1 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #ebebeb; }
+      .section1 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #f2f2f2;
+        background-color: #ebebeb; }
+      .section1 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section1 .wrapper .input {
+      margin-top: 20px; }
+      .section1 .wrapper .input.transparent input, .section1 .wrapper .input.transparent select, .section1 .wrapper .input.transparent textarea {
+        border: 1px solid #d9d9d9;
+        background-color: white;
+        box-shadow: 0 0px 3px #e6e6e6 inset;
+        -webkit-text-fill-color: #737373; }
+        .section1 .wrapper .input.transparent input:focus:not(.error), .section1 .wrapper .input.transparent select:focus:not(.error), .section1 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section1 .wrapper .input.transparent input:hover, .section1 .wrapper .input.transparent input:focus, .section1 .wrapper .input.transparent select:hover, .section1 .wrapper .input.transparent select:focus, .section1 .wrapper .input.transparent textarea:hover, .section1 .wrapper .input.transparent textarea:focus {
+          background-color: white; }
+      .section1 .wrapper .input.transparent label, .section1 .wrapper .input.transparent label + * {
+        color: #666666; }
+      .section1 .wrapper .input.error input, .section1 .wrapper .input.error select, .section1 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section1 .wrapper .input.error input:focus, .section1 .wrapper .input.error select:focus, .section1 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section1 .wrapper .input.error input:hover, .section1 .wrapper .input.error input:focus, .section1 .wrapper .input.error select:hover, .section1 .wrapper .input.error select:focus, .section1 .wrapper .input.error textarea:hover, .section1 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section1 .wrapper .input.error label, .section1 .wrapper .input.error label + * {
+        color: #da2700; }
 
 .section2 {
+  height: 490px;
   background-color: #ebdfc7; }
-  .section2 button.ui.transparent {
-    background-color: #ebdfc7;
-    border: 1px solid #e0cea9;
-    box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #a9853d; }
-    .section2 button.ui.transparent:active {
-      border: 2px solid #d7bf8f; }
-    .section2 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section2 button.ui.transparent:hover:enabled, .section2 button.ui.transparent:focus:enabled {
-      background-color: #e0cea9; }
-    .section2 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #e4d4b4;
-      background-color: #e0cea9; }
-    .section2 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section2 .input.transparent input, .section2 .input.transparent select, .section2 .input.transparent textarea {
-    border: 1px solid #d7bf8f;
-    background-color: white;
-    box-shadow: 0 0px 3px #decaa1 inset;
-    -webkit-text-fill-color: #715928; }
-    .section2 .input.transparent input:focus, .section2 .input.transparent select:focus, .section2 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section2 .input.transparent input:hover, .section2 .input.transparent input:focus, .section2 .input.transparent select:hover, .section2 .input.transparent select:focus, .section2 .input.transparent textarea:hover, .section2 .input.transparent textarea:focus {
-      background-color: #e8dbbf; }
+  .section2 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section2 .wrapper * {
+      margin: auto; }
+    .section2 .wrapper button.ui.transparent {
+      background-color: #ebdfc7;
+      border: 1px solid #e0cea9;
+      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: #5e4a22; }
+      .section2 .wrapper button.ui.transparent:active {
+        border: 2px solid #d7bf8f; }
+      .section2 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section2 .wrapper button.ui.transparent:hover:enabled, .section2 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #e0cea9; }
+      .section2 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #e4d4b4;
+        background-color: #e0cea9; }
+      .section2 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section2 .wrapper .input {
+      margin-top: 20px; }
+      .section2 .wrapper .input.transparent input, .section2 .wrapper .input.transparent select, .section2 .wrapper .input.transparent textarea {
+        border: 1px solid #d7bf8f;
+        background-color: white;
+        box-shadow: 0 0px 3px #decaa1 inset;
+        -webkit-text-fill-color: #715928; }
+        .section2 .wrapper .input.transparent input:focus:not(.error), .section2 .wrapper .input.transparent select:focus:not(.error), .section2 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section2 .wrapper .input.transparent input:hover, .section2 .wrapper .input.transparent input:focus, .section2 .wrapper .input.transparent select:hover, .section2 .wrapper .input.transparent select:focus, .section2 .wrapper .input.transparent textarea:hover, .section2 .wrapper .input.transparent textarea:focus {
+          background-color: #f2eada; }
+      .section2 .wrapper .input.transparent label, .section2 .wrapper .input.transparent label + * {
+        color: #5e4a22; }
+      .section2 .wrapper .input.error input, .section2 .wrapper .input.error select, .section2 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section2 .wrapper .input.error input:focus, .section2 .wrapper .input.error select:focus, .section2 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section2 .wrapper .input.error input:hover, .section2 .wrapper .input.error input:focus, .section2 .wrapper .input.error select:hover, .section2 .wrapper .input.error select:focus, .section2 .wrapper .input.error textarea:hover, .section2 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section2 .wrapper .input.error label, .section2 .wrapper .input.error label + * {
+        color: #da2700; }
 
 .section3 {
+  height: 490px;
   background-color: #bfb6a3; }
-  .section3 button.ui.transparent {
-    background-color: #bfb6a3;
-    border: 1px solid #aea38b;
-    box-shadow: inset 0px 1px 0px #dedad0, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #58503e; }
-    .section3 button.ui.transparent:active {
-      border: 2px solid #a09276; }
-    .section3 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section3 button.ui.transparent:hover:enabled, .section3 button.ui.transparent:focus:enabled {
-      background-color: #aea38b; }
-    .section3 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #b5aa94;
-      background-color: #aea38b; }
-    .section3 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section3 .input.transparent input, .section3 .input.transparent select, .section3 .input.transparent textarea {
-    border: 1px solid #a09276;
-    background-color: #dedad0;
-    box-shadow: 0 0px 3px #aa9e85 inset;
-    -webkit-text-fill-color: #2b271e; }
-    .section3 .input.transparent input:focus, .section3 .input.transparent select:focus, .section3 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section3 .input.transparent input:hover, .section3 .input.transparent input:focus, .section3 .input.transparent select:hover, .section3 .input.transparent select:focus, .section3 .input.transparent textarea:hover, .section3 .input.transparent textarea:focus {
-      background-color: #bbb19d; }
+  .section3 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section3 .wrapper * {
+      margin: auto; }
+    .section3 .wrapper button.ui.transparent {
+      background-color: #bfb6a3;
+      border: 1px solid #aea38b;
+      box-shadow: inset 0px 1px 0px #dedad0, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: #1c1a14; }
+      .section3 .wrapper button.ui.transparent:active {
+        border: 2px solid #a09276; }
+      .section3 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section3 .wrapper button.ui.transparent:hover:enabled, .section3 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #aea38b; }
+      .section3 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #b5aa94;
+        background-color: #aea38b; }
+      .section3 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section3 .wrapper .input {
+      margin-top: 20px; }
+      .section3 .wrapper .input.transparent input, .section3 .wrapper .input.transparent select, .section3 .wrapper .input.transparent textarea {
+        border: 1px solid #a09276;
+        background-color: #dedad0;
+        box-shadow: 0 0px 3px #aa9e85 inset;
+        -webkit-text-fill-color: #2b271e; }
+        .section3 .wrapper .input.transparent input:focus:not(.error), .section3 .wrapper .input.transparent select:focus:not(.error), .section3 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section3 .wrapper .input.transparent input:hover, .section3 .wrapper .input.transparent input:focus, .section3 .wrapper .input.transparent select:hover, .section3 .wrapper .input.transparent select:focus, .section3 .wrapper .input.transparent textarea:hover, .section3 .wrapper .input.transparent textarea:focus {
+          background-color: #c9c2b2; }
+      .section3 .wrapper .input.transparent label, .section3 .wrapper .input.transparent label + * {
+        color: #1c1a14; }
+      .section3 .wrapper .input.error input, .section3 .wrapper .input.error select, .section3 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section3 .wrapper .input.error input:focus, .section3 .wrapper .input.error select:focus, .section3 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section3 .wrapper .input.error input:hover, .section3 .wrapper .input.error input:focus, .section3 .wrapper .input.error select:hover, .section3 .wrapper .input.error select:focus, .section3 .wrapper .input.error textarea:hover, .section3 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section3 .wrapper .input.error label, .section3 .wrapper .input.error label + * {
+        color: #da2700; }
 
 .section4 {
+  height: 490px;
   background-color: #454545; }
-  .section4 button.ui.transparent {
-    background-color: #454545;
-    border: 1px solid #313131;
-    box-shadow: inset 0px 1px 0px #6b6b6b, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #d1d1d1;
-    box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(18, 18, 18, 0.5); }
-    .section4 button.ui.transparent:active {
-      border: 2px solid #1f1f1f; }
-    .section4 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section4 button.ui.transparent:hover:enabled, .section4 button.ui.transparent:focus:enabled {
-      background-color: #646464; }
-    .section4 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #525252;
-      background-color: #646464; }
-    .section4 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section4 .input.transparent input, .section4 .input.transparent select, .section4 .input.transparent textarea {
-    border: 1px solid #1f1f1f;
-    background-color: #6b6b6b;
-    box-shadow: 0 0px 3px #2c2c2c inset;
-    -webkit-text-fill-color: #d1d1d1; }
-    .section4 .input.transparent input:focus, .section4 .input.transparent select:focus, .section4 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section4 .input.transparent input:hover, .section4 .input.transparent input:focus, .section4 .input.transparent select:hover, .section4 .input.transparent select:focus, .section4 .input.transparent textarea:hover, .section4 .input.transparent textarea:focus {
-      background-color: #787878; }
+  .section4 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section4 .wrapper * {
+      margin: auto; }
+    .section4 .wrapper button.ui.transparent {
+      background-color: #454545;
+      border: 1px solid #313131;
+      box-shadow: inset 0px 1px 0px #6b6b6b, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(18, 18, 18, 0.5); }
+      .section4 .wrapper button.ui.transparent:active {
+        border: 2px solid #1f1f1f; }
+      .section4 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section4 .wrapper button.ui.transparent:hover:enabled, .section4 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #646464; }
+      .section4 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #525252;
+        background-color: #646464; }
+      .section4 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section4 .wrapper .input {
+      margin-top: 20px; }
+      .section4 .wrapper .input.transparent input, .section4 .wrapper .input.transparent select, .section4 .wrapper .input.transparent textarea {
+        border: 1px solid #1f1f1f;
+        background-color: #6b6b6b;
+        box-shadow: 0 0px 3px #2c2c2c inset;
+        -webkit-text-fill-color: #ebebeb; }
+        .section4 .wrapper .input.transparent input:focus:not(.error), .section4 .wrapper .input.transparent select:focus:not(.error), .section4 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section4 .wrapper .input.transparent input:hover, .section4 .wrapper .input.transparent input:focus, .section4 .wrapper .input.transparent select:hover, .section4 .wrapper .input.transparent select:focus, .section4 .wrapper .input.transparent textarea:hover, .section4 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #525252; }
+      .section4 .wrapper .input.transparent label, .section4 .wrapper .input.transparent label + * {
+        color: white; }
+      .section4 .wrapper .input.error input, .section4 .wrapper .input.error select, .section4 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section4 .wrapper .input.error input:focus, .section4 .wrapper .input.error select:focus, .section4 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section4 .wrapper .input.error input:hover, .section4 .wrapper .input.error input:focus, .section4 .wrapper .input.error select:hover, .section4 .wrapper .input.error select:focus, .section4 .wrapper .input.error textarea:hover, .section4 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section4 .wrapper .input.error label, .section4 .wrapper .input.error label + * {
+        color: white; }
 
 .section5 {
+  height: 490px;
   background-color: #bf4122; }
-  .section5 button.ui.transparent {
-    background-color: #bf4122;
-    border: 1px solid #9c351c;
-    box-shadow: inset 0px 1px 0px #df6b4e, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #fefcfb;
-    box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(104, 36, 19, 0.5); }
-    .section5 button.ui.transparent:active {
-      border: 2px solid #7e2b16; }
-    .section5 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section5 button.ui.transparent:hover:enabled, .section5 button.ui.transparent:focus:enabled {
-      background-color: #dd6041; }
-    .section5 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #d54826;
-      background-color: #dd6041; }
-    .section5 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section5 .input.transparent input, .section5 .input.transparent select, .section5 .input.transparent textarea {
-    border: 1px solid #7e2b16;
-    background-color: #df6b4e;
-    box-shadow: 0 0px 3px #94321a inset;
-    -webkit-text-fill-color: #fefcfb; }
-    .section5 .input.transparent input:focus, .section5 .input.transparent select:focus, .section5 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section5 .input.transparent input:hover, .section5 .input.transparent input:focus, .section5 .input.transparent select:hover, .section5 .input.transparent select:focus, .section5 .input.transparent textarea:hover, .section5 .input.transparent textarea:focus {
-      background-color: #e37d64; }
+  .section5 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section5 .wrapper * {
+      margin: auto; }
+    .section5 .wrapper button.ui.transparent {
+      background-color: #bf4122;
+      border: 1px solid #9c351c;
+      box-shadow: inset 0px 1px 0px #df6b4e, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(104, 36, 19, 0.5); }
+      .section5 .wrapper button.ui.transparent:active {
+        border: 2px solid #7e2b16; }
+      .section5 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section5 .wrapper button.ui.transparent:hover:enabled, .section5 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #dd6041; }
+      .section5 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #d54826;
+        background-color: #dd6041; }
+      .section5 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section5 .wrapper .input {
+      margin-top: 20px; }
+      .section5 .wrapper .input.transparent input, .section5 .wrapper .input.transparent select, .section5 .wrapper .input.transparent textarea {
+        border: 1px solid #7e2b16;
+        background-color: #df6b4e;
+        box-shadow: 0 0px 3px #94321a inset;
+        -webkit-text-fill-color: white; }
+        .section5 .wrapper .input.transparent input:focus:not(.error), .section5 .wrapper .input.transparent select:focus:not(.error), .section5 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section5 .wrapper .input.transparent input:hover, .section5 .wrapper .input.transparent input:focus, .section5 .wrapper .input.transparent select:hover, .section5 .wrapper .input.transparent select:focus, .section5 .wrapper .input.transparent textarea:hover, .section5 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #d54826; }
+      .section5 .wrapper .input.transparent label, .section5 .wrapper .input.transparent label + * {
+        color: white; }
+      .section5 .wrapper .input.error input, .section5 .wrapper .input.error select, .section5 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section5 .wrapper .input.error input:focus, .section5 .wrapper .input.error select:focus, .section5 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section5 .wrapper .input.error input:hover, .section5 .wrapper .input.error input:focus, .section5 .wrapper .input.error select:hover, .section5 .wrapper .input.error select:focus, .section5 .wrapper .input.error textarea:hover, .section5 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section5 .wrapper .input.error label, .section5 .wrapper .input.error label + * {
+        color: white; }
 
 .section6 {
+  height: 490px;
   background-color: #cf4232; }
-  .section6 button.ui.transparent {
-    background-color: #cf4232;
-    border: 1px solid #af3729;
-    box-shadow: inset 0px 1px 0px #de7b70, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: white;
-    box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(126, 39, 29, 0.5); }
-    .section6 button.ui.transparent:active {
-      border: 2px solid #922e22; }
-    .section6 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section6 button.ui.transparent:hover:enabled, .section6 button.ui.transparent:focus:enabled {
-      background-color: #db7064; }
-    .section6 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #d45547;
-      background-color: #db7064; }
-    .section6 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section6 .input.transparent input, .section6 .input.transparent select, .section6 .input.transparent textarea {
-    border: 1px solid #922e22;
-    background-color: #de7b70;
-    box-shadow: 0 0px 3px #a73427 inset;
-    -webkit-text-fill-color: white; }
-    .section6 .input.transparent input:focus, .section6 .input.transparent select:focus, .section6 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section6 .input.transparent input:hover, .section6 .input.transparent input:focus, .section6 .input.transparent select:hover, .section6 .input.transparent select:focus, .section6 .input.transparent textarea:hover, .section6 .input.transparent textarea:focus {
-      background-color: #e28e85; }
+  .section6 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section6 .wrapper * {
+      margin: auto; }
+    .section6 .wrapper button.ui.transparent {
+      background-color: #cf4232;
+      border: 1px solid #af3729;
+      box-shadow: inset 0px 1px 0px #de7b70, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(126, 39, 29, 0.5); }
+      .section6 .wrapper button.ui.transparent:active {
+        border: 2px solid #922e22; }
+      .section6 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section6 .wrapper button.ui.transparent:hover:enabled, .section6 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #db7064; }
+      .section6 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #d45547;
+        background-color: #db7064; }
+      .section6 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section6 .wrapper .input {
+      margin-top: 20px; }
+      .section6 .wrapper .input.transparent input, .section6 .wrapper .input.transparent select, .section6 .wrapper .input.transparent textarea {
+        border: 1px solid #922e22;
+        background-color: #de7b70;
+        box-shadow: 0 0px 3px #a73427 inset;
+        -webkit-text-fill-color: white; }
+        .section6 .wrapper .input.transparent input:focus:not(.error), .section6 .wrapper .input.transparent select:focus:not(.error), .section6 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section6 .wrapper .input.transparent input:hover, .section6 .wrapper .input.transparent input:focus, .section6 .wrapper .input.transparent select:hover, .section6 .wrapper .input.transparent select:focus, .section6 .wrapper .input.transparent textarea:hover, .section6 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #d45547; }
+      .section6 .wrapper .input.transparent label, .section6 .wrapper .input.transparent label + * {
+        color: white; }
+      .section6 .wrapper .input.error input, .section6 .wrapper .input.error select, .section6 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section6 .wrapper .input.error input:focus, .section6 .wrapper .input.error select:focus, .section6 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section6 .wrapper .input.error input:hover, .section6 .wrapper .input.error input:focus, .section6 .wrapper .input.error select:hover, .section6 .wrapper .input.error select:focus, .section6 .wrapper .input.error textarea:hover, .section6 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section6 .wrapper .input.error label, .section6 .wrapper .input.error label + * {
+        color: white; }
 
 .section7 {
+  height: 490px;
   background-color: #eb7f23; }
-  .section7 button.ui.transparent {
-    background-color: #eb7f23;
-    border: 1px solid #d26b13;
-    box-shadow: inset 0px 1px 0px #f1a869, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #3d1f06; }
-    .section7 button.ui.transparent:active {
-      border: 2px solid #b15a10; }
-    .section7 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section7 button.ui.transparent:hover:enabled, .section7 button.ui.transparent:focus:enabled {
-      background-color: #d26b13; }
-    .section7 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #e07214;
-      background-color: #d26b13; }
-    .section7 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section7 .input.transparent input, .section7 .input.transparent select, .section7 .input.transparent textarea {
-    border: 1px solid #b15a10;
-    background-color: #f1a869;
-    box-shadow: 0 0px 3px #c96612 inset;
-    -webkit-text-fill-color: black; }
-    .section7 .input.transparent input:focus, .section7 .input.transparent select:focus, .section7 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section7 .input.transparent input:hover, .section7 .input.transparent input:focus, .section7 .input.transparent select:hover, .section7 .input.transparent select:focus, .section7 .input.transparent textarea:hover, .section7 .input.transparent textarea:focus {
-      background-color: #ea7a1a; }
+  .section7 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section7 .wrapper * {
+      margin: auto; }
+    .section7 .wrapper button.ui.transparent {
+      background-color: #eb7f23;
+      border: 1px solid #d26b13;
+      box-shadow: inset 0px 1px 0px #f1a869, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: black; }
+      .section7 .wrapper button.ui.transparent:active {
+        border: 2px solid #b15a10; }
+      .section7 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section7 .wrapper button.ui.transparent:hover:enabled, .section7 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #d26b13; }
+      .section7 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #e07214;
+        background-color: #d26b13; }
+      .section7 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section7 .wrapper .input {
+      margin-top: 20px; }
+      .section7 .wrapper .input.transparent input, .section7 .wrapper .input.transparent select, .section7 .wrapper .input.transparent textarea {
+        border: 1px solid #b15a10;
+        background-color: #f1a869;
+        box-shadow: 0 0px 3px #c96612 inset;
+        -webkit-text-fill-color: black; }
+        .section7 .wrapper .input.transparent input:focus:not(.error), .section7 .wrapper .input.transparent select:focus:not(.error), .section7 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section7 .wrapper .input.transparent input:hover, .section7 .wrapper .input.transparent input:focus, .section7 .wrapper .input.transparent select:hover, .section7 .wrapper .input.transparent select:focus, .section7 .wrapper .input.transparent textarea:hover, .section7 .wrapper .input.transparent textarea:focus {
+          background-color: #ed8d3a; }
+      .section7 .wrapper .input.transparent label, .section7 .wrapper .input.transparent label + * {
+        color: black; }
+      .section7 .wrapper .input.error input, .section7 .wrapper .input.error select, .section7 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section7 .wrapper .input.error input:focus, .section7 .wrapper .input.error select:focus, .section7 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section7 .wrapper .input.error input:hover, .section7 .wrapper .input.error input:focus, .section7 .wrapper .input.error select:hover, .section7 .wrapper .input.error select:focus, .section7 .wrapper .input.error textarea:hover, .section7 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section7 .wrapper .input.error label, .section7 .wrapper .input.error label + * {
+        color: #da2700; }
 
 .section8 {
+  height: 490px;
   background-color: #fac023; }
-  .section8 button.ui.transparent {
-    background-color: #fac023;
-    border: 1px solid #efb005;
-    box-shadow: inset 0px 1px 0px #fcd56e, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #4f3a02; }
-    .section8 button.ui.transparent:active {
-      border: 2px solid #cc9605; }
-    .section8 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section8 button.ui.transparent:hover:enabled, .section8 button.ui.transparent:focus:enabled {
-      background-color: #efb005; }
-    .section8 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #f9b90a;
-      background-color: #efb005; }
-    .section8 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section8 .input.transparent input, .section8 .input.transparent select, .section8 .input.transparent textarea {
-    border: 1px solid #cc9605;
-    background-color: #fcd56e;
-    box-shadow: 0 0px 3px #e5a805 inset;
-    -webkit-text-fill-color: #040300; }
-    .section8 .input.transparent input:focus, .section8 .input.transparent select:focus, .section8 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section8 .input.transparent input:hover, .section8 .input.transparent input:focus, .section8 .input.transparent select:hover, .section8 .input.transparent select:focus, .section8 .input.transparent textarea:hover, .section8 .input.transparent textarea:focus {
-      background-color: #fabd19; }
+  .section8 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section8 .wrapper * {
+      margin: auto; }
+    .section8 .wrapper button.ui.transparent {
+      background-color: #fac023;
+      border: 1px solid #efb005;
+      box-shadow: inset 0px 1px 0px #fcd56e, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: black; }
+      .section8 .wrapper button.ui.transparent:active {
+        border: 2px solid #cc9605; }
+      .section8 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section8 .wrapper button.ui.transparent:hover:enabled, .section8 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #efb005; }
+      .section8 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #f9b90a;
+        background-color: #efb005; }
+      .section8 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section8 .wrapper .input {
+      margin-top: 20px; }
+      .section8 .wrapper .input.transparent input, .section8 .wrapper .input.transparent select, .section8 .wrapper .input.transparent textarea {
+        border: 1px solid #cc9605;
+        background-color: #fcd56e;
+        box-shadow: 0 0px 3px #e5a805 inset;
+        -webkit-text-fill-color: #040300; }
+        .section8 .wrapper .input.transparent input:focus:not(.error), .section8 .wrapper .input.transparent select:focus:not(.error), .section8 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section8 .wrapper .input.transparent input:hover, .section8 .wrapper .input.transparent input:focus, .section8 .wrapper .input.transparent select:hover, .section8 .wrapper .input.transparent select:focus, .section8 .wrapper .input.transparent textarea:hover, .section8 .wrapper .input.transparent textarea:focus {
+          background-color: #fbc73c; }
+      .section8 .wrapper .input.transparent label, .section8 .wrapper .input.transparent label + * {
+        color: black; }
+      .section8 .wrapper .input.error input, .section8 .wrapper .input.error select, .section8 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section8 .wrapper .input.error input:focus, .section8 .wrapper .input.error select:focus, .section8 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section8 .wrapper .input.error input:hover, .section8 .wrapper .input.error input:focus, .section8 .wrapper .input.error select:hover, .section8 .wrapper .input.error select:focus, .section8 .wrapper .input.error textarea:hover, .section8 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section8 .wrapper .input.error label, .section8 .wrapper .input.error label + * {
+        color: #da2700; }
 
 .section9 {
+  height: 490px;
   background-color: #068675; }
-  .section9 button.ui.transparent {
-    background-color: #068675;
-    border: 1px solid #045f53;
-    box-shadow: inset 0px 1px 0px #09cfb5, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #a9fbf0;
-    box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(2, 36, 32, 0.5); }
-    .section9 button.ui.transparent:active {
-      border: 2px solid #033d35; }
-    .section9 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section9 button.ui.transparent:hover:enabled, .section9 button.ui.transparent:focus:enabled {
-      background-color: #09c1a8; }
-    .section9 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #079e8a;
-      background-color: #09c1a8; }
-    .section9 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section9 .input.transparent input, .section9 .input.transparent select, .section9 .input.transparent textarea {
-    border: 1px solid #033d35;
-    background-color: #09cfb5;
-    box-shadow: 0 0px 3px #04554a inset;
-    -webkit-text-fill-color: #a9fbf0; }
-    .section9 .input.transparent input:focus, .section9 .input.transparent select:focus, .section9 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section9 .input.transparent input:hover, .section9 .input.transparent input:focus, .section9 .input.transparent select:hover, .section9 .input.transparent select:focus, .section9 .input.transparent textarea:hover, .section9 .input.transparent textarea:focus {
-      background-color: #0ae8ca; }
+  .section9 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section9 .wrapper * {
+      margin: auto; }
+    .section9 .wrapper button.ui.transparent {
+      background-color: #068675;
+      border: 1px solid #045f53;
+      box-shadow: inset 0px 1px 0px #09cfb5, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(2, 36, 32, 0.5); }
+      .section9 .wrapper button.ui.transparent:active {
+        border: 2px solid #033d35; }
+      .section9 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section9 .wrapper button.ui.transparent:hover:enabled, .section9 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #09c1a8; }
+      .section9 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #079e8a;
+        background-color: #09c1a8; }
+      .section9 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section9 .wrapper .input {
+      margin-top: 20px; }
+      .section9 .wrapper .input.transparent input, .section9 .wrapper .input.transparent select, .section9 .wrapper .input.transparent textarea {
+        border: 1px solid #033d35;
+        background-color: #09cfb5;
+        box-shadow: 0 0px 3px #04554a inset;
+        -webkit-text-fill-color: #dafdf9; }
+        .section9 .wrapper .input.transparent input:focus:not(.error), .section9 .wrapper .input.transparent select:focus:not(.error), .section9 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section9 .wrapper .input.transparent input:hover, .section9 .wrapper .input.transparent input:focus, .section9 .wrapper .input.transparent select:hover, .section9 .wrapper .input.transparent select:focus, .section9 .wrapper .input.transparent textarea:hover, .section9 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #079e8a; }
+      .section9 .wrapper .input.transparent label, .section9 .wrapper .input.transparent label + * {
+        color: white; }
+      .section9 .wrapper .input.error input, .section9 .wrapper .input.error select, .section9 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section9 .wrapper .input.error input:focus, .section9 .wrapper .input.error select:focus, .section9 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section9 .wrapper .input.error input:hover, .section9 .wrapper .input.error input:focus, .section9 .wrapper .input.error select:hover, .section9 .wrapper .input.error select:focus, .section9 .wrapper .input.error textarea:hover, .section9 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section9 .wrapper .input.error label, .section9 .wrapper .input.error label + * {
+        color: white; }
 
 .section10 {
+  height: 490px;
   background-color: #6b202e; }
-  .section10 button.ui.transparent {
-    background-color: #6b202e;
-    border: 1px solid #4c1720;
-    box-shadow: inset 0px 1px 0px #a63247, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #eab9c2;
-    box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(28, 9, 12, 0.5); }
-    .section10 button.ui.transparent:active {
-      border: 2px solid #300e15; }
-    .section10 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section10 button.ui.transparent:hover:enabled, .section10 button.ui.transparent:focus:enabled {
-      background-color: #9a2e42; }
-    .section10 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #7f2636;
-      background-color: #9a2e42; }
-    .section10 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section10 .input.transparent input, .section10 .input.transparent select, .section10 .input.transparent textarea {
-    border: 1px solid #300e15;
-    background-color: #a63247;
-    box-shadow: 0 0px 3px #44141d inset;
-    -webkit-text-fill-color: #eab9c2; }
-    .section10 .input.transparent input:focus, .section10 .input.transparent select:focus, .section10 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section10 .input.transparent input:hover, .section10 .input.transparent input:focus, .section10 .input.transparent select:hover, .section10 .input.transparent select:focus, .section10 .input.transparent textarea:hover, .section10 .input.transparent textarea:focus {
-      background-color: #ba3750; }
+  .section10 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section10 .wrapper * {
+      margin: auto; }
+    .section10 .wrapper button.ui.transparent {
+      background-color: #6b202e;
+      border: 1px solid #4c1720;
+      box-shadow: inset 0px 1px 0px #a63247, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(28, 9, 12, 0.5); }
+      .section10 .wrapper button.ui.transparent:active {
+        border: 2px solid #300e15; }
+      .section10 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section10 .wrapper button.ui.transparent:hover:enabled, .section10 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #9a2e42; }
+      .section10 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #7f2636;
+        background-color: #9a2e42; }
+      .section10 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section10 .wrapper .input {
+      margin-top: 20px; }
+      .section10 .wrapper .input.transparent input, .section10 .wrapper .input.transparent select, .section10 .wrapper .input.transparent textarea {
+        border: 1px solid #300e15;
+        background-color: #a63247;
+        box-shadow: 0 0px 3px #44141d inset;
+        -webkit-text-fill-color: #f6e1e5; }
+        .section10 .wrapper .input.transparent input:focus:not(.error), .section10 .wrapper .input.transparent select:focus:not(.error), .section10 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section10 .wrapper .input.transparent input:hover, .section10 .wrapper .input.transparent input:focus, .section10 .wrapper .input.transparent select:hover, .section10 .wrapper .input.transparent select:focus, .section10 .wrapper .input.transparent textarea:hover, .section10 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #7f2636; }
+      .section10 .wrapper .input.transparent label, .section10 .wrapper .input.transparent label + * {
+        color: white; }
+      .section10 .wrapper .input.error input, .section10 .wrapper .input.error select, .section10 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section10 .wrapper .input.error input:focus, .section10 .wrapper .input.error select:focus, .section10 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section10 .wrapper .input.error input:hover, .section10 .wrapper .input.error input:focus, .section10 .wrapper .input.error select:hover, .section10 .wrapper .input.error select:focus, .section10 .wrapper .input.error textarea:hover, .section10 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section10 .wrapper .input.error label, .section10 .wrapper .input.error label + * {
+        color: white; }
 
 .section11 {
+  height: 490px;
   background-color: #165873; }
-  .section11 button.ui.transparent {
-    background-color: #165873;
-    border: 1px solid #0f3e51;
-    box-shadow: inset 0px 1px 0px #2289b3, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #b1def0;
-    box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(6, 22, 29, 0.5); }
-    .section11 button.ui.transparent:active {
-      border: 2px solid #0a2733; }
-    .section11 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section11 button.ui.transparent:hover:enabled, .section11 button.ui.transparent:focus:enabled {
-      background-color: #207fa6; }
-    .section11 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #1a6888;
-      background-color: #207fa6; }
-    .section11 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section11 .input.transparent input, .section11 .input.transparent select, .section11 .input.transparent textarea {
-    border: 1px solid #0a2733;
-    background-color: #2289b3;
-    box-shadow: 0 0px 3px #0e3748 inset;
-    -webkit-text-fill-color: #b1def0; }
-    .section11 .input.transparent input:focus, .section11 .input.transparent select:focus, .section11 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section11 .input.transparent input:hover, .section11 .input.transparent input:focus, .section11 .input.transparent select:hover, .section11 .input.transparent select:focus, .section11 .input.transparent textarea:hover, .section11 .input.transparent textarea:focus {
-      background-color: #269ac9; }
+  .section11 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section11 .wrapper * {
+      margin: auto; }
+    .section11 .wrapper button.ui.transparent {
+      background-color: #165873;
+      border: 1px solid #0f3e51;
+      box-shadow: inset 0px 1px 0px #2289b3, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(6, 22, 29, 0.5); }
+      .section11 .wrapper button.ui.transparent:active {
+        border: 2px solid #0a2733; }
+      .section11 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section11 .wrapper button.ui.transparent:hover:enabled, .section11 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #207fa6; }
+      .section11 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #1a6888;
+        background-color: #207fa6; }
+      .section11 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section11 .wrapper .input {
+      margin-top: 20px; }
+      .section11 .wrapper .input.transparent input, .section11 .wrapper .input.transparent select, .section11 .wrapper .input.transparent textarea {
+        border: 1px solid #0a2733;
+        background-color: #2289b3;
+        box-shadow: 0 0px 3px #0e3748 inset;
+        -webkit-text-fill-color: #dcf0f8; }
+        .section11 .wrapper .input.transparent input:focus:not(.error), .section11 .wrapper .input.transparent select:focus:not(.error), .section11 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section11 .wrapper .input.transparent input:hover, .section11 .wrapper .input.transparent input:focus, .section11 .wrapper .input.transparent select:hover, .section11 .wrapper .input.transparent select:focus, .section11 .wrapper .input.transparent textarea:hover, .section11 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #1a6888; }
+      .section11 .wrapper .input.transparent label, .section11 .wrapper .input.transparent label + * {
+        color: white; }
+      .section11 .wrapper .input.error input, .section11 .wrapper .input.error select, .section11 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section11 .wrapper .input.error input:focus, .section11 .wrapper .input.error select:focus, .section11 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section11 .wrapper .input.error input:hover, .section11 .wrapper .input.error input:focus, .section11 .wrapper .input.error select:hover, .section11 .wrapper .input.error select:focus, .section11 .wrapper .input.error textarea:hover, .section11 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section11 .wrapper .input.error label, .section11 .wrapper .input.error label + * {
+        color: white; }
 
 .section12 {
+  height: 490px;
   background-color: #124c59; }
-  .section12 button.ui.transparent {
-    background-color: #124c59;
-    border: 1px solid #0b2f37;
-    box-shadow: inset 0px 1px 0px #1f8299, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #99dcea;
-    box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(1, 4, 4, 0.5); }
-    .section12 button.ui.transparent:active {
-      border: 2px solid #051619; }
-    .section12 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section12 button.ui.transparent:hover:enabled, .section12 button.ui.transparent:focus:enabled {
-      background-color: #1c778c; }
-    .section12 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #165e6e;
-      background-color: #1c778c; }
-    .section12 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section12 .input.transparent input, .section12 .input.transparent select, .section12 .input.transparent textarea {
-    border: 1px solid #051619;
-    background-color: #1f8299;
-    box-shadow: 0 0px 3px #09282f inset;
-    -webkit-text-fill-color: #99dcea; }
-    .section12 .input.transparent input:focus, .section12 .input.transparent select:focus, .section12 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section12 .input.transparent input:hover, .section12 .input.transparent input:focus, .section12 .input.transparent select:hover, .section12 .input.transparent select:focus, .section12 .input.transparent textarea:hover, .section12 .input.transparent textarea:focus {
-      background-color: #2394ae; }
+  .section12 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section12 .wrapper * {
+      margin: auto; }
+    .section12 .wrapper button.ui.transparent {
+      background-color: #124c59;
+      border: 1px solid #0b2f37;
+      box-shadow: inset 0px 1px 0px #1f8299, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: #eef9fc;
+      box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(1, 4, 4, 0.5); }
+      .section12 .wrapper button.ui.transparent:active {
+        border: 2px solid #051619; }
+      .section12 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section12 .wrapper button.ui.transparent:hover:enabled, .section12 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #1c778c; }
+      .section12 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #165e6e;
+        background-color: #1c778c; }
+      .section12 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section12 .wrapper .input {
+      margin-top: 20px; }
+      .section12 .wrapper .input.transparent input, .section12 .wrapper .input.transparent select, .section12 .wrapper .input.transparent textarea {
+        border: 1px solid #051619;
+        background-color: #1f8299;
+        box-shadow: 0 0px 3px #09282f inset;
+        -webkit-text-fill-color: #c4eaf3; }
+        .section12 .wrapper .input.transparent input:focus:not(.error), .section12 .wrapper .input.transparent select:focus:not(.error), .section12 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section12 .wrapper .input.transparent input:hover, .section12 .wrapper .input.transparent input:focus, .section12 .wrapper .input.transparent select:hover, .section12 .wrapper .input.transparent select:focus, .section12 .wrapper .input.transparent textarea:hover, .section12 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #165e6e; }
+      .section12 .wrapper .input.transparent label, .section12 .wrapper .input.transparent label + * {
+        color: #eef9fc; }
+      .section12 .wrapper .input.error input, .section12 .wrapper .input.error select, .section12 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section12 .wrapper .input.error input:focus, .section12 .wrapper .input.error select:focus, .section12 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section12 .wrapper .input.error input:hover, .section12 .wrapper .input.error input:focus, .section12 .wrapper .input.error select:hover, .section12 .wrapper .input.error select:focus, .section12 .wrapper .input.error textarea:hover, .section12 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section12 .wrapper .input.error label, .section12 .wrapper .input.error label + * {
+        color: white; }
 
 .section13 {
+  height: 490px;
   background-color: #428c5c; }
-  .section13 button.ui.transparent {
-    background-color: #428c5c;
-    border: 1px solid #35704a;
-    box-shadow: inset 0px 1px 0px #64b681, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #eff7f2;
-    box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(33, 71, 46, 0.5); }
-    .section13 button.ui.transparent:active {
-      border: 2px solid #29583a; }
-    .section13 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section13 button.ui.transparent:hover:enabled, .section13 button.ui.transparent:focus:enabled {
-      background-color: #5ab179; }
-    .section13 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #4a9d67;
-      background-color: #5ab179; }
-    .section13 button.ui.transparent:focus:enabled {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669; }
-  .section13 .input.transparent input, .section13 .input.transparent select, .section13 .input.transparent textarea {
-    border: 1px solid #29583a;
-    background-color: #64b681;
-    box-shadow: 0 0px 3px #326945 inset;
-    -webkit-text-fill-color: #eff7f2; }
-    .section13 .input.transparent input:focus, .section13 .input.transparent select:focus, .section13 .input.transparent textarea:focus {
-      border: 2px solid #e74c3c;
-      box-shadow: 0 0 0 2px #ed7669;
-      padding: 12px; }
-    .section13 .input.transparent input:hover, .section13 .input.transparent input:focus, .section13 .input.transparent select:hover, .section13 .input.transparent select:focus, .section13 .input.transparent textarea:hover, .section13 .input.transparent textarea:focus {
-      background-color: #76be8f; }
+  .section13 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section13 .wrapper * {
+      margin: auto; }
+    .section13 .wrapper button.ui.transparent {
+      background-color: #428c5c;
+      border: 1px solid #35704a;
+      box-shadow: inset 0px 1px 0px #64b681, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: white;
+      box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(33, 71, 46, 0.5); }
+      .section13 .wrapper button.ui.transparent:active {
+        border: 2px solid #29583a; }
+      .section13 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section13 .wrapper button.ui.transparent:hover:enabled, .section13 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #5ab179; }
+      .section13 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #4a9d67;
+        background-color: #5ab179; }
+      .section13 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section13 .wrapper .input {
+      margin-top: 20px; }
+      .section13 .wrapper .input.transparent input, .section13 .wrapper .input.transparent select, .section13 .wrapper .input.transparent textarea {
+        border: 1px solid #29583a;
+        background-color: #64b681;
+        box-shadow: 0 0px 3px #326945 inset;
+        -webkit-text-fill-color: white; }
+        .section13 .wrapper .input.transparent input:focus:not(.error), .section13 .wrapper .input.transparent select:focus:not(.error), .section13 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section13 .wrapper .input.transparent input:hover, .section13 .wrapper .input.transparent input:focus, .section13 .wrapper .input.transparent select:hover, .section13 .wrapper .input.transparent select:focus, .section13 .wrapper .input.transparent textarea:hover, .section13 .wrapper .input.transparent textarea:focus {
+          -webkit-text-fill-color: white;
+          background-color: #4a9d67; }
+      .section13 .wrapper .input.transparent label, .section13 .wrapper .input.transparent label + * {
+        color: white; }
+      .section13 .wrapper .input.error input, .section13 .wrapper .input.error select, .section13 .wrapper .input.error textarea {
+        border: 1px solid #c02300;
+        box-shadow: 0 0px 3px #ff6341 inset;
+        background-color: #ffcbc0;
+        -webkit-text-fill-color: #0e0200; }
+        .section13 .wrapper .input.error input:focus, .section13 .wrapper .input.error select:focus, .section13 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section13 .wrapper .input.error input:hover, .section13 .wrapper .input.error input:focus, .section13 .wrapper .input.error select:hover, .section13 .wrapper .input.error select:focus, .section13 .wrapper .input.error textarea:hover, .section13 .wrapper .input.error textarea:focus {
+          -webkit-text-fill-color: #0e0200;
+          background-color: #ffe0da; }
+      .section13 .wrapper .input.error label, .section13 .wrapper .input.error label + * {
+        color: white; }
 
 .section14 {
+  height: 490px;
   background-color: #4ea64b; }
-  .section14 button.ui.transparent {
-    background-color: #4ea64b;
-    border: 1px solid #418a3e;
-    box-shadow: inset 0px 1px 0px #7dc37a, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #0c190c; }
-    .section14 button.ui.transparent:active {
-      border: 2px solid #357133; }
-    .section14 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section14 button.ui.transparent:hover:enabled, .section14 button.ui.transparent:focus:enabled {
-      background-color: #418a3e; }
-    .section14 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #469443;
-      background-color: #418a3e; }
-    .section14 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section14 .input.transparent input, .section14 .input.transparent select, .section14 .input.transparent textarea {
-    border: 1px solid #357133;
-    background-color: #7dc37a;
-    box-shadow: 0 0px 3px #3d833b inset;
-    -webkit-text-fill-color: black; }
-    .section14 .input.transparent input:focus, .section14 .input.transparent select:focus, .section14 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section14 .input.transparent input:hover, .section14 .input.transparent input:focus, .section14 .input.transparent select:hover, .section14 .input.transparent select:focus, .section14 .input.transparent textarea:hover, .section14 .input.transparent textarea:focus {
-      background-color: #4b9f48; }
+  .section14 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section14 .wrapper * {
+      margin: auto; }
+    .section14 .wrapper button.ui.transparent {
+      background-color: #4ea64b;
+      border: 1px solid #418a3e;
+      box-shadow: inset 0px 1px 0px #7dc37a, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: black; }
+      .section14 .wrapper button.ui.transparent:active {
+        border: 2px solid #357133; }
+      .section14 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section14 .wrapper button.ui.transparent:hover:enabled, .section14 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #418a3e; }
+      .section14 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #469443;
+        background-color: #418a3e; }
+      .section14 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section14 .wrapper .input {
+      margin-top: 20px; }
+      .section14 .wrapper .input.transparent input, .section14 .wrapper .input.transparent select, .section14 .wrapper .input.transparent textarea {
+        border: 1px solid #357133;
+        background-color: #7dc37a;
+        box-shadow: 0 0px 3px #3d833b inset;
+        -webkit-text-fill-color: black; }
+        .section14 .wrapper .input.transparent input:focus:not(.error), .section14 .wrapper .input.transparent select:focus:not(.error), .section14 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section14 .wrapper .input.transparent input:hover, .section14 .wrapper .input.transparent input:focus, .section14 .wrapper .input.transparent select:hover, .section14 .wrapper .input.transparent select:focus, .section14 .wrapper .input.transparent textarea:hover, .section14 .wrapper .input.transparent textarea:focus {
+          background-color: #5ab357; }
+      .section14 .wrapper .input.transparent label, .section14 .wrapper .input.transparent label + * {
+        color: black; }
+      .section14 .wrapper .input.error input, .section14 .wrapper .input.error select, .section14 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section14 .wrapper .input.error input:focus, .section14 .wrapper .input.error select:focus, .section14 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section14 .wrapper .input.error input:hover, .section14 .wrapper .input.error input:focus, .section14 .wrapper .input.error select:hover, .section14 .wrapper .input.error select:focus, .section14 .wrapper .input.error textarea:hover, .section14 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section14 .wrapper .input.error label, .section14 .wrapper .input.error label + * {
+        color: #da2700; }
 
 .section15 {
+  height: 490px;
   background-color: #add96c; }
-  .section15 button.ui.transparent {
-    background-color: #add96c;
-    border: 1px solid #9bd14c;
-    box-shadow: inset 0px 1px 0px #cfe9a9, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
-    color: #436019; }
-    .section15 button.ui.transparent:active {
-      border: 2px solid #8ac533; }
-    .section15 button.ui.transparent:disabled {
-      opacity: 0.5;
-      cursor: default;
-      box-shadow: none; }
-    .section15 button.ui.transparent:hover:enabled, .section15 button.ui.transparent:focus:enabled {
-      background-color: #9bd14c; }
-    .section15 button.ui.transparent:active:enabled {
-      box-shadow: inset 0 -1px 1px 0 #a2d458;
-      background-color: #9bd14c; }
-    .section15 button.ui.transparent:focus:enabled {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da; }
-  .section15 .input.transparent input, .section15 .input.transparent select, .section15 .input.transparent textarea {
-    border: 1px solid #8ac533;
-    background-color: #cfe9a9;
-    box-shadow: 0 0px 3px #96cf43 inset;
-    -webkit-text-fill-color: #192309; }
-    .section15 .input.transparent input:focus, .section15 .input.transparent select:focus, .section15 .input.transparent textarea:focus {
-      border: 2px solid #ff4e27;
-      box-shadow: 0 0 0 2px #ffe0da;
-      padding: 12px; }
-    .section15 .input.transparent input:hover, .section15 .input.transparent input:focus, .section15 .input.transparent select:hover, .section15 .input.transparent select:focus, .section15 .input.transparent textarea:hover, .section15 .input.transparent textarea:focus {
-      background-color: #a8d764; }
+  .section15 .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .section15 .wrapper * {
+      margin: auto; }
+    .section15 .wrapper button.ui.transparent {
+      background-color: #add96c;
+      border: 1px solid #9bd14c;
+      box-shadow: inset 0px 1px 0px #cfe9a9, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      color: #0b0f04; }
+      .section15 .wrapper button.ui.transparent:active {
+        border: 2px solid #8ac533; }
+      .section15 .wrapper button.ui.transparent:disabled {
+        opacity: 0.5;
+        cursor: default;
+        box-shadow: none; }
+      .section15 .wrapper button.ui.transparent:hover:enabled, .section15 .wrapper button.ui.transparent:focus:enabled {
+        background-color: #9bd14c; }
+      .section15 .wrapper button.ui.transparent:active:enabled {
+        box-shadow: inset 0 -1px 1px 0 #a2d458;
+        background-color: #9bd14c; }
+      .section15 .wrapper button.ui.transparent:focus:enabled {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section15 .wrapper .input {
+      margin-top: 20px; }
+      .section15 .wrapper .input.transparent input, .section15 .wrapper .input.transparent select, .section15 .wrapper .input.transparent textarea {
+        border: 1px solid #8ac533;
+        background-color: #cfe9a9;
+        box-shadow: 0 0px 3px #96cf43 inset;
+        -webkit-text-fill-color: #192309; }
+        .section15 .wrapper .input.transparent input:focus:not(.error), .section15 .wrapper .input.transparent select:focus:not(.error), .section15 .wrapper .input.transparent textarea:focus:not(.error) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section15 .wrapper .input.transparent input:hover, .section15 .wrapper .input.transparent input:focus, .section15 .wrapper .input.transparent select:hover, .section15 .wrapper .input.transparent select:focus, .section15 .wrapper .input.transparent textarea:hover, .section15 .wrapper .input.transparent textarea:focus {
+          background-color: #b8de80; }
+      .section15 .wrapper .input.transparent label, .section15 .wrapper .input.transparent label + * {
+        color: #0b0f04; }
+      .section15 .wrapper .input.error input, .section15 .wrapper .input.error select, .section15 .wrapper .input.error textarea {
+        border: 1px solid #ff8d74;
+        box-shadow: 0 0px 3px #ffcbc0 inset;
+        background-color: #fff9f8;
+        -webkit-text-fill-color: #da2700; }
+        .section15 .wrapper .input.error input:focus, .section15 .wrapper .input.error select:focus, .section15 .wrapper .input.error textarea:focus {
+          border: 2px solid #ff4e27;
+          box-shadow: 0 0 0 2px #ffe0da;
+          padding: 7px; }
+        .section15 .wrapper .input.error input:hover, .section15 .wrapper .input.error input:focus, .section15 .wrapper .input.error select:hover, .section15 .wrapper .input.error select:focus, .section15 .wrapper .input.error textarea:hover, .section15 .wrapper .input.error textarea:focus {
+          background-color: white; }
+      .section15 .wrapper .input.error label, .section15 .wrapper .input.error label + * {
+        color: #da2700; }
 
-.section {
-  height: 190px;
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10, .section11, .section12, .section13, .section14, .section15 {
   position: relative; }
-  .section button.ui.transparent {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .section .input {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
 
 body {
   background-color: #bf4122; }

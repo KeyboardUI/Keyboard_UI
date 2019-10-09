@@ -4,28 +4,42 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
 
 @for $i from 1 to length($sections) + 1
     .section#{$i}
+        @extend %section
+        height: 490px
         background-color: nth($sections, $i)
-        button.ui.transparent
-            @include transparent-btn(nth($sections, $i))
-        .input
-            //position: relative
-            //left: 50%
-            &.transparent
-                @include transparent-input(nth($sections, $i))
-
-.section
-    height: 190px
+        .wrapper
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 30%
+            *
+                margin: auto
+            button.ui.transparent
+                @include transparent-btn(nth($sections, $i))
+                @extend %btn
+            .input
+                margin-top: 20px
+                @extend %input
+                &.transparent
+                    @include transparent-input(nth($sections, $i))
+                &.disabled
+                    @extend %input_disabled
+                &.error
+                    @include error-input(nth($sections, $i))
+%section
     position: relative
-    button.ui.transparent
-        position: absolute
-        top: 30%
-        left: 50%
-        transform: translate(-50%, -50%)
-    .input
-        position: absolute
-        top: 70%
-        left: 50%
-        transform: translate(-50%, -50%)
+    // button.ui.transparent
+    //     position: absolute
+    //     top: 30%
+    //     left: 50%
+    //     transform: translate(-50%, -50%)
+    // .input
+    //     position: absolute
+    //     top: 70%
+    //     left: 50%
+    //     transform: translate(-50%, -50%)
+    
     
 body
     background-color: nth($sections, 5)
