@@ -4,14 +4,23 @@ html(lang="en")
         title Keyboard UI
         meta(charset="utf-8")
         meta(name="description" content="Lorem ipsum dolor sit amet.")
-        link(rel="stylesheet" href="../css/reset.css")
         link(rel="stylesheet" href="../css/keyui.css")
         link(rel="stylesheet" href="./css/style.css")
     body
         - var sections = 1
         while sections <= 15 
             div(class="section" + sections++)
-                button.ui.transparent Transparent
-                .ui.input.transparent
-                    input(size="35", value="")
-        script(src="../js/keyui.js")
+                .wrapper
+                    button.ui.transparent Transparents
+                    .ui.input.transparent
+                        label Regular input with label
+                        div And this is some tip
+                        input(size="45", value="")
+                    .ui.input.transparent.disabled
+                        label Disabled transparent input
+                        input(size="45", value="", disabled)
+                    .ui.input.error
+                        label Error example
+                        div And this is some tip
+                        input(size="45", value="")
+        script(src="./keyui.js")

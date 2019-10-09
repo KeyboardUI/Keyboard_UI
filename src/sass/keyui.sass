@@ -16,7 +16,7 @@
         background-color: rgba(255, 0, 0, 0.2)
         outline: 1px solid blue
         *
-            background-color: rgba(0, 255, 0, 0.2)
+            background-color: rgba(0, 254, 0, 0.2)
             *
                 background-color: rgba(0, 0, 255, 0.2)
                 *
@@ -35,8 +35,12 @@
                                             background-color: rgba(0, 10, 255, 0.2)
                                             *
                                                 background-color: rgba(0, 10, 200, 0.2)
+                                                *
+                                                    background-color: rgba(0, 10, 200, 0.2)
+                                                    *
+                                                        background-color: rgba(0, 10, 200, 0.2)
 
-@include devmode()
+//@include devmode()
 //
     --------------------------
             FUNCTIONS
@@ -49,23 +53,20 @@
             BASIC
     --------------------------
 @mixin outline($n, $color)
-    @if $color != ""
+    @if $color == "default"
         @if abs(contrast($n)) < 112980
             border: 2px solid #1a5fc7
             box-shadow: 0 0 0 2px rgba(82,163,222, 0.8)
         @else
             border: 2px solid #0066ff
             box-shadow: 0 0 0 2px rgba(165,201,227, 0.8)
-    @else
+    @if $color == "error"
         @if abs(contrast($n)) < 112980
-            $c: #e74c3c
-            border: 2px solid $c
-            box-shadow: 0 0 0 2px lighten($c, 10%)
+            border: 2px solid #ff4e27
+            box-shadow: 0 0 0 2px #ffe0da
         @else
-            $c: #ff4e27
-            border: 2px solid $c
-            box-shadow: 0 0 0 2px lighten($c, 35%)
-
+            border: 2px solid #ff4e27
+            box-shadow: 0 0 0 2px #ffe0da
 //
     --------------------------
             BUTTONS
@@ -82,7 +83,7 @@
         cursor: default
         box-shadow: none
     @if abs(contrast($n)) < 112980
-        color: lighten($n, 55%)
+        color: lighten($n, 75%)
         box-shadow: inset 0px 1px 0px lighten($n, 20%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 3px 0 darken(rgba($n, 0.5), 20%)
         &:hover:enabled, &:focus:enabled
             background-color: lighten($n, 12%)
@@ -90,24 +91,25 @@
             box-shadow: inset 0 -1px 1px 0 lighten($n, 5%)
             background-color: lighten($n, 12%)
         &:focus:enabled
-            @include outline($n, "")
+            @include outline($n, "default")
     @else
-        color: darken($n, 40%)
+        color: darken($n, 60%)
         &:hover:enabled, &:focus:enabled
             background-color: darken($n, 8%)
         &:active:enabled
             box-shadow: inset 0 -1px 1px 0 darken($n, 5%)
             background-color: darken($n, 8%)
         &:focus:enabled
-            @include outline($n, "")
+            @include outline($n, "default")
 
 %btn
     cursor: pointer
     padding: 10px 31px
+    display: block
     border-radius: 3px
     font-size: 14px
-    font-weight: 400
-    font-family: 'Roboto', sans-serif
+    font-weight: 600
+    font-family: $font
     outline: none
     user-select: none
     -webkit-transition: all .15s ease-in-out
@@ -118,41 +120,53 @@
     transition-property: background-color, opacity
     &:focus, &:active
         padding: 9px 30px
-    
-button.ui
-    @include transparent-btn($def)
-    @extend %btn
 
 //
     --------------------------
         TEXT INPUT FIELDS
     --------------------------
+
 @mixin transparent-input($n)
     input, select, textarea
         border: 1px solid darken($n, 15%)
         background-color: lighten($n, 15%)
         box-shadow: 0 0px 3px darken($n, 10%) inset
-        &:focus
-            @include outline($n, "")
-            padding: 12px
+        &:focus:not(.error)
+            @include outline($n, "default")
+            padding: 7px
         @if abs(contrast($n)) < 112980
             //dark
-            -webkit-text-fill-color: lighten($n, 55%)
+            -webkit-text-fill-color: lighten($n, 65%)
             &:hover, &:focus
-                background-color: lighten($n, 20%)
+                -webkit-text-fill-color: lighten($n, 100%)
+                background-color: lighten($n, 5%)
         @else
             -webkit-text-fill-color: darken($n, 55%)
             &:hover, &:focus
-                background-color: darken($n, 2%)
+                background-color: lighten($n, 5%)
+    label, label + *
+        @if abs(contrast($n)) < 112980
+            color: lighten($n, 75%)
+        @else
+            color: darken($n, 60%)
 
-.ui.input
-    @include transparent-input($def)
-    $transition: box-shadow, opacity, background-color, border, padding
+%input
+    $transition: box-shadow, opacity, background-color
     input, label, select, textarea
+        font-family: $font
         display: block
+    label, label + *:not(input)
+        line-height: 25px
+        margin-left: 3px
     label
         font-weight: 600
+        font-size: 14px
+        + *:not(input)
+            font-family: $font
+            font-size: 14px
     input, select, textarea
+        margin-top: 5px
+        width: 100%
         -webkit-text-fill-color: #8a8ea0
         border-radius: 3px
         padding: 8px
@@ -175,20 +189,46 @@ button.ui
     input[type=submit], select[type=submit]
         -webkit-text-fill-color: #515876
         color: #515876  
-    &.error
-        input
-            @include outline($def, #c0392b)
-            &:focus
-                background-color: #fff5f5 !important
-    &.disabled
-        label, div, input, select
-            opacity: 0.5
-            //pointer-events: none
-        input, select
-            box-shadow: none
-            border: 1px solid darken($def, 20%)
-            &:focus, &:active
-                padding: 8px !important
+
+@mixin error-input($n)
+    input, select, textarea
+        &:focus
+            @include outline($n, "error")
+            padding: 7px
+        @if abs(contrast($n)) < 112980 // dark
+            $red: #ff4e27
+            border: 1px solid darken($red, 20%)
+            box-shadow: 0 0px 3px lighten($red, 5%) inset
+            background-color: lighten($red, 30%)
+            -webkit-text-fill-color: darken($red, 55%)
+            &:hover, &:focus
+                -webkit-text-fill-color: darken($red, 55%)
+                background-color: lighten($red, 35%)
+        @else
+            $red: #ff4e27
+            border: 1px solid lighten($red, 15%)
+            box-shadow: 0 0px 3px lighten($red, 30%) inset
+            background-color: lighten($red, 41%)
+            -webkit-text-fill-color: darken($red, 15%)
+            &:hover, &:focus
+                background-color: lighten($red, 45%)
+    label, label + *
+        @if abs(contrast($n)) < 112980
+            $red: #ffe6e5
+            color: lighten($red, 5%)
+        @else
+            $red: #ff4e27
+            color: darken($red, 15%)
+
+%input_disabled
+    label, div, input, select
+        opacity: 0.5
+        pointer-events: none
+    input, select
+        box-shadow: none
+        border: 1px solid darken($def, 20%)
+        &:focus, &:active
+            padding: 8px !important
 
 
 //

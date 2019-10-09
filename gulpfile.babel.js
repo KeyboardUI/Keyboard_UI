@@ -37,6 +37,12 @@ const observe = () => {
   gulp
     .watch(config.src.sass, series(reload, pugTest, testSass))
     .on("change", browserSync.reload);
+  gulp
+    .watch(config.test.pug, series(reload, pugTest, testSass))
+    .on("change", browserSync.reload);
+  gulp
+    .watch(config.test.sass, series(reload, pugTest, testSass))
+    .on("change", browserSync.reload);
 };
 
 const srcComp = done => {
