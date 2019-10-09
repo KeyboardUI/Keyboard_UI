@@ -171,7 +171,7 @@ table {
       .ui.pag.transparent button:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #f2f2f2;
         background-color: #ebebeb; }
-      .ui.pag.transparent button:focus:enabled {
+      .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .ui.pag.transparent button {
@@ -306,7 +306,7 @@ i.ui {
       .section1 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #f2f2f2;
         background-color: #ebebeb; }
-      .section1 .wrapper button.ui.transparent:focus:enabled {
+      .section1 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section1 .wrapper .input {
@@ -365,7 +365,7 @@ i.ui {
       .section2 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #e4d4b4;
         background-color: #e0cea9; }
-      .section2 .wrapper button.ui.transparent:focus:enabled {
+      .section2 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section2 .wrapper .input {
@@ -424,7 +424,7 @@ i.ui {
       .section3 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #b5aa94;
         background-color: #aea38b; }
-      .section3 .wrapper button.ui.transparent:focus:enabled {
+      .section3 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section3 .wrapper .input {
@@ -484,7 +484,7 @@ i.ui {
       .section4 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #525252;
         background-color: #646464; }
-      .section4 .wrapper button.ui.transparent:focus:enabled {
+      .section4 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section4 .wrapper .input {
@@ -546,7 +546,7 @@ i.ui {
       .section5 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #d54826;
         background-color: #dd6041; }
-      .section5 .wrapper button.ui.transparent:focus:enabled {
+      .section5 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section5 .wrapper .input {
@@ -608,7 +608,7 @@ i.ui {
       .section6 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #d45547;
         background-color: #db7064; }
-      .section6 .wrapper button.ui.transparent:focus:enabled {
+      .section6 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section6 .wrapper .input {
@@ -669,7 +669,7 @@ i.ui {
       .section7 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #e07214;
         background-color: #d26b13; }
-      .section7 .wrapper button.ui.transparent:focus:enabled {
+      .section7 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section7 .wrapper .input {
@@ -728,7 +728,7 @@ i.ui {
       .section8 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #f9b90a;
         background-color: #efb005; }
-      .section8 .wrapper button.ui.transparent:focus:enabled {
+      .section8 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section8 .wrapper .input {
@@ -788,7 +788,7 @@ i.ui {
       .section9 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #079e8a;
         background-color: #09c1a8; }
-      .section9 .wrapper button.ui.transparent:focus:enabled {
+      .section9 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section9 .wrapper .input {
@@ -850,7 +850,7 @@ i.ui {
       .section10 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #7f2636;
         background-color: #9a2e42; }
-      .section10 .wrapper button.ui.transparent:focus:enabled {
+      .section10 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section10 .wrapper .input {
@@ -912,7 +912,7 @@ i.ui {
       .section11 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #1a6888;
         background-color: #207fa6; }
-      .section11 .wrapper button.ui.transparent:focus:enabled {
+      .section11 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section11 .wrapper .input {
@@ -974,7 +974,7 @@ i.ui {
       .section12 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #165e6e;
         background-color: #1c778c; }
-      .section12 .wrapper button.ui.transparent:focus:enabled {
+      .section12 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section12 .wrapper .input {
@@ -1036,7 +1036,7 @@ i.ui {
       .section13 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #4a9d67;
         background-color: #5ab179; }
-      .section13 .wrapper button.ui.transparent:focus:enabled {
+      .section13 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #1a5fc7;
         box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section13 .wrapper .input {
@@ -1097,7 +1097,7 @@ i.ui {
       .section14 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #469443;
         background-color: #418a3e; }
-      .section14 .wrapper button.ui.transparent:focus:enabled {
+      .section14 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section14 .wrapper .input {
@@ -1156,7 +1156,7 @@ i.ui {
       .section15 .wrapper button.ui.transparent:active:enabled {
         box-shadow: inset 0 -1px 1px 0 #a2d458;
         background-color: #9bd14c; }
-      .section15 .wrapper button.ui.transparent:focus:enabled {
+      .section15 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
         border: 2px solid #0066ff;
         box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
     .section15 .wrapper .input {
