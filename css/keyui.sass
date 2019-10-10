@@ -76,7 +76,6 @@
 @mixin transparent-btn($n)
     background-color: $n
     border: 1px solid darken($n, 8%)
-    box-shadow: inset 0px 1px 0px lighten($n, 15%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 3px 0 rgba(0, 0, 0, 0.23)
     &:active
         border: 1px solid darken($n, 15%)
     &:disabled
@@ -85,7 +84,7 @@
         box-shadow: none
     @if abs(contrast($n)) < 112980
         color: lighten($n, 75%)
-        box-shadow: inset 0px 1px 0px lighten($n, 20%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 3px 0 darken(rgba($n, 0.5), 20%)
+        box-shadow: inset 0px 1px 0px lighten($n, 20%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 1px 0 darken(rgba($n, 0.11), 30%), 0 2px 2px 0 darken(rgba($n, 0.11), 30%), 0 4px 4px 0 darken(rgba($n, 0.11), 30%), 0 8px 16px 0 darken(rgba($n, 0.11), 30%)
         &:hover:enabled, &:focus:enabled
             background-color: lighten($n, 12%)
         &:active:enabled
@@ -94,6 +93,7 @@
         &:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse'])
             @include outline($n, "default")
     @else
+        box-shadow: inset 0px 1px 0px lighten($n, 20%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 1px 0 darken(rgba($n, 0.11), 30%), 0 2px 2px 0 darken(rgba($n, 0.11), 30%), 0 4px 4px 0 darken(rgba($n, 0.11), 30%), 0 8px 16px 0 darken(rgba($n, 0.11), 30%)
         color: darken($n, 60%)
         &:hover:enabled, &:focus:enabled
             background-color: darken($n, 8%)

@@ -161,7 +161,7 @@ table {
       background-color: #ffffff;
       background-color: #ffffff;
       border: 1px solid #ebebeb;
-      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 1px 0 rgba(179, 179, 179, 0.11), 0 2px 2px 0 rgba(179, 179, 179, 0.11), 0 4px 4px 0 rgba(179, 179, 179, 0.11), 0 8px 16px 0 rgba(179, 179, 179, 0.11);
       color: #666666; }
       .ui.pag.transparent button:active {
         border: 1px solid #d9d9d9; }
@@ -296,7 +296,7 @@ i.ui {
     .section1 .wrapper button.ui.transparent {
       background-color: #ffffff;
       border: 1px solid #ebebeb;
-      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 1px 0 rgba(179, 179, 179, 0.11), 0 2px 2px 0 rgba(179, 179, 179, 0.11), 0 4px 4px 0 rgba(179, 179, 179, 0.11), 0 8px 16px 0 rgba(179, 179, 179, 0.11);
       color: #666666; }
       .section1 .wrapper button.ui.transparent:active {
         border: 1px solid #d9d9d9; }
@@ -355,7 +355,7 @@ i.ui {
     .section2 .wrapper button.ui.transparent {
       background-color: #ebdfc7;
       border: 1px solid #e0cea9;
-      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 1px 0 rgba(195, 159, 86, 0.11), 0 2px 2px 0 rgba(195, 159, 86, 0.11), 0 4px 4px 0 rgba(195, 159, 86, 0.11), 0 8px 16px 0 rgba(195, 159, 86, 0.11);
       color: #5e4a22; }
       .section2 .wrapper button.ui.transparent:active {
         border: 1px solid #d7bf8f; }
@@ -414,7 +414,7 @@ i.ui {
     .section3 .wrapper button.ui.transparent {
       background-color: #bfb6a3;
       border: 1px solid #aea38b;
-      box-shadow: inset 0px 1px 0px #dedad0, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px #e9e6df, inset 0 -1px 1px 0 #685d48, 0 1px 1px 0 rgba(119, 107, 82, 0.11), 0 2px 2px 0 rgba(119, 107, 82, 0.11), 0 4px 4px 0 rgba(119, 107, 82, 0.11), 0 8px 16px 0 rgba(119, 107, 82, 0.11);
       color: #1c1a14; }
       .section3 .wrapper button.ui.transparent:active {
         border: 1px solid #a09276; }
@@ -473,9 +473,8 @@ i.ui {
     .section4 .wrapper button.ui.transparent {
       background-color: #454545;
       border: 1px solid #313131;
-      box-shadow: inset 0px 1px 0px #6b6b6b, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(18, 18, 18, 0.5); }
+      box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
       .section4 .wrapper button.ui.transparent:active {
         border: 1px solid #1f1f1f; }
       .section4 .wrapper button.ui.transparent:disabled {
@@ -535,9 +534,8 @@ i.ui {
     .section5 .wrapper button.ui.transparent {
       background-color: #bf4122;
       border: 1px solid #9c351c;
-      box-shadow: inset 0px 1px 0px #df6b4e, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(104, 36, 19, 0.5); }
+      box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 1px 0 rgba(61, 21, 11, 0.11), 0 2px 2px 0 rgba(61, 21, 11, 0.11), 0 4px 4px 0 rgba(61, 21, 11, 0.11), 0 8px 16px 0 rgba(61, 21, 11, 0.11); }
       .section5 .wrapper button.ui.transparent:active {
         border: 1px solid #7e2b16; }
       .section5 .wrapper button.ui.transparent:disabled {
@@ -597,9 +595,8 @@ i.ui {
     .section6 .wrapper button.ui.transparent {
       background-color: #cf4232;
       border: 1px solid #af3729;
-      box-shadow: inset 0px 1px 0px #de7b70, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(126, 39, 29, 0.5); }
+      box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 1px 0 rgba(84, 26, 20, 0.11), 0 2px 2px 0 rgba(84, 26, 20, 0.11), 0 4px 4px 0 rgba(84, 26, 20, 0.11), 0 8px 16px 0 rgba(84, 26, 20, 0.11); }
       .section6 .wrapper button.ui.transparent:active {
         border: 1px solid #922e22; }
       .section6 .wrapper button.ui.transparent:disabled {
@@ -659,7 +656,7 @@ i.ui {
     .section7 .wrapper button.ui.transparent {
       background-color: #eb7f23;
       border: 1px solid #d26b13;
-      box-shadow: inset 0px 1px 0px #f1a869, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px #f4b581, inset 0 -1px 1px 0 #542b08, 0 1px 1px 0 rgba(107, 55, 10, 0.11), 0 2px 2px 0 rgba(107, 55, 10, 0.11), 0 4px 4px 0 rgba(107, 55, 10, 0.11), 0 8px 16px 0 rgba(107, 55, 10, 0.11);
       color: black; }
       .section7 .wrapper button.ui.transparent:active {
         border: 1px solid #b15a10; }
@@ -718,7 +715,7 @@ i.ui {
     .section8 .wrapper button.ui.transparent {
       background-color: #fac023;
       border: 1px solid #efb005;
-      box-shadow: inset 0px 1px 0px #fcd56e, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px #fcdd87, inset 0 -1px 1px 0 #684d02, 0 1px 1px 0 rgba(129, 95, 3, 0.11), 0 2px 2px 0 rgba(129, 95, 3, 0.11), 0 4px 4px 0 rgba(129, 95, 3, 0.11), 0 8px 16px 0 rgba(129, 95, 3, 0.11);
       color: black; }
       .section8 .wrapper button.ui.transparent:active {
         border: 1px solid #cc9605; }
@@ -777,9 +774,8 @@ i.ui {
     .section9 .wrapper button.ui.transparent {
       background-color: #068675;
       border: 1px solid #045f53;
-      box-shadow: inset 0px 1px 0px #09cfb5, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(2, 36, 32, 0.5); }
+      box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
       .section9 .wrapper button.ui.transparent:active {
         border: 1px solid #033d35; }
       .section9 .wrapper button.ui.transparent:disabled {
@@ -839,9 +835,8 @@ i.ui {
     .section10 .wrapper button.ui.transparent {
       background-color: #6b202e;
       border: 1px solid #4c1720;
-      box-shadow: inset 0px 1px 0px #a63247, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(28, 9, 12, 0.5); }
+      box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
       .section10 .wrapper button.ui.transparent:active {
         border: 1px solid #300e15; }
       .section10 .wrapper button.ui.transparent:disabled {
@@ -901,9 +896,8 @@ i.ui {
     .section11 .wrapper button.ui.transparent {
       background-color: #165873;
       border: 1px solid #0f3e51;
-      box-shadow: inset 0px 1px 0px #2289b3, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(6, 22, 29, 0.5); }
+      box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
       .section11 .wrapper button.ui.transparent:active {
         border: 1px solid #0a2733; }
       .section11 .wrapper button.ui.transparent:disabled {
@@ -963,9 +957,8 @@ i.ui {
     .section12 .wrapper button.ui.transparent {
       background-color: #124c59;
       border: 1px solid #0b2f37;
-      box-shadow: inset 0px 1px 0px #1f8299, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: #eef9fc;
-      box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(1, 4, 4, 0.5); }
+      box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
       .section12 .wrapper button.ui.transparent:active {
         border: 1px solid #051619; }
       .section12 .wrapper button.ui.transparent:disabled {
@@ -1025,9 +1018,8 @@ i.ui {
     .section13 .wrapper button.ui.transparent {
       background-color: #428c5c;
       border: 1px solid #35704a;
-      box-shadow: inset 0px 1px 0px #64b681, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: white;
-      box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(33, 71, 46, 0.5); }
+      box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 1px 0 rgba(17, 36, 24, 0.11), 0 2px 2px 0 rgba(17, 36, 24, 0.11), 0 4px 4px 0 rgba(17, 36, 24, 0.11), 0 8px 16px 0 rgba(17, 36, 24, 0.11); }
       .section13 .wrapper button.ui.transparent:active {
         border: 1px solid #29583a; }
       .section13 .wrapper button.ui.transparent:disabled {
@@ -1087,7 +1079,7 @@ i.ui {
     .section14 .wrapper button.ui.transparent {
       background-color: #4ea64b;
       border: 1px solid #418a3e;
-      box-shadow: inset 0px 1px 0px #7dc37a, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px #8ecb8c, inset 0 -1px 1px 0 #142b13, 0 1px 1px 0 rgba(28, 61, 27, 0.11), 0 2px 2px 0 rgba(28, 61, 27, 0.11), 0 4px 4px 0 rgba(28, 61, 27, 0.11), 0 8px 16px 0 rgba(28, 61, 27, 0.11);
       color: black; }
       .section14 .wrapper button.ui.transparent:active {
         border: 1px solid #357133; }
@@ -1146,7 +1138,7 @@ i.ui {
     .section15 .wrapper button.ui.transparent {
       background-color: #add96c;
       border: 1px solid #9bd14c;
-      box-shadow: inset 0px 1px 0px #cfe9a9, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: inset 0px 1px 0px #daeebd, inset 0 -1px 1px 0 #52741e, 0 1px 1px 0 rgba(96, 137, 35, 0.11), 0 2px 2px 0 rgba(96, 137, 35, 0.11), 0 4px 4px 0 rgba(96, 137, 35, 0.11), 0 8px 16px 0 rgba(96, 137, 35, 0.11);
       color: #0b0f04; }
       .section15 .wrapper button.ui.transparent:active {
         border: 1px solid #8ac533; }
