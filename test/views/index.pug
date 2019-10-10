@@ -24,11 +24,16 @@ html(lang="en")
                         label Error example
                         div And this is some tip
                         input(size="45", value="")
-                    form.ui.pag.transparent
-                        button(type="button")
-                        .ui.input.transparent
-                            input
-                        span /
-                        button(type="button")
+                    .box
+                        span.text Pagination
+                        form.ui.pag.transparent
+                            button(type="button")
+                                i.ui.arrow.l
+                            .ui.test.transparent
+                                input(type="number")
+                            span /
+                            span 10
+                            button(type="button")
+                                i.ui.arrow.r
 
         script(type="module" src="./js/keyui.js")

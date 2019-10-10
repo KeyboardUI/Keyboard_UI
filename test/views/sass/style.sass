@@ -7,6 +7,12 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
         @extend %section
         height: 690px
         background-color: nth($sections, $i)
+        .text
+            @include color(nth($sections, $i))
+            font-size: 14px
+            line-height: 25px
+            font-weight: 600
+            font-family: 'Roboto', sans-serif
         .wrapper
             position: absolute
             top: 45%
@@ -35,6 +41,22 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
                     @extend %input_disabled
                 &.error
                     @include error-input(nth($sections, $i))
+            .box
+                position: relative
+                margin-top: 30px
+            .ui.pag.transparent
+                position: absolute
+                top: 50%
+                left: 50%
+                margin-right: -50%
+                transform: translate(-50%, -50%)
+                @include transparent-pag(nth($sections, $i))
+                @extend %pag
+                i.ui.arrow
+                    &.r
+                        @include arrow(nth($sections, $i), "right")
+                    &.l
+                        @include arrow(nth($sections, $i), "left")
 %section
     position: relative
     // button.ui.transparent

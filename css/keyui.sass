@@ -67,6 +67,12 @@
         @else
             border: 2px solid #ff4e27
             box-shadow: 0 0 0 2px #ffe0da
+
+@mixin color($n) 
+    @if abs(contrast($n)) < 112980
+        color: lighten($n, 75%)
+    @else
+        color: darken($n, 60%)
 //
     --------------------------
             BUTTONS
@@ -105,7 +111,7 @@
 
 %btn
     cursor: pointer
-    padding: 10px 31px
+    padding: 12px 31px
     border-radius: 3px
     font-size: 14px
     font-weight: 600
@@ -119,10 +125,10 @@
     transition: all .15s ease-in-out
     transition-property: background-color, opacity
     &:focus
-        padding: 9px 30px
+        padding: 11px 30px
         border: 2px solid rgba(255,255,255,0) //this is unbelievably hackish, what happened here?
     &:active
-        padding: 10px 31px
+        padding: 12px 31px
 
 //
     --------------------------
@@ -153,6 +159,34 @@
         @else
             color: darken($n, 60%)
 
+@mixin transparent-input2($n)
+    border: 1px solid darken($n, 15%)
+    background-color: lighten($n, 15%)
+    box-shadow: 0 0px 3px darken($n, 10%) inset
+    &:focus
+        @include outline($n, "default")
+        padding: 7px
+    @if abs(contrast($n)) < 112980
+        //dark
+        -webkit-text-fill-color: lighten($n, 65%)
+        &:hover, &:focus
+            -webkit-text-fill-color: lighten($n, 100%)
+            background-color: lighten($n, 5%)
+    @else
+        -webkit-text-fill-color: darken($n, 55%)
+        &:hover, &:focus
+            background-color: lighten($n, 5%)
+
+%label
+    font-family: $font
+    display: block
+    line-height: 25px
+    margin-left: 3px
+    font-weight: 600
+    font-size: 14px
+    & + *:not(input)
+        font-family: $font
+        font-size: 14px
 %input
     $transition: box-shadow, opacity, background-color
     input, label, select, textarea
@@ -190,6 +224,34 @@
         &::placeholder
             opacity: 0.6
     input[type=submit], select[type=submit]
+        -webkit-text-fill-color: #515876
+        color: #515876  
+
+%input2
+    $transition: box-shadow, opacity, background-color
+    font-family: $font
+    display: block
+    //margin-top: 5px
+    width: 100%
+    -webkit-text-fill-color: #8a8ea0
+    border-radius: 3px
+    padding: 8px
+    z-index: 1
+    box-sizing: border-box
+    font-size: 14px
+    outline: none
+    -webkit-transition: all .15s ease-in-out
+    -moz-transition: all .15s ease-in-out
+    -ms-transition: all .15s ease-in-out
+    -o-transition: all .15s ease-in-out
+    transition: all .15s ease-in-out
+    transition-property: $transition
+    &:focus
+        &::placeholder
+            opacity: 1
+    &::placeholder
+        opacity: 0.6
+    &[type=submit]
         -webkit-text-fill-color: #515876
         color: #515876  
 
@@ -239,49 +301,39 @@
             PAGINATION
     --------------------------
 @mixin transparent-pag($n)
-    &:focus
-        @include outline($n, "")
+    background-color: $n
+    input
+        @include transparent-input2($n)
+    &:focus:not(.error)
+        @include outline($n, "default")
     background-color: $n
     @if abs(contrast($n)) < 112980
-        color: lighten($n, 55%)
+        color: lighten($n, 75%)
         button
-            i.ui.arrow
-                border-right: 0.2em solid lighten($n, 55%)
-                border-top: 0.2em solid lighten($n, 55%)
-            &:hover, &:focus
-                background-color: lighten($n, 8%)
-            &:active
-                //box-shadow: inset 0 -1px 1px 0 lighten($n, 5%)
-                background-color: lighten($n, 8%)
+            i
+                border-right: 0.2em solid lighten($n, 55%) !important
+                border-top: 0.2em solid lighten($n, 55%) !important
     @else
-        color: darken($n, 40%)
+        color: darken($n, 60%)
         button
-            i.ui.arrow
-                border-right: 0.2em solid darken($n, 40%)
-                border-top: 0.2em solid darken($n, 40%)
-            &:hover, &:focus
-                background-color: darken($n, 8%)
-            &:active
-                //box-shadow: inset 0 -1px 1px 0 darken($n, 5%)
-                background-color: darken($n, 8%)
+            i
+                border-right: 0.2em solid darken($n, 40%) !important
+                border-top: 0.2em solid darken($n, 40%) !important
     button
-        background-color: $n
         @include transparent-btn($n)
-.ui.pag
-    display: inline-block
-    font-size: 14px
+%pag
+    *
+        display: inline-block
+    font-size: 15px
     font-weight: 600
-    font-family: 'Noto Sans', sans-serif
-    outline: none
-    user-select: none
-    padding: 2px 0
+    font-family: 'Roboto', sans-serif
     input
         width: 45px
         text-align: right
         -moz-appearance: textfield
         appearance: textfield
         margin: 0
-        padding: 8px 8px 7px
+        @extend %input2
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button  
         -webkit-appearance: none
@@ -291,47 +343,44 @@
             padding: 7px
     button
         border-radius: 3px
-        margin: 0 15px 0 15px
+        margin: 0px 15px 0px 15px
+        height: 36px
+        padding: 8px 11px
+        &:focus
+            padding: 7px 10px
+        &:active
+            padding: 8px 11px
+        @extend %btn
         i
+            pointer-events: none
             margin-bottom: 1px
-    &.transparent
-        @include transparent-pag($def)
-        button
-            //@include transparent-btn($def)
-            cursor: pointer
-            font-size: 14px
-            font-weight: 600
-            height: 36px
-            font-family: 'Noto Sans', sans-serif
-            outline: none
-            user-select: none
-            -webkit-transition: background-color .15s ease-in-out
-            -moz-transition: background-color .15s ease-in-out
-            -ms-transition: background-color .15s ease-in-out
-            -o-transition: background-color .15s ease-in-out
-            transition: background-color .15s ease-in-out
-            padding: 5px 10px
-            border: none
-            &:focus, &:active
-                padding: 8px 8px  
 //
     --------------------------
             ICONS
     --------------------------
 
-i.ui
+%icon
     display: inline-block
     font-style: normal
     position: relative
-    &.arrow
-        width: 0.4em
-        height: 0.4em
-        border-right: 0.2em solid black
-        border-top: 0.2em solid black
-        &.r
-            transform: rotate(45deg)
-        &.l
-            transform: rotate(225deg)
+
+@mixin arrow($n, $direction)
+    width: 0.4em
+    height: 0.4em
+    position: relative
+    top: 1px
+    @if abs(contrast($n)) < 112980
+        border-right: 0.2em solid lighten($n, 55%)
+        border-top: 0.2em solid lighten($n, 55%)
+    @else
+        border-right: 0.2em solid darken($n, 40%)
+        border-top: 0.2em solid darken($n, 40%)
+    @if $direction == "left"
+        transform: rotate(225deg)
+        left: 1px
+    @if $direction == "right"
+        transform: rotate(45deg)
+        right: 1px
 
 //
     --------------------------

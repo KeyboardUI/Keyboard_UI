@@ -48,9 +48,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.section1 .wrapper .wrap button.ui.transparent, .section1 .wrapper .wrap button.ui.primary, .section2 .wrapper .wrap button.ui.transparent, .section2 .wrapper .wrap button.ui.primary, .section3 .wrapper .wrap button.ui.transparent, .section3 .wrapper .wrap button.ui.primary, .section4 .wrapper .wrap button.ui.transparent, .section4 .wrapper .wrap button.ui.primary, .section5 .wrapper .wrap button.ui.transparent, .section5 .wrapper .wrap button.ui.primary, .section6 .wrapper .wrap button.ui.transparent, .section6 .wrapper .wrap button.ui.primary, .section7 .wrapper .wrap button.ui.transparent, .section7 .wrapper .wrap button.ui.primary, .section8 .wrapper .wrap button.ui.transparent, .section8 .wrapper .wrap button.ui.primary, .section9 .wrapper .wrap button.ui.transparent, .section9 .wrapper .wrap button.ui.primary, .section10 .wrapper .wrap button.ui.transparent, .section10 .wrapper .wrap button.ui.primary, .section11 .wrapper .wrap button.ui.transparent, .section11 .wrapper .wrap button.ui.primary, .section12 .wrapper .wrap button.ui.transparent, .section12 .wrapper .wrap button.ui.primary, .section13 .wrapper .wrap button.ui.transparent, .section13 .wrapper .wrap button.ui.primary, .section14 .wrapper .wrap button.ui.transparent, .section14 .wrapper .wrap button.ui.primary, .section15 .wrapper .wrap button.ui.transparent, .section15 .wrapper .wrap button.ui.primary {
+.section1 .wrapper .ui.pag.transparent button, .section2 .wrapper .ui.pag.transparent button, .section3 .wrapper .ui.pag.transparent button, .section4 .wrapper .ui.pag.transparent button, .section5 .wrapper .ui.pag.transparent button, .section6 .wrapper .ui.pag.transparent button, .section7 .wrapper .ui.pag.transparent button, .section8 .wrapper .ui.pag.transparent button, .section9 .wrapper .ui.pag.transparent button, .section10 .wrapper .ui.pag.transparent button, .section11 .wrapper .ui.pag.transparent button, .section12 .wrapper .ui.pag.transparent button, .section13 .wrapper .ui.pag.transparent button, .section14 .wrapper .ui.pag.transparent button, .section15 .wrapper .ui.pag.transparent button, .section1 .wrapper .wrap button.ui.transparent, .section1 .wrapper .wrap button.ui.primary, .section2 .wrapper .wrap button.ui.transparent, .section2 .wrapper .wrap button.ui.primary, .section3 .wrapper .wrap button.ui.transparent, .section3 .wrapper .wrap button.ui.primary, .section4 .wrapper .wrap button.ui.transparent, .section4 .wrapper .wrap button.ui.primary, .section5 .wrapper .wrap button.ui.transparent, .section5 .wrapper .wrap button.ui.primary, .section6 .wrapper .wrap button.ui.transparent, .section6 .wrapper .wrap button.ui.primary, .section7 .wrapper .wrap button.ui.transparent, .section7 .wrapper .wrap button.ui.primary, .section8 .wrapper .wrap button.ui.transparent, .section8 .wrapper .wrap button.ui.primary, .section9 .wrapper .wrap button.ui.transparent, .section9 .wrapper .wrap button.ui.primary, .section10 .wrapper .wrap button.ui.transparent, .section10 .wrapper .wrap button.ui.primary, .section11 .wrapper .wrap button.ui.transparent, .section11 .wrapper .wrap button.ui.primary, .section12 .wrapper .wrap button.ui.transparent, .section12 .wrapper .wrap button.ui.primary, .section13 .wrapper .wrap button.ui.transparent, .section13 .wrapper .wrap button.ui.primary, .section14 .wrapper .wrap button.ui.transparent, .section14 .wrapper .wrap button.ui.primary, .section15 .wrapper .wrap button.ui.transparent, .section15 .wrapper .wrap button.ui.primary {
   cursor: pointer;
-  padding: 10px 31px;
+  padding: 12px 31px;
   border-radius: 3px;
   font-size: 14px;
   font-weight: 600;
@@ -63,11 +63,11 @@ table {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   transition-property: background-color, opacity; }
-  .section1 .wrapper .wrap button.ui.transparent:focus, .section1 .wrapper .wrap button.ui.primary:focus, .section2 .wrapper .wrap button.ui.transparent:focus, .section2 .wrapper .wrap button.ui.primary:focus, .section3 .wrapper .wrap button.ui.transparent:focus, .section3 .wrapper .wrap button.ui.primary:focus, .section4 .wrapper .wrap button.ui.transparent:focus, .section4 .wrapper .wrap button.ui.primary:focus, .section5 .wrapper .wrap button.ui.transparent:focus, .section5 .wrapper .wrap button.ui.primary:focus, .section6 .wrapper .wrap button.ui.transparent:focus, .section6 .wrapper .wrap button.ui.primary:focus, .section7 .wrapper .wrap button.ui.transparent:focus, .section7 .wrapper .wrap button.ui.primary:focus, .section8 .wrapper .wrap button.ui.transparent:focus, .section8 .wrapper .wrap button.ui.primary:focus, .section9 .wrapper .wrap button.ui.transparent:focus, .section9 .wrapper .wrap button.ui.primary:focus, .section10 .wrapper .wrap button.ui.transparent:focus, .section10 .wrapper .wrap button.ui.primary:focus, .section11 .wrapper .wrap button.ui.transparent:focus, .section11 .wrapper .wrap button.ui.primary:focus, .section12 .wrapper .wrap button.ui.transparent:focus, .section12 .wrapper .wrap button.ui.primary:focus, .section13 .wrapper .wrap button.ui.transparent:focus, .section13 .wrapper .wrap button.ui.primary:focus, .section14 .wrapper .wrap button.ui.transparent:focus, .section14 .wrapper .wrap button.ui.primary:focus, .section15 .wrapper .wrap button.ui.transparent:focus, .section15 .wrapper .wrap button.ui.primary:focus {
-    padding: 9px 30px;
+  .section1 .wrapper .ui.pag.transparent button:focus, .section2 .wrapper .ui.pag.transparent button:focus, .section3 .wrapper .ui.pag.transparent button:focus, .section4 .wrapper .ui.pag.transparent button:focus, .section5 .wrapper .ui.pag.transparent button:focus, .section6 .wrapper .ui.pag.transparent button:focus, .section7 .wrapper .ui.pag.transparent button:focus, .section8 .wrapper .ui.pag.transparent button:focus, .section9 .wrapper .ui.pag.transparent button:focus, .section10 .wrapper .ui.pag.transparent button:focus, .section11 .wrapper .ui.pag.transparent button:focus, .section12 .wrapper .ui.pag.transparent button:focus, .section13 .wrapper .ui.pag.transparent button:focus, .section14 .wrapper .ui.pag.transparent button:focus, .section15 .wrapper .ui.pag.transparent button:focus, .section1 .wrapper .wrap button.ui.transparent:focus, .section1 .wrapper .wrap button.ui.primary:focus, .section2 .wrapper .wrap button.ui.transparent:focus, .section2 .wrapper .wrap button.ui.primary:focus, .section3 .wrapper .wrap button.ui.transparent:focus, .section3 .wrapper .wrap button.ui.primary:focus, .section4 .wrapper .wrap button.ui.transparent:focus, .section4 .wrapper .wrap button.ui.primary:focus, .section5 .wrapper .wrap button.ui.transparent:focus, .section5 .wrapper .wrap button.ui.primary:focus, .section6 .wrapper .wrap button.ui.transparent:focus, .section6 .wrapper .wrap button.ui.primary:focus, .section7 .wrapper .wrap button.ui.transparent:focus, .section7 .wrapper .wrap button.ui.primary:focus, .section8 .wrapper .wrap button.ui.transparent:focus, .section8 .wrapper .wrap button.ui.primary:focus, .section9 .wrapper .wrap button.ui.transparent:focus, .section9 .wrapper .wrap button.ui.primary:focus, .section10 .wrapper .wrap button.ui.transparent:focus, .section10 .wrapper .wrap button.ui.primary:focus, .section11 .wrapper .wrap button.ui.transparent:focus, .section11 .wrapper .wrap button.ui.primary:focus, .section12 .wrapper .wrap button.ui.transparent:focus, .section12 .wrapper .wrap button.ui.primary:focus, .section13 .wrapper .wrap button.ui.transparent:focus, .section13 .wrapper .wrap button.ui.primary:focus, .section14 .wrapper .wrap button.ui.transparent:focus, .section14 .wrapper .wrap button.ui.primary:focus, .section15 .wrapper .wrap button.ui.transparent:focus, .section15 .wrapper .wrap button.ui.primary:focus {
+    padding: 11px 30px;
     border: 2px solid rgba(255, 255, 255, 0); }
-  .section1 .wrapper .wrap button.ui.transparent:active, .section1 .wrapper .wrap button.ui.primary:active, .section2 .wrapper .wrap button.ui.transparent:active, .section2 .wrapper .wrap button.ui.primary:active, .section3 .wrapper .wrap button.ui.transparent:active, .section3 .wrapper .wrap button.ui.primary:active, .section4 .wrapper .wrap button.ui.transparent:active, .section4 .wrapper .wrap button.ui.primary:active, .section5 .wrapper .wrap button.ui.transparent:active, .section5 .wrapper .wrap button.ui.primary:active, .section6 .wrapper .wrap button.ui.transparent:active, .section6 .wrapper .wrap button.ui.primary:active, .section7 .wrapper .wrap button.ui.transparent:active, .section7 .wrapper .wrap button.ui.primary:active, .section8 .wrapper .wrap button.ui.transparent:active, .section8 .wrapper .wrap button.ui.primary:active, .section9 .wrapper .wrap button.ui.transparent:active, .section9 .wrapper .wrap button.ui.primary:active, .section10 .wrapper .wrap button.ui.transparent:active, .section10 .wrapper .wrap button.ui.primary:active, .section11 .wrapper .wrap button.ui.transparent:active, .section11 .wrapper .wrap button.ui.primary:active, .section12 .wrapper .wrap button.ui.transparent:active, .section12 .wrapper .wrap button.ui.primary:active, .section13 .wrapper .wrap button.ui.transparent:active, .section13 .wrapper .wrap button.ui.primary:active, .section14 .wrapper .wrap button.ui.transparent:active, .section14 .wrapper .wrap button.ui.primary:active, .section15 .wrapper .wrap button.ui.transparent:active, .section15 .wrapper .wrap button.ui.primary:active {
-    padding: 10px 31px; }
+  .section1 .wrapper .ui.pag.transparent button:active, .section2 .wrapper .ui.pag.transparent button:active, .section3 .wrapper .ui.pag.transparent button:active, .section4 .wrapper .ui.pag.transparent button:active, .section5 .wrapper .ui.pag.transparent button:active, .section6 .wrapper .ui.pag.transparent button:active, .section7 .wrapper .ui.pag.transparent button:active, .section8 .wrapper .ui.pag.transparent button:active, .section9 .wrapper .ui.pag.transparent button:active, .section10 .wrapper .ui.pag.transparent button:active, .section11 .wrapper .ui.pag.transparent button:active, .section12 .wrapper .ui.pag.transparent button:active, .section13 .wrapper .ui.pag.transparent button:active, .section14 .wrapper .ui.pag.transparent button:active, .section15 .wrapper .ui.pag.transparent button:active, .section1 .wrapper .wrap button.ui.transparent:active, .section1 .wrapper .wrap button.ui.primary:active, .section2 .wrapper .wrap button.ui.transparent:active, .section2 .wrapper .wrap button.ui.primary:active, .section3 .wrapper .wrap button.ui.transparent:active, .section3 .wrapper .wrap button.ui.primary:active, .section4 .wrapper .wrap button.ui.transparent:active, .section4 .wrapper .wrap button.ui.primary:active, .section5 .wrapper .wrap button.ui.transparent:active, .section5 .wrapper .wrap button.ui.primary:active, .section6 .wrapper .wrap button.ui.transparent:active, .section6 .wrapper .wrap button.ui.primary:active, .section7 .wrapper .wrap button.ui.transparent:active, .section7 .wrapper .wrap button.ui.primary:active, .section8 .wrapper .wrap button.ui.transparent:active, .section8 .wrapper .wrap button.ui.primary:active, .section9 .wrapper .wrap button.ui.transparent:active, .section9 .wrapper .wrap button.ui.primary:active, .section10 .wrapper .wrap button.ui.transparent:active, .section10 .wrapper .wrap button.ui.primary:active, .section11 .wrapper .wrap button.ui.transparent:active, .section11 .wrapper .wrap button.ui.primary:active, .section12 .wrapper .wrap button.ui.transparent:active, .section12 .wrapper .wrap button.ui.primary:active, .section13 .wrapper .wrap button.ui.transparent:active, .section13 .wrapper .wrap button.ui.primary:active, .section14 .wrapper .wrap button.ui.transparent:active, .section14 .wrapper .wrap button.ui.primary:active, .section15 .wrapper .wrap button.ui.transparent:active, .section15 .wrapper .wrap button.ui.primary:active {
+    padding: 12px 31px; }
 
 .section1 .wrapper .input input, .section2 .wrapper .input input, .section3 .wrapper .input input, .section4 .wrapper .input input, .section5 .wrapper .input input, .section6 .wrapper .input input, .section7 .wrapper .input input, .section8 .wrapper .input input, .section9 .wrapper .input input, .section10 .wrapper .input input, .section11 .wrapper .input input, .section12 .wrapper .input input, .section13 .wrapper .input input, .section14 .wrapper .input input, .section15 .wrapper .input input, .section1 .wrapper .input label, .section2 .wrapper .input label, .section3 .wrapper .input label, .section4 .wrapper .input label, .section5 .wrapper .input label, .section6 .wrapper .input label, .section7 .wrapper .input label, .section8 .wrapper .input label, .section9 .wrapper .input label, .section10 .wrapper .input label, .section11 .wrapper .input label, .section12 .wrapper .input label, .section13 .wrapper .input label, .section14 .wrapper .input label, .section15 .wrapper .input label, .section1 .wrapper .input select, .section2 .wrapper .input select, .section3 .wrapper .input select, .section4 .wrapper .input select, .section5 .wrapper .input select, .section6 .wrapper .input select, .section7 .wrapper .input select, .section8 .wrapper .input select, .section9 .wrapper .input select, .section10 .wrapper .input select, .section11 .wrapper .input select, .section12 .wrapper .input select, .section13 .wrapper .input select, .section14 .wrapper .input select, .section15 .wrapper .input select, .section1 .wrapper .input textarea, .section2 .wrapper .input textarea, .section3 .wrapper .input textarea, .section4 .wrapper .input textarea, .section5 .wrapper .input textarea, .section6 .wrapper .input textarea, .section7 .wrapper .input textarea, .section8 .wrapper .input textarea, .section9 .wrapper .input textarea, .section10 .wrapper .input textarea, .section11 .wrapper .input textarea, .section12 .wrapper .input textarea, .section13 .wrapper .input textarea, .section14 .wrapper .input textarea, .section15 .wrapper .input textarea {
   font-family: "Roboto";
@@ -110,6 +110,31 @@ table {
   -webkit-text-fill-color: #515876;
   color: #515876; }
 
+.section1 .wrapper .ui.pag.transparent input, .section2 .wrapper .ui.pag.transparent input, .section3 .wrapper .ui.pag.transparent input, .section4 .wrapper .ui.pag.transparent input, .section5 .wrapper .ui.pag.transparent input, .section6 .wrapper .ui.pag.transparent input, .section7 .wrapper .ui.pag.transparent input, .section8 .wrapper .ui.pag.transparent input, .section9 .wrapper .ui.pag.transparent input, .section10 .wrapper .ui.pag.transparent input, .section11 .wrapper .ui.pag.transparent input, .section12 .wrapper .ui.pag.transparent input, .section13 .wrapper .ui.pag.transparent input, .section14 .wrapper .ui.pag.transparent input, .section15 .wrapper .ui.pag.transparent input {
+  font-family: "Roboto";
+  display: block;
+  width: 100%;
+  -webkit-text-fill-color: #8a8ea0;
+  border-radius: 3px;
+  padding: 8px;
+  z-index: 1;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  transition-property: box-shadow, opacity, background-color; }
+  .section1 .wrapper .ui.pag.transparent input:focus::placeholder, .section2 .wrapper .ui.pag.transparent input:focus::placeholder, .section3 .wrapper .ui.pag.transparent input:focus::placeholder, .section4 .wrapper .ui.pag.transparent input:focus::placeholder, .section5 .wrapper .ui.pag.transparent input:focus::placeholder, .section6 .wrapper .ui.pag.transparent input:focus::placeholder, .section7 .wrapper .ui.pag.transparent input:focus::placeholder, .section8 .wrapper .ui.pag.transparent input:focus::placeholder, .section9 .wrapper .ui.pag.transparent input:focus::placeholder, .section10 .wrapper .ui.pag.transparent input:focus::placeholder, .section11 .wrapper .ui.pag.transparent input:focus::placeholder, .section12 .wrapper .ui.pag.transparent input:focus::placeholder, .section13 .wrapper .ui.pag.transparent input:focus::placeholder, .section14 .wrapper .ui.pag.transparent input:focus::placeholder, .section15 .wrapper .ui.pag.transparent input:focus::placeholder {
+    opacity: 1; }
+  .section1 .wrapper .ui.pag.transparent input::placeholder, .section2 .wrapper .ui.pag.transparent input::placeholder, .section3 .wrapper .ui.pag.transparent input::placeholder, .section4 .wrapper .ui.pag.transparent input::placeholder, .section5 .wrapper .ui.pag.transparent input::placeholder, .section6 .wrapper .ui.pag.transparent input::placeholder, .section7 .wrapper .ui.pag.transparent input::placeholder, .section8 .wrapper .ui.pag.transparent input::placeholder, .section9 .wrapper .ui.pag.transparent input::placeholder, .section10 .wrapper .ui.pag.transparent input::placeholder, .section11 .wrapper .ui.pag.transparent input::placeholder, .section12 .wrapper .ui.pag.transparent input::placeholder, .section13 .wrapper .ui.pag.transparent input::placeholder, .section14 .wrapper .ui.pag.transparent input::placeholder, .section15 .wrapper .ui.pag.transparent input::placeholder {
+    opacity: 0.6; }
+  .section1 .wrapper .ui.pag.transparent input[type=submit], .section2 .wrapper .ui.pag.transparent input[type=submit], .section3 .wrapper .ui.pag.transparent input[type=submit], .section4 .wrapper .ui.pag.transparent input[type=submit], .section5 .wrapper .ui.pag.transparent input[type=submit], .section6 .wrapper .ui.pag.transparent input[type=submit], .section7 .wrapper .ui.pag.transparent input[type=submit], .section8 .wrapper .ui.pag.transparent input[type=submit], .section9 .wrapper .ui.pag.transparent input[type=submit], .section10 .wrapper .ui.pag.transparent input[type=submit], .section11 .wrapper .ui.pag.transparent input[type=submit], .section12 .wrapper .ui.pag.transparent input[type=submit], .section13 .wrapper .ui.pag.transparent input[type=submit], .section14 .wrapper .ui.pag.transparent input[type=submit], .section15 .wrapper .ui.pag.transparent input[type=submit] {
+    -webkit-text-fill-color: #515876;
+    color: #515876; }
+
 .section1 .wrapper .input.disabled label, .section2 .wrapper .input.disabled label, .section3 .wrapper .input.disabled label, .section4 .wrapper .input.disabled label, .section5 .wrapper .input.disabled label, .section6 .wrapper .input.disabled label, .section7 .wrapper .input.disabled label, .section8 .wrapper .input.disabled label, .section9 .wrapper .input.disabled label, .section10 .wrapper .input.disabled label, .section11 .wrapper .input.disabled label, .section12 .wrapper .input.disabled label, .section13 .wrapper .input.disabled label, .section14 .wrapper .input.disabled label, .section15 .wrapper .input.disabled label, .section1 .wrapper .input.disabled div, .section2 .wrapper .input.disabled div, .section3 .wrapper .input.disabled div, .section4 .wrapper .input.disabled div, .section5 .wrapper .input.disabled div, .section6 .wrapper .input.disabled div, .section7 .wrapper .input.disabled div, .section8 .wrapper .input.disabled div, .section9 .wrapper .input.disabled div, .section10 .wrapper .input.disabled div, .section11 .wrapper .input.disabled div, .section12 .wrapper .input.disabled div, .section13 .wrapper .input.disabled div, .section14 .wrapper .input.disabled div, .section15 .wrapper .input.disabled div, .section1 .wrapper .input.disabled input, .section2 .wrapper .input.disabled input, .section3 .wrapper .input.disabled input, .section4 .wrapper .input.disabled input, .section5 .wrapper .input.disabled input, .section6 .wrapper .input.disabled input, .section7 .wrapper .input.disabled input, .section8 .wrapper .input.disabled input, .section9 .wrapper .input.disabled input, .section10 .wrapper .input.disabled input, .section11 .wrapper .input.disabled input, .section12 .wrapper .input.disabled input, .section13 .wrapper .input.disabled input, .section14 .wrapper .input.disabled input, .section15 .wrapper .input.disabled input, .section1 .wrapper .input.disabled select, .section2 .wrapper .input.disabled select, .section3 .wrapper .input.disabled select, .section4 .wrapper .input.disabled select, .section5 .wrapper .input.disabled select, .section6 .wrapper .input.disabled select, .section7 .wrapper .input.disabled select, .section8 .wrapper .input.disabled select, .section9 .wrapper .input.disabled select, .section10 .wrapper .input.disabled select, .section11 .wrapper .input.disabled select, .section12 .wrapper .input.disabled select, .section13 .wrapper .input.disabled select, .section14 .wrapper .input.disabled select, .section15 .wrapper .input.disabled select {
   opacity: 0.5;
   pointer-events: none; }
@@ -120,93 +145,50 @@ table {
   .section1 .wrapper .input.disabled input:focus, .section2 .wrapper .input.disabled input:focus, .section3 .wrapper .input.disabled input:focus, .section4 .wrapper .input.disabled input:focus, .section5 .wrapper .input.disabled input:focus, .section6 .wrapper .input.disabled input:focus, .section7 .wrapper .input.disabled input:focus, .section8 .wrapper .input.disabled input:focus, .section9 .wrapper .input.disabled input:focus, .section10 .wrapper .input.disabled input:focus, .section11 .wrapper .input.disabled input:focus, .section12 .wrapper .input.disabled input:focus, .section13 .wrapper .input.disabled input:focus, .section14 .wrapper .input.disabled input:focus, .section15 .wrapper .input.disabled input:focus, .section1 .wrapper .input.disabled input:active, .section2 .wrapper .input.disabled input:active, .section3 .wrapper .input.disabled input:active, .section4 .wrapper .input.disabled input:active, .section5 .wrapper .input.disabled input:active, .section6 .wrapper .input.disabled input:active, .section7 .wrapper .input.disabled input:active, .section8 .wrapper .input.disabled input:active, .section9 .wrapper .input.disabled input:active, .section10 .wrapper .input.disabled input:active, .section11 .wrapper .input.disabled input:active, .section12 .wrapper .input.disabled input:active, .section13 .wrapper .input.disabled input:active, .section14 .wrapper .input.disabled input:active, .section15 .wrapper .input.disabled input:active, .section1 .wrapper .input.disabled select:focus, .section2 .wrapper .input.disabled select:focus, .section3 .wrapper .input.disabled select:focus, .section4 .wrapper .input.disabled select:focus, .section5 .wrapper .input.disabled select:focus, .section6 .wrapper .input.disabled select:focus, .section7 .wrapper .input.disabled select:focus, .section8 .wrapper .input.disabled select:focus, .section9 .wrapper .input.disabled select:focus, .section10 .wrapper .input.disabled select:focus, .section11 .wrapper .input.disabled select:focus, .section12 .wrapper .input.disabled select:focus, .section13 .wrapper .input.disabled select:focus, .section14 .wrapper .input.disabled select:focus, .section15 .wrapper .input.disabled select:focus, .section1 .wrapper .input.disabled select:active, .section2 .wrapper .input.disabled select:active, .section3 .wrapper .input.disabled select:active, .section4 .wrapper .input.disabled select:active, .section5 .wrapper .input.disabled select:active, .section6 .wrapper .input.disabled select:active, .section7 .wrapper .input.disabled select:active, .section8 .wrapper .input.disabled select:active, .section9 .wrapper .input.disabled select:active, .section10 .wrapper .input.disabled select:active, .section11 .wrapper .input.disabled select:active, .section12 .wrapper .input.disabled select:active, .section13 .wrapper .input.disabled select:active, .section14 .wrapper .input.disabled select:active, .section15 .wrapper .input.disabled select:active {
     padding: 8px !important; }
 
-.ui.pag {
-  display: inline-block;
-  font-size: 14px;
+.section1 .wrapper .ui.pag.transparent, .section2 .wrapper .ui.pag.transparent, .section3 .wrapper .ui.pag.transparent, .section4 .wrapper .ui.pag.transparent, .section5 .wrapper .ui.pag.transparent, .section6 .wrapper .ui.pag.transparent, .section7 .wrapper .ui.pag.transparent, .section8 .wrapper .ui.pag.transparent, .section9 .wrapper .ui.pag.transparent, .section10 .wrapper .ui.pag.transparent, .section11 .wrapper .ui.pag.transparent, .section12 .wrapper .ui.pag.transparent, .section13 .wrapper .ui.pag.transparent, .section14 .wrapper .ui.pag.transparent, .section15 .wrapper .ui.pag.transparent {
+  font-size: 15px;
   font-weight: 600;
-  font-family: 'Noto Sans', sans-serif;
-  outline: none;
-  user-select: none;
-  padding: 2px 0; }
-  .ui.pag input {
+  font-family: 'Roboto', sans-serif; }
+  .section1 .wrapper .ui.pag.transparent *, .section2 .wrapper .ui.pag.transparent *, .section3 .wrapper .ui.pag.transparent *, .section4 .wrapper .ui.pag.transparent *, .section5 .wrapper .ui.pag.transparent *, .section6 .wrapper .ui.pag.transparent *, .section7 .wrapper .ui.pag.transparent *, .section8 .wrapper .ui.pag.transparent *, .section9 .wrapper .ui.pag.transparent *, .section10 .wrapper .ui.pag.transparent *, .section11 .wrapper .ui.pag.transparent *, .section12 .wrapper .ui.pag.transparent *, .section13 .wrapper .ui.pag.transparent *, .section14 .wrapper .ui.pag.transparent *, .section15 .wrapper .ui.pag.transparent * {
+    display: inline-block; }
+  .section1 .wrapper .ui.pag.transparent input, .section2 .wrapper .ui.pag.transparent input, .section3 .wrapper .ui.pag.transparent input, .section4 .wrapper .ui.pag.transparent input, .section5 .wrapper .ui.pag.transparent input, .section6 .wrapper .ui.pag.transparent input, .section7 .wrapper .ui.pag.transparent input, .section8 .wrapper .ui.pag.transparent input, .section9 .wrapper .ui.pag.transparent input, .section10 .wrapper .ui.pag.transparent input, .section11 .wrapper .ui.pag.transparent input, .section12 .wrapper .ui.pag.transparent input, .section13 .wrapper .ui.pag.transparent input, .section14 .wrapper .ui.pag.transparent input, .section15 .wrapper .ui.pag.transparent input {
     width: 45px;
     text-align: right;
     -moz-appearance: textfield;
     appearance: textfield;
-    margin: 0;
-    padding: 8px 8px 7px; }
-  .ui.pag input[type=number]::-webkit-inner-spin-button,
-  .ui.pag input[type=number]::-webkit-outer-spin-button {
+    margin: 0; }
+  .section1 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section2 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section3 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section4 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section5 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section6 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section7 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section8 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section9 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section10 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section11 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section12 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section13 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section14 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button, .section15 .wrapper .ui.pag.transparent input[type=number]::-webkit-inner-spin-button,
+  .section1 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section2 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section3 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section4 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section5 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section6 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section7 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section8 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section9 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section10 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section11 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section12 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section13 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section14 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button,
+  .section15 .wrapper .ui.pag.transparent input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; }
-  .ui.pag span:first-of-type {
+  .section1 .wrapper .ui.pag.transparent span:first-of-type, .section2 .wrapper .ui.pag.transparent span:first-of-type, .section3 .wrapper .ui.pag.transparent span:first-of-type, .section4 .wrapper .ui.pag.transparent span:first-of-type, .section5 .wrapper .ui.pag.transparent span:first-of-type, .section6 .wrapper .ui.pag.transparent span:first-of-type, .section7 .wrapper .ui.pag.transparent span:first-of-type, .section8 .wrapper .ui.pag.transparent span:first-of-type, .section9 .wrapper .ui.pag.transparent span:first-of-type, .section10 .wrapper .ui.pag.transparent span:first-of-type, .section11 .wrapper .ui.pag.transparent span:first-of-type, .section12 .wrapper .ui.pag.transparent span:first-of-type, .section13 .wrapper .ui.pag.transparent span:first-of-type, .section14 .wrapper .ui.pag.transparent span:first-of-type, .section15 .wrapper .ui.pag.transparent span:first-of-type {
     padding: 7px; }
-  .ui.pag button {
+  .section1 .wrapper .ui.pag.transparent button, .section2 .wrapper .ui.pag.transparent button, .section3 .wrapper .ui.pag.transparent button, .section4 .wrapper .ui.pag.transparent button, .section5 .wrapper .ui.pag.transparent button, .section6 .wrapper .ui.pag.transparent button, .section7 .wrapper .ui.pag.transparent button, .section8 .wrapper .ui.pag.transparent button, .section9 .wrapper .ui.pag.transparent button, .section10 .wrapper .ui.pag.transparent button, .section11 .wrapper .ui.pag.transparent button, .section12 .wrapper .ui.pag.transparent button, .section13 .wrapper .ui.pag.transparent button, .section14 .wrapper .ui.pag.transparent button, .section15 .wrapper .ui.pag.transparent button {
     border-radius: 3px;
-    margin: 0 15px 0 15px; }
-    .ui.pag button i {
+    margin: 0px 15px 0px 15px;
+    height: 36px;
+    padding: 8px 11px; }
+    .section1 .wrapper .ui.pag.transparent button:focus, .section2 .wrapper .ui.pag.transparent button:focus, .section3 .wrapper .ui.pag.transparent button:focus, .section4 .wrapper .ui.pag.transparent button:focus, .section5 .wrapper .ui.pag.transparent button:focus, .section6 .wrapper .ui.pag.transparent button:focus, .section7 .wrapper .ui.pag.transparent button:focus, .section8 .wrapper .ui.pag.transparent button:focus, .section9 .wrapper .ui.pag.transparent button:focus, .section10 .wrapper .ui.pag.transparent button:focus, .section11 .wrapper .ui.pag.transparent button:focus, .section12 .wrapper .ui.pag.transparent button:focus, .section13 .wrapper .ui.pag.transparent button:focus, .section14 .wrapper .ui.pag.transparent button:focus, .section15 .wrapper .ui.pag.transparent button:focus {
+      padding: 7px 10px; }
+    .section1 .wrapper .ui.pag.transparent button:active, .section2 .wrapper .ui.pag.transparent button:active, .section3 .wrapper .ui.pag.transparent button:active, .section4 .wrapper .ui.pag.transparent button:active, .section5 .wrapper .ui.pag.transparent button:active, .section6 .wrapper .ui.pag.transparent button:active, .section7 .wrapper .ui.pag.transparent button:active, .section8 .wrapper .ui.pag.transparent button:active, .section9 .wrapper .ui.pag.transparent button:active, .section10 .wrapper .ui.pag.transparent button:active, .section11 .wrapper .ui.pag.transparent button:active, .section12 .wrapper .ui.pag.transparent button:active, .section13 .wrapper .ui.pag.transparent button:active, .section14 .wrapper .ui.pag.transparent button:active, .section15 .wrapper .ui.pag.transparent button:active {
+      padding: 8px 11px; }
+    .section1 .wrapper .ui.pag.transparent button i, .section2 .wrapper .ui.pag.transparent button i, .section3 .wrapper .ui.pag.transparent button i, .section4 .wrapper .ui.pag.transparent button i, .section5 .wrapper .ui.pag.transparent button i, .section6 .wrapper .ui.pag.transparent button i, .section7 .wrapper .ui.pag.transparent button i, .section8 .wrapper .ui.pag.transparent button i, .section9 .wrapper .ui.pag.transparent button i, .section10 .wrapper .ui.pag.transparent button i, .section11 .wrapper .ui.pag.transparent button i, .section12 .wrapper .ui.pag.transparent button i, .section13 .wrapper .ui.pag.transparent button i, .section14 .wrapper .ui.pag.transparent button i, .section15 .wrapper .ui.pag.transparent button i {
+      pointer-events: none;
       margin-bottom: 1px; }
-  .ui.pag.transparent {
-    background-color: #ffffff;
-    color: #999999; }
-    .ui.pag.transparent button i.ui.arrow {
-      border-right: 0.2em solid #999999;
-      border-top: 0.2em solid #999999; }
-    .ui.pag.transparent button:hover, .ui.pag.transparent button:focus {
-      background-color: #ebebeb; }
-    .ui.pag.transparent button:active {
-      background-color: #ebebeb; }
-    .ui.pag.transparent button {
-      background-color: #ffffff;
-      background-color: #ffffff;
-      border: 1px solid #ebebeb;
-      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 1px 0 rgba(179, 179, 179, 0.11), 0 2px 2px 0 rgba(179, 179, 179, 0.11), 0 4px 4px 0 rgba(179, 179, 179, 0.11), 0 8px 16px 0 rgba(179, 179, 179, 0.11);
-      color: #666666; }
-      .ui.pag.transparent button:active {
-        border: 1px solid #d9d9d9; }
-      .ui.pag.transparent button:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .ui.pag.transparent button:hover:enabled, .ui.pag.transparent button:focus:enabled {
-        background-color: #ebebeb; }
-      .ui.pag.transparent button:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #f2f2f2;
-        background-color: #ebebeb; }
-      .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
-    .ui.pag.transparent button {
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
-      height: 36px;
-      font-family: 'Noto Sans', sans-serif;
-      outline: none;
-      user-select: none;
-      -webkit-transition: background-color .15s ease-in-out;
-      -moz-transition: background-color .15s ease-in-out;
-      -ms-transition: background-color .15s ease-in-out;
-      -o-transition: background-color .15s ease-in-out;
-      transition: background-color .15s ease-in-out;
-      padding: 5px 10px;
-      border: none; }
-      .ui.pag.transparent button:focus, .ui.pag.transparent button:active {
-        padding: 8px 8px; }
-
-i.ui {
-  display: inline-block;
-  font-style: normal;
-  position: relative; }
-  i.ui.arrow {
-    width: 0.4em;
-    height: 0.4em;
-    border-right: 0.2em solid black;
-    border-top: 0.2em solid black; }
-    i.ui.arrow.r {
-      transform: rotate(45deg); }
-    i.ui.arrow.l {
-      transform: rotate(225deg); }
 
 .ui.checkbox {
   position: relative; }
@@ -284,6 +266,12 @@ i.ui {
 .section1 {
   height: 690px;
   background-color: #ffffff; }
+  .section1 .text {
+    color: #666666;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section1 .wrapper {
     position: absolute;
     top: 45%;
@@ -363,10 +351,82 @@ i.ui {
           background-color: white; }
       .section1 .wrapper .input.error label, .section1 .wrapper .input.error label + * {
         color: #da2700; }
+    .section1 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section1 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      background-color: #ffffff;
+      color: #666666; }
+      .section1 .wrapper .ui.pag.transparent input {
+        border: 1px solid #d9d9d9;
+        background-color: white;
+        box-shadow: 0 0px 3px #e6e6e6 inset;
+        -webkit-text-fill-color: #737373; }
+        .section1 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section1 .wrapper .ui.pag.transparent input:hover, .section1 .wrapper .ui.pag.transparent input:focus {
+          background-color: white; }
+      .section1 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section1 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #999999 !important;
+        border-top: 0.2em solid #999999 !important; }
+      .section1 .wrapper .ui.pag.transparent button {
+        background-color: #ffffff;
+        border: 1px solid #ebebeb;
+        box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 1px 0 rgba(179, 179, 179, 0.11), 0 2px 2px 0 rgba(179, 179, 179, 0.11), 0 4px 4px 0 rgba(179, 179, 179, 0.11), 0 8px 16px 0 rgba(179, 179, 179, 0.11);
+        color: #666666; }
+        .section1 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #d9d9d9; }
+        .section1 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section1 .wrapper .ui.pag.transparent button:hover:enabled, .section1 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #ebebeb; }
+        .section1 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #f2f2f2;
+          background-color: #ebebeb; }
+        .section1 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section1 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #999999;
+        border-top: 0.2em solid #999999;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section1 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #999999;
+        border-top: 0.2em solid #999999;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section2 {
   height: 690px;
   background-color: #ebdfc7; }
+  .section2 .text {
+    color: #5e4a22;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section2 .wrapper {
     position: absolute;
     top: 45%;
@@ -446,10 +506,82 @@ i.ui {
           background-color: white; }
       .section2 .wrapper .input.error label, .section2 .wrapper .input.error label + * {
         color: #da2700; }
+    .section2 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section2 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #ebdfc7;
+      background-color: #ebdfc7;
+      color: #5e4a22; }
+      .section2 .wrapper .ui.pag.transparent input {
+        border: 1px solid #d7bf8f;
+        background-color: white;
+        box-shadow: 0 0px 3px #decaa1 inset;
+        -webkit-text-fill-color: #715928; }
+        .section2 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section2 .wrapper .ui.pag.transparent input:hover, .section2 .wrapper .ui.pag.transparent input:focus {
+          background-color: #f2eada; }
+      .section2 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section2 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #a9853d !important;
+        border-top: 0.2em solid #a9853d !important; }
+      .section2 .wrapper .ui.pag.transparent button {
+        background-color: #ebdfc7;
+        border: 1px solid #e0cea9;
+        box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 1px 0 rgba(195, 159, 86, 0.11), 0 2px 2px 0 rgba(195, 159, 86, 0.11), 0 4px 4px 0 rgba(195, 159, 86, 0.11), 0 8px 16px 0 rgba(195, 159, 86, 0.11);
+        color: #5e4a22; }
+        .section2 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #d7bf8f; }
+        .section2 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section2 .wrapper .ui.pag.transparent button:hover:enabled, .section2 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #e0cea9; }
+        .section2 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #e4d4b4;
+          background-color: #e0cea9; }
+        .section2 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section2 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #a9853d;
+        border-top: 0.2em solid #a9853d;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section2 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #a9853d;
+        border-top: 0.2em solid #a9853d;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section3 {
   height: 690px;
   background-color: #bfb6a3; }
+  .section3 .text {
+    color: #1c1a14;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section3 .wrapper {
     position: absolute;
     top: 45%;
@@ -529,10 +661,82 @@ i.ui {
           background-color: white; }
       .section3 .wrapper .input.error label, .section3 .wrapper .input.error label + * {
         color: #da2700; }
+    .section3 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section3 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #bfb6a3;
+      background-color: #bfb6a3;
+      color: #1c1a14; }
+      .section3 .wrapper .ui.pag.transparent input {
+        border: 1px solid #a09276;
+        background-color: #dedad0;
+        box-shadow: 0 0px 3px #aa9e85 inset;
+        -webkit-text-fill-color: #2b271e; }
+        .section3 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section3 .wrapper .ui.pag.transparent input:hover, .section3 .wrapper .ui.pag.transparent input:focus {
+          background-color: #c9c2b2; }
+      .section3 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section3 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #58503e !important;
+        border-top: 0.2em solid #58503e !important; }
+      .section3 .wrapper .ui.pag.transparent button {
+        background-color: #bfb6a3;
+        border: 1px solid #aea38b;
+        box-shadow: inset 0px 1px 0px #e9e6df, inset 0 -1px 1px 0 #685d48, 0 1px 1px 0 rgba(119, 107, 82, 0.11), 0 2px 2px 0 rgba(119, 107, 82, 0.11), 0 4px 4px 0 rgba(119, 107, 82, 0.11), 0 8px 16px 0 rgba(119, 107, 82, 0.11);
+        color: #1c1a14; }
+        .section3 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #a09276; }
+        .section3 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section3 .wrapper .ui.pag.transparent button:hover:enabled, .section3 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #aea38b; }
+        .section3 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #b5aa94;
+          background-color: #aea38b; }
+        .section3 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section3 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #58503e;
+        border-top: 0.2em solid #58503e;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section3 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #58503e;
+        border-top: 0.2em solid #58503e;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section4 {
   height: 690px;
   background-color: #454545; }
+  .section4 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section4 .wrapper {
     position: absolute;
     top: 45%;
@@ -614,10 +818,83 @@ i.ui {
           background-color: #ffe0da; }
       .section4 .wrapper .input.error label, .section4 .wrapper .input.error label + * {
         color: white; }
+    .section4 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section4 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #454545;
+      background-color: #454545;
+      color: white; }
+      .section4 .wrapper .ui.pag.transparent input {
+        border: 1px solid #1f1f1f;
+        background-color: #6b6b6b;
+        box-shadow: 0 0px 3px #2c2c2c inset;
+        -webkit-text-fill-color: #ebebeb; }
+        .section4 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section4 .wrapper .ui.pag.transparent input:hover, .section4 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #525252; }
+      .section4 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section4 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #d1d1d1 !important;
+        border-top: 0.2em solid #d1d1d1 !important; }
+      .section4 .wrapper .ui.pag.transparent button {
+        background-color: #454545;
+        border: 1px solid #313131;
+        color: white;
+        box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section4 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #1f1f1f; }
+        .section4 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section4 .wrapper .ui.pag.transparent button:hover:enabled, .section4 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #646464; }
+        .section4 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #525252;
+          background-color: #646464; }
+        .section4 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section4 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #d1d1d1;
+        border-top: 0.2em solid #d1d1d1;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section4 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #d1d1d1;
+        border-top: 0.2em solid #d1d1d1;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section5 {
   height: 690px;
   background-color: #bf4122; }
+  .section5 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section5 .wrapper {
     position: absolute;
     top: 45%;
@@ -699,10 +976,83 @@ i.ui {
           background-color: #ffe0da; }
       .section5 .wrapper .input.error label, .section5 .wrapper .input.error label + * {
         color: white; }
+    .section5 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section5 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #bf4122;
+      background-color: #bf4122;
+      color: white; }
+      .section5 .wrapper .ui.pag.transparent input {
+        border: 1px solid #7e2b16;
+        background-color: #df6b4e;
+        box-shadow: 0 0px 3px #94321a inset;
+        -webkit-text-fill-color: white; }
+        .section5 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section5 .wrapper .ui.pag.transparent input:hover, .section5 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #d54826; }
+      .section5 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section5 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #fefcfb !important;
+        border-top: 0.2em solid #fefcfb !important; }
+      .section5 .wrapper .ui.pag.transparent button {
+        background-color: #bf4122;
+        border: 1px solid #9c351c;
+        color: white;
+        box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 1px 0 rgba(61, 21, 11, 0.11), 0 2px 2px 0 rgba(61, 21, 11, 0.11), 0 4px 4px 0 rgba(61, 21, 11, 0.11), 0 8px 16px 0 rgba(61, 21, 11, 0.11); }
+        .section5 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #7e2b16; }
+        .section5 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section5 .wrapper .ui.pag.transparent button:hover:enabled, .section5 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #dd6041; }
+        .section5 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #d54826;
+          background-color: #dd6041; }
+        .section5 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section5 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #fefcfb;
+        border-top: 0.2em solid #fefcfb;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section5 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #fefcfb;
+        border-top: 0.2em solid #fefcfb;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section6 {
   height: 690px;
   background-color: #cf4232; }
+  .section6 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section6 .wrapper {
     position: absolute;
     top: 45%;
@@ -784,10 +1134,83 @@ i.ui {
           background-color: #ffe0da; }
       .section6 .wrapper .input.error label, .section6 .wrapper .input.error label + * {
         color: white; }
+    .section6 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section6 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #cf4232;
+      background-color: #cf4232;
+      color: white; }
+      .section6 .wrapper .ui.pag.transparent input {
+        border: 1px solid #922e22;
+        background-color: #de7b70;
+        box-shadow: 0 0px 3px #a73427 inset;
+        -webkit-text-fill-color: white; }
+        .section6 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section6 .wrapper .ui.pag.transparent input:hover, .section6 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #d45547; }
+      .section6 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section6 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid white !important;
+        border-top: 0.2em solid white !important; }
+      .section6 .wrapper .ui.pag.transparent button {
+        background-color: #cf4232;
+        border: 1px solid #af3729;
+        color: white;
+        box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 1px 0 rgba(84, 26, 20, 0.11), 0 2px 2px 0 rgba(84, 26, 20, 0.11), 0 4px 4px 0 rgba(84, 26, 20, 0.11), 0 8px 16px 0 rgba(84, 26, 20, 0.11); }
+        .section6 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #922e22; }
+        .section6 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section6 .wrapper .ui.pag.transparent button:hover:enabled, .section6 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #db7064; }
+        .section6 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #d45547;
+          background-color: #db7064; }
+        .section6 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section6 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid white;
+        border-top: 0.2em solid white;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section6 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid white;
+        border-top: 0.2em solid white;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section7 {
   height: 690px;
   background-color: #eb7f23; }
+  .section7 .text {
+    color: black;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section7 .wrapper {
     position: absolute;
     top: 45%;
@@ -867,10 +1290,82 @@ i.ui {
           background-color: white; }
       .section7 .wrapper .input.error label, .section7 .wrapper .input.error label + * {
         color: #da2700; }
+    .section7 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section7 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #eb7f23;
+      background-color: #eb7f23;
+      color: black; }
+      .section7 .wrapper .ui.pag.transparent input {
+        border: 1px solid #b15a10;
+        background-color: #f1a869;
+        box-shadow: 0 0px 3px #c96612 inset;
+        -webkit-text-fill-color: black; }
+        .section7 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section7 .wrapper .ui.pag.transparent input:hover, .section7 .wrapper .ui.pag.transparent input:focus {
+          background-color: #ed8d3a; }
+      .section7 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section7 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #3d1f06 !important;
+        border-top: 0.2em solid #3d1f06 !important; }
+      .section7 .wrapper .ui.pag.transparent button {
+        background-color: #eb7f23;
+        border: 1px solid #d26b13;
+        box-shadow: inset 0px 1px 0px #f4b581, inset 0 -1px 1px 0 #542b08, 0 1px 1px 0 rgba(107, 55, 10, 0.11), 0 2px 2px 0 rgba(107, 55, 10, 0.11), 0 4px 4px 0 rgba(107, 55, 10, 0.11), 0 8px 16px 0 rgba(107, 55, 10, 0.11);
+        color: black; }
+        .section7 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #b15a10; }
+        .section7 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section7 .wrapper .ui.pag.transparent button:hover:enabled, .section7 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #d26b13; }
+        .section7 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #e07214;
+          background-color: #d26b13; }
+        .section7 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section7 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #3d1f06;
+        border-top: 0.2em solid #3d1f06;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section7 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #3d1f06;
+        border-top: 0.2em solid #3d1f06;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section8 {
   height: 690px;
   background-color: #fac023; }
+  .section8 .text {
+    color: black;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section8 .wrapper {
     position: absolute;
     top: 45%;
@@ -950,10 +1445,82 @@ i.ui {
           background-color: white; }
       .section8 .wrapper .input.error label, .section8 .wrapper .input.error label + * {
         color: #da2700; }
+    .section8 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section8 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #fac023;
+      background-color: #fac023;
+      color: black; }
+      .section8 .wrapper .ui.pag.transparent input {
+        border: 1px solid #cc9605;
+        background-color: #fcd56e;
+        box-shadow: 0 0px 3px #e5a805 inset;
+        -webkit-text-fill-color: #040300; }
+        .section8 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section8 .wrapper .ui.pag.transparent input:hover, .section8 .wrapper .ui.pag.transparent input:focus {
+          background-color: #fbc73c; }
+      .section8 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section8 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #4f3a02 !important;
+        border-top: 0.2em solid #4f3a02 !important; }
+      .section8 .wrapper .ui.pag.transparent button {
+        background-color: #fac023;
+        border: 1px solid #efb005;
+        box-shadow: inset 0px 1px 0px #fcdd87, inset 0 -1px 1px 0 #684d02, 0 1px 1px 0 rgba(129, 95, 3, 0.11), 0 2px 2px 0 rgba(129, 95, 3, 0.11), 0 4px 4px 0 rgba(129, 95, 3, 0.11), 0 8px 16px 0 rgba(129, 95, 3, 0.11);
+        color: black; }
+        .section8 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #cc9605; }
+        .section8 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section8 .wrapper .ui.pag.transparent button:hover:enabled, .section8 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #efb005; }
+        .section8 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #f9b90a;
+          background-color: #efb005; }
+        .section8 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section8 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #4f3a02;
+        border-top: 0.2em solid #4f3a02;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section8 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #4f3a02;
+        border-top: 0.2em solid #4f3a02;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section9 {
   height: 690px;
   background-color: #068675; }
+  .section9 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section9 .wrapper {
     position: absolute;
     top: 45%;
@@ -1035,10 +1602,83 @@ i.ui {
           background-color: #ffe0da; }
       .section9 .wrapper .input.error label, .section9 .wrapper .input.error label + * {
         color: white; }
+    .section9 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section9 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #068675;
+      background-color: #068675;
+      color: white; }
+      .section9 .wrapper .ui.pag.transparent input {
+        border: 1px solid #033d35;
+        background-color: #09cfb5;
+        box-shadow: 0 0px 3px #04554a inset;
+        -webkit-text-fill-color: #dafdf9; }
+        .section9 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section9 .wrapper .ui.pag.transparent input:hover, .section9 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #079e8a; }
+      .section9 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section9 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #a9fbf0 !important;
+        border-top: 0.2em solid #a9fbf0 !important; }
+      .section9 .wrapper .ui.pag.transparent button {
+        background-color: #068675;
+        border: 1px solid #045f53;
+        color: white;
+        box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section9 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #033d35; }
+        .section9 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section9 .wrapper .ui.pag.transparent button:hover:enabled, .section9 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #09c1a8; }
+        .section9 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #079e8a;
+          background-color: #09c1a8; }
+        .section9 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section9 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #a9fbf0;
+        border-top: 0.2em solid #a9fbf0;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section9 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #a9fbf0;
+        border-top: 0.2em solid #a9fbf0;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section10 {
   height: 690px;
   background-color: #6b202e; }
+  .section10 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section10 .wrapper {
     position: absolute;
     top: 45%;
@@ -1120,10 +1760,83 @@ i.ui {
           background-color: #ffe0da; }
       .section10 .wrapper .input.error label, .section10 .wrapper .input.error label + * {
         color: white; }
+    .section10 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section10 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #6b202e;
+      background-color: #6b202e;
+      color: white; }
+      .section10 .wrapper .ui.pag.transparent input {
+        border: 1px solid #300e15;
+        background-color: #a63247;
+        box-shadow: 0 0px 3px #44141d inset;
+        -webkit-text-fill-color: #f6e1e5; }
+        .section10 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section10 .wrapper .ui.pag.transparent input:hover, .section10 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #7f2636; }
+      .section10 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section10 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #eab9c2 !important;
+        border-top: 0.2em solid #eab9c2 !important; }
+      .section10 .wrapper .ui.pag.transparent button {
+        background-color: #6b202e;
+        border: 1px solid #4c1720;
+        color: white;
+        box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section10 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #300e15; }
+        .section10 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section10 .wrapper .ui.pag.transparent button:hover:enabled, .section10 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #9a2e42; }
+        .section10 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #7f2636;
+          background-color: #9a2e42; }
+        .section10 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section10 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #eab9c2;
+        border-top: 0.2em solid #eab9c2;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section10 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #eab9c2;
+        border-top: 0.2em solid #eab9c2;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section11 {
   height: 690px;
   background-color: #165873; }
+  .section11 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section11 .wrapper {
     position: absolute;
     top: 45%;
@@ -1205,10 +1918,83 @@ i.ui {
           background-color: #ffe0da; }
       .section11 .wrapper .input.error label, .section11 .wrapper .input.error label + * {
         color: white; }
+    .section11 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section11 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #165873;
+      background-color: #165873;
+      color: white; }
+      .section11 .wrapper .ui.pag.transparent input {
+        border: 1px solid #0a2733;
+        background-color: #2289b3;
+        box-shadow: 0 0px 3px #0e3748 inset;
+        -webkit-text-fill-color: #dcf0f8; }
+        .section11 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section11 .wrapper .ui.pag.transparent input:hover, .section11 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #1a6888; }
+      .section11 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section11 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #b1def0 !important;
+        border-top: 0.2em solid #b1def0 !important; }
+      .section11 .wrapper .ui.pag.transparent button {
+        background-color: #165873;
+        border: 1px solid #0f3e51;
+        color: white;
+        box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section11 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #0a2733; }
+        .section11 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section11 .wrapper .ui.pag.transparent button:hover:enabled, .section11 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #207fa6; }
+        .section11 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1a6888;
+          background-color: #207fa6; }
+        .section11 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section11 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #b1def0;
+        border-top: 0.2em solid #b1def0;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section11 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #b1def0;
+        border-top: 0.2em solid #b1def0;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section12 {
   height: 690px;
   background-color: #124c59; }
+  .section12 .text {
+    color: #eef9fc;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section12 .wrapper {
     position: absolute;
     top: 45%;
@@ -1290,10 +2076,83 @@ i.ui {
           background-color: #ffe0da; }
       .section12 .wrapper .input.error label, .section12 .wrapper .input.error label + * {
         color: white; }
+    .section12 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section12 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #124c59;
+      background-color: #124c59;
+      color: #eef9fc; }
+      .section12 .wrapper .ui.pag.transparent input {
+        border: 1px solid #051619;
+        background-color: #1f8299;
+        box-shadow: 0 0px 3px #09282f inset;
+        -webkit-text-fill-color: #c4eaf3; }
+        .section12 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section12 .wrapper .ui.pag.transparent input:hover, .section12 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #165e6e; }
+      .section12 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section12 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #99dcea !important;
+        border-top: 0.2em solid #99dcea !important; }
+      .section12 .wrapper .ui.pag.transparent button {
+        background-color: #124c59;
+        border: 1px solid #0b2f37;
+        color: #eef9fc;
+        box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section12 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #051619; }
+        .section12 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section12 .wrapper .ui.pag.transparent button:hover:enabled, .section12 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #1c778c; }
+        .section12 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #165e6e;
+          background-color: #1c778c; }
+        .section12 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section12 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #99dcea;
+        border-top: 0.2em solid #99dcea;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section12 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #99dcea;
+        border-top: 0.2em solid #99dcea;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section13 {
   height: 690px;
   background-color: #428c5c; }
+  .section13 .text {
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section13 .wrapper {
     position: absolute;
     top: 45%;
@@ -1375,10 +2234,83 @@ i.ui {
           background-color: #ffe0da; }
       .section13 .wrapper .input.error label, .section13 .wrapper .input.error label + * {
         color: white; }
+    .section13 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section13 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #428c5c;
+      background-color: #428c5c;
+      color: white; }
+      .section13 .wrapper .ui.pag.transparent input {
+        border: 1px solid #29583a;
+        background-color: #64b681;
+        box-shadow: 0 0px 3px #326945 inset;
+        -webkit-text-fill-color: white; }
+        .section13 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8);
+          padding: 7px; }
+        .section13 .wrapper .ui.pag.transparent input:hover, .section13 .wrapper .ui.pag.transparent input:focus {
+          -webkit-text-fill-color: white;
+          background-color: #4a9d67; }
+      .section13 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #1a5fc7;
+        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section13 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #eff7f2 !important;
+        border-top: 0.2em solid #eff7f2 !important; }
+      .section13 .wrapper .ui.pag.transparent button {
+        background-color: #428c5c;
+        border: 1px solid #35704a;
+        color: white;
+        box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 1px 0 rgba(17, 36, 24, 0.11), 0 2px 2px 0 rgba(17, 36, 24, 0.11), 0 4px 4px 0 rgba(17, 36, 24, 0.11), 0 8px 16px 0 rgba(17, 36, 24, 0.11); }
+        .section13 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #29583a; }
+        .section13 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section13 .wrapper .ui.pag.transparent button:hover:enabled, .section13 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #5ab179; }
+        .section13 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #4a9d67;
+          background-color: #5ab179; }
+        .section13 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section13 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #eff7f2;
+        border-top: 0.2em solid #eff7f2;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section13 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #eff7f2;
+        border-top: 0.2em solid #eff7f2;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section14 {
   height: 690px;
   background-color: #4ea64b; }
+  .section14 .text {
+    color: black;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section14 .wrapper {
     position: absolute;
     top: 45%;
@@ -1458,10 +2390,82 @@ i.ui {
           background-color: white; }
       .section14 .wrapper .input.error label, .section14 .wrapper .input.error label + * {
         color: #da2700; }
+    .section14 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section14 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #4ea64b;
+      background-color: #4ea64b;
+      color: black; }
+      .section14 .wrapper .ui.pag.transparent input {
+        border: 1px solid #357133;
+        background-color: #7dc37a;
+        box-shadow: 0 0px 3px #3d833b inset;
+        -webkit-text-fill-color: black; }
+        .section14 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section14 .wrapper .ui.pag.transparent input:hover, .section14 .wrapper .ui.pag.transparent input:focus {
+          background-color: #5ab357; }
+      .section14 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section14 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #0c190c !important;
+        border-top: 0.2em solid #0c190c !important; }
+      .section14 .wrapper .ui.pag.transparent button {
+        background-color: #4ea64b;
+        border: 1px solid #418a3e;
+        box-shadow: inset 0px 1px 0px #8ecb8c, inset 0 -1px 1px 0 #142b13, 0 1px 1px 0 rgba(28, 61, 27, 0.11), 0 2px 2px 0 rgba(28, 61, 27, 0.11), 0 4px 4px 0 rgba(28, 61, 27, 0.11), 0 8px 16px 0 rgba(28, 61, 27, 0.11);
+        color: black; }
+        .section14 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #357133; }
+        .section14 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section14 .wrapper .ui.pag.transparent button:hover:enabled, .section14 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #418a3e; }
+        .section14 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #469443;
+          background-color: #418a3e; }
+        .section14 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section14 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #0c190c;
+        border-top: 0.2em solid #0c190c;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section14 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #0c190c;
+        border-top: 0.2em solid #0c190c;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section15 {
   height: 690px;
   background-color: #add96c; }
+  .section15 .text {
+    color: #0b0f04;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif; }
   .section15 .wrapper {
     position: absolute;
     top: 45%;
@@ -1541,6 +2545,72 @@ i.ui {
           background-color: white; }
       .section15 .wrapper .input.error label, .section15 .wrapper .input.error label + * {
         color: #da2700; }
+    .section15 .wrapper .box {
+      position: relative;
+      margin-top: 30px; }
+    .section15 .wrapper .ui.pag.transparent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background-color: #add96c;
+      background-color: #add96c;
+      color: #0b0f04; }
+      .section15 .wrapper .ui.pag.transparent input {
+        border: 1px solid #8ac533;
+        background-color: #cfe9a9;
+        box-shadow: 0 0px 3px #96cf43 inset;
+        -webkit-text-fill-color: #192309; }
+        .section15 .wrapper .ui.pag.transparent input:focus {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8);
+          padding: 7px; }
+        .section15 .wrapper .ui.pag.transparent input:hover, .section15 .wrapper .ui.pag.transparent input:focus {
+          background-color: #b8de80; }
+      .section15 .wrapper .ui.pag.transparent:focus:not(.error) {
+        border: 2px solid #0066ff;
+        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section15 .wrapper .ui.pag.transparent button i {
+        border-right: 0.2em solid #436019 !important;
+        border-top: 0.2em solid #436019 !important; }
+      .section15 .wrapper .ui.pag.transparent button {
+        background-color: #add96c;
+        border: 1px solid #9bd14c;
+        box-shadow: inset 0px 1px 0px #daeebd, inset 0 -1px 1px 0 #52741e, 0 1px 1px 0 rgba(96, 137, 35, 0.11), 0 2px 2px 0 rgba(96, 137, 35, 0.11), 0 4px 4px 0 rgba(96, 137, 35, 0.11), 0 8px 16px 0 rgba(96, 137, 35, 0.11);
+        color: #0b0f04; }
+        .section15 .wrapper .ui.pag.transparent button:active {
+          border: 1px solid #8ac533; }
+        .section15 .wrapper .ui.pag.transparent button:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section15 .wrapper .ui.pag.transparent button:hover:enabled, .section15 .wrapper .ui.pag.transparent button:focus:enabled {
+          background-color: #9bd14c; }
+        .section15 .wrapper .ui.pag.transparent button:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #a2d458;
+          background-color: #9bd14c; }
+        .section15 .wrapper .ui.pag.transparent button:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section15 .wrapper .ui.pag.transparent i.ui.arrow.r {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #436019;
+        border-top: 0.2em solid #436019;
+        transform: rotate(45deg);
+        right: 1px; }
+      .section15 .wrapper .ui.pag.transparent i.ui.arrow.l {
+        width: 0.4em;
+        height: 0.4em;
+        position: relative;
+        top: 1px;
+        border-right: 0.2em solid #436019;
+        border-top: 0.2em solid #436019;
+        transform: rotate(225deg);
+        left: 1px; }
 
 .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10, .section11, .section12, .section13, .section14, .section15 {
   position: relative; }
