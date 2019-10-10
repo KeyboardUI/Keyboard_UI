@@ -5,11 +5,11 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
 @for $i from 1 to length($sections) + 1
     .section#{$i}
         @extend %section
-        height: 490px
+        height: 690px
         background-color: nth($sections, $i)
         .wrapper
             position: absolute
-            top: 40%
+            top: 45%
             left: 50%
             transform: translate(-50%, -50%)
             width: 30%
