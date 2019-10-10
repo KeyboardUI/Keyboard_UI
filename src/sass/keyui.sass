@@ -78,7 +78,7 @@
     border: 1px solid darken($n, 8%)
     box-shadow: inset 0px 1px 0px lighten($n, 15%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 3px 0 rgba(0, 0, 0, 0.23)
     &:active
-        border: 2px solid darken($n, 15%)
+        border: 1px solid darken($n, 15%)
     &:disabled
         opacity: 0.5
         cursor: default
@@ -93,7 +93,6 @@
             background-color: lighten($n, 12%)
         &:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse'])
             @include outline($n, "default")
-            
     @else
         color: darken($n, 60%)
         &:hover:enabled, &:focus:enabled
@@ -120,8 +119,11 @@
     -o-transition: all .15s ease-in-out
     transition: all .15s ease-in-out
     transition-property: background-color, opacity
-    &:focus, &:active
-        padding: 9px 30px
+    &:focus
+        padding: 9px 31px
+        border: 2px solid rgba(255,255,255,0) //this is unbelievably hackish, what happened here?
+    &:active
+        padding: 10px 31px
 
 //
     --------------------------

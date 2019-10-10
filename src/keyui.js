@@ -1,9 +1,7 @@
 import whatInput from "what-input";
 
-document.addEventListener("click", () => {
+document.addEventListener("click", e => {
   if (whatInput.ask() === "mouse") {
-    console.log(whatInput.element());
-  } else if (whatInput.ask() === "keyboard") {
-    console.log("KEYBOARD");
+    if (e.target.tagName === "BUTTON") e.target.blur();
   }
 });

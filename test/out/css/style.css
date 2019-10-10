@@ -64,8 +64,11 @@ table {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   transition-property: background-color, opacity; }
-  .section1 .wrapper button.ui.transparent:focus, .section2 .wrapper button.ui.transparent:focus, .section3 .wrapper button.ui.transparent:focus, .section4 .wrapper button.ui.transparent:focus, .section5 .wrapper button.ui.transparent:focus, .section6 .wrapper button.ui.transparent:focus, .section7 .wrapper button.ui.transparent:focus, .section8 .wrapper button.ui.transparent:focus, .section9 .wrapper button.ui.transparent:focus, .section10 .wrapper button.ui.transparent:focus, .section11 .wrapper button.ui.transparent:focus, .section12 .wrapper button.ui.transparent:focus, .section13 .wrapper button.ui.transparent:focus, .section14 .wrapper button.ui.transparent:focus, .section15 .wrapper button.ui.transparent:focus, .section1 .wrapper button.ui.transparent:active, .section2 .wrapper button.ui.transparent:active, .section3 .wrapper button.ui.transparent:active, .section4 .wrapper button.ui.transparent:active, .section5 .wrapper button.ui.transparent:active, .section6 .wrapper button.ui.transparent:active, .section7 .wrapper button.ui.transparent:active, .section8 .wrapper button.ui.transparent:active, .section9 .wrapper button.ui.transparent:active, .section10 .wrapper button.ui.transparent:active, .section11 .wrapper button.ui.transparent:active, .section12 .wrapper button.ui.transparent:active, .section13 .wrapper button.ui.transparent:active, .section14 .wrapper button.ui.transparent:active, .section15 .wrapper button.ui.transparent:active {
-    padding: 9px 30px; }
+  .section1 .wrapper button.ui.transparent:focus, .section2 .wrapper button.ui.transparent:focus, .section3 .wrapper button.ui.transparent:focus, .section4 .wrapper button.ui.transparent:focus, .section5 .wrapper button.ui.transparent:focus, .section6 .wrapper button.ui.transparent:focus, .section7 .wrapper button.ui.transparent:focus, .section8 .wrapper button.ui.transparent:focus, .section9 .wrapper button.ui.transparent:focus, .section10 .wrapper button.ui.transparent:focus, .section11 .wrapper button.ui.transparent:focus, .section12 .wrapper button.ui.transparent:focus, .section13 .wrapper button.ui.transparent:focus, .section14 .wrapper button.ui.transparent:focus, .section15 .wrapper button.ui.transparent:focus {
+    padding: 9px 31px;
+    border: 2px solid rgba(255, 255, 255, 0); }
+  .section1 .wrapper button.ui.transparent:active, .section2 .wrapper button.ui.transparent:active, .section3 .wrapper button.ui.transparent:active, .section4 .wrapper button.ui.transparent:active, .section5 .wrapper button.ui.transparent:active, .section6 .wrapper button.ui.transparent:active, .section7 .wrapper button.ui.transparent:active, .section8 .wrapper button.ui.transparent:active, .section9 .wrapper button.ui.transparent:active, .section10 .wrapper button.ui.transparent:active, .section11 .wrapper button.ui.transparent:active, .section12 .wrapper button.ui.transparent:active, .section13 .wrapper button.ui.transparent:active, .section14 .wrapper button.ui.transparent:active, .section15 .wrapper button.ui.transparent:active {
+    padding: 10px 31px; }
 
 .section1 .wrapper .input input, .section2 .wrapper .input input, .section3 .wrapper .input input, .section4 .wrapper .input input, .section5 .wrapper .input input, .section6 .wrapper .input input, .section7 .wrapper .input input, .section8 .wrapper .input input, .section9 .wrapper .input input, .section10 .wrapper .input input, .section11 .wrapper .input input, .section12 .wrapper .input input, .section13 .wrapper .input input, .section14 .wrapper .input input, .section15 .wrapper .input input, .section1 .wrapper .input label, .section2 .wrapper .input label, .section3 .wrapper .input label, .section4 .wrapper .input label, .section5 .wrapper .input label, .section6 .wrapper .input label, .section7 .wrapper .input label, .section8 .wrapper .input label, .section9 .wrapper .input label, .section10 .wrapper .input label, .section11 .wrapper .input label, .section12 .wrapper .input label, .section13 .wrapper .input label, .section14 .wrapper .input label, .section15 .wrapper .input label, .section1 .wrapper .input select, .section2 .wrapper .input select, .section3 .wrapper .input select, .section4 .wrapper .input select, .section5 .wrapper .input select, .section6 .wrapper .input select, .section7 .wrapper .input select, .section8 .wrapper .input select, .section9 .wrapper .input select, .section10 .wrapper .input select, .section11 .wrapper .input select, .section12 .wrapper .input select, .section13 .wrapper .input select, .section14 .wrapper .input select, .section15 .wrapper .input select, .section1 .wrapper .input textarea, .section2 .wrapper .input textarea, .section3 .wrapper .input textarea, .section4 .wrapper .input textarea, .section5 .wrapper .input textarea, .section6 .wrapper .input textarea, .section7 .wrapper .input textarea, .section8 .wrapper .input textarea, .section9 .wrapper .input textarea, .section10 .wrapper .input textarea, .section11 .wrapper .input textarea, .section12 .wrapper .input textarea, .section13 .wrapper .input textarea, .section14 .wrapper .input textarea, .section15 .wrapper .input textarea {
   font-family: "Roboto";
@@ -161,7 +164,7 @@ table {
       box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: #666666; }
       .ui.pag.transparent button:active {
-        border: 2px solid #d9d9d9; }
+        border: 1px solid #d9d9d9; }
       .ui.pag.transparent button:disabled {
         opacity: 0.5;
         cursor: default;
@@ -296,7 +299,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: #666666; }
       .section1 .wrapper button.ui.transparent:active {
-        border: 2px solid #d9d9d9; }
+        border: 1px solid #d9d9d9; }
       .section1 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -355,7 +358,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: #5e4a22; }
       .section2 .wrapper button.ui.transparent:active {
-        border: 2px solid #d7bf8f; }
+        border: 1px solid #d7bf8f; }
       .section2 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -414,7 +417,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px #dedad0, inset 0 -1px 1px 0 #685d48, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: #1c1a14; }
       .section3 .wrapper button.ui.transparent:active {
-        border: 2px solid #a09276; }
+        border: 1px solid #a09276; }
       .section3 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -474,7 +477,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(18, 18, 18, 0.5); }
       .section4 .wrapper button.ui.transparent:active {
-        border: 2px solid #1f1f1f; }
+        border: 1px solid #1f1f1f; }
       .section4 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -536,7 +539,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 3px 0 rgba(104, 36, 19, 0.5); }
       .section5 .wrapper button.ui.transparent:active {
-        border: 2px solid #7e2b16; }
+        border: 1px solid #7e2b16; }
       .section5 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -598,7 +601,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 3px 0 rgba(126, 39, 29, 0.5); }
       .section6 .wrapper button.ui.transparent:active {
-        border: 2px solid #922e22; }
+        border: 1px solid #922e22; }
       .section6 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -659,7 +662,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px #f1a869, inset 0 -1px 1px 0 #542b08, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: black; }
       .section7 .wrapper button.ui.transparent:active {
-        border: 2px solid #b15a10; }
+        border: 1px solid #b15a10; }
       .section7 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -718,7 +721,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px #fcd56e, inset 0 -1px 1px 0 #684d02, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: black; }
       .section8 .wrapper button.ui.transparent:active {
-        border: 2px solid #cc9605; }
+        border: 1px solid #cc9605; }
       .section8 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -778,7 +781,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(2, 36, 32, 0.5); }
       .section9 .wrapper button.ui.transparent:active {
-        border: 2px solid #033d35; }
+        border: 1px solid #033d35; }
       .section9 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -840,7 +843,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(28, 9, 12, 0.5); }
       .section10 .wrapper button.ui.transparent:active {
-        border: 2px solid #300e15; }
+        border: 1px solid #300e15; }
       .section10 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -902,7 +905,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(6, 22, 29, 0.5); }
       .section11 .wrapper button.ui.transparent:active {
-        border: 2px solid #0a2733; }
+        border: 1px solid #0a2733; }
       .section11 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -964,7 +967,7 @@ i.ui {
       color: #eef9fc;
       box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 3px 0 rgba(1, 4, 4, 0.5); }
       .section12 .wrapper button.ui.transparent:active {
-        border: 2px solid #051619; }
+        border: 1px solid #051619; }
       .section12 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -1026,7 +1029,7 @@ i.ui {
       color: white;
       box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 3px 0 rgba(33, 71, 46, 0.5); }
       .section13 .wrapper button.ui.transparent:active {
-        border: 2px solid #29583a; }
+        border: 1px solid #29583a; }
       .section13 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -1087,7 +1090,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px #7dc37a, inset 0 -1px 1px 0 #142b13, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: black; }
       .section14 .wrapper button.ui.transparent:active {
-        border: 2px solid #357133; }
+        border: 1px solid #357133; }
       .section14 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
@@ -1146,7 +1149,7 @@ i.ui {
       box-shadow: inset 0px 1px 0px #cfe9a9, inset 0 -1px 1px 0 #52741e, 0 1px 3px 0 rgba(0, 0, 0, 0.23);
       color: #0b0f04; }
       .section15 .wrapper button.ui.transparent:active {
-        border: 2px solid #8ac533; }
+        border: 1px solid #8ac533; }
       .section15 .wrapper button.ui.transparent:disabled {
         opacity: 0.5;
         cursor: default;
