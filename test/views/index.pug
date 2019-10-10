@@ -10,7 +10,9 @@ html(lang="en")
         while sections <= 15 
             div(class="section" + sections++)
                 .wrapper
-                    button.ui.transparent Transparents
+                    .wrap
+                        button.ui.transparent Transparent
+                        button.ui.primary Primary
                     .ui.input.transparent
                         label Regular input with label
                         div And this is some tip
@@ -22,4 +24,16 @@ html(lang="en")
                         label Error example
                         div And this is some tip
                         input(size="45", value="")
+                    .box
+                        span.text Pagination
+                        form.ui.pag.transparent
+                            button(type="button")
+                                i.ui.arrow.l
+                            .ui.test.transparent
+                                input(type="number")
+                            span /
+                            span 10
+                            button(type="button")
+                                i.ui.arrow.r
+
         script(type="module" src="./js/keyui.js")

@@ -5,12 +5,15 @@ import browserSync from "browser-sync";
 import browserify from "browserify";
 import babel from "babelify";
 import fs from "fs";
+import patch from "gulp-apply-patch";
 const server = browserSync.create();
 
 const config = {
   src: {
     sass: "./src/sass/**/*.sass",
-    js: "./src/keyui.js"
+    js: "./src/keyui.js",
+    patch: "./patches/*.patch",
+    modules: "./node-modules"
   },
   test: {
     pug: "./test/views/*.pug",
@@ -29,6 +32,7 @@ const browser = done => {
     .transform(babel)
     .bundle()
     .pipe(fs.createWriteStream("./js/keyui.js"));
+  patch(config.src.patch, config.src.modules);
   done();
 };
 
@@ -88,5 +92,5 @@ const testSass = done => {
 };
 
 const dev = series(pugTest, testSass, srcComp);
-const watch = series(serve, observe);
+const watch = series(serve, dev, observe);
 export { dev, testSass, srcComp, watch, browser };
