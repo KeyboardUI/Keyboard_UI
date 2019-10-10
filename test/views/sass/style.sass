@@ -15,9 +15,17 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
             width: 30%
             *
                 margin: auto
-            button.ui.transparent
-                @include transparent-btn(nth($sections, $i))
-                @extend %btn
+            .wrap
+                display: block
+                *
+                    display: inline
+                    margin-left: 10px
+                button.ui.transparent
+                    @include transparent-btn(nth($sections, $i))
+                    @extend %btn
+                button.ui.primary
+                    @include transparent-btn(#0a90ef)
+                    @extend %btn
             .input
                 margin-top: 20px
                 @extend %input

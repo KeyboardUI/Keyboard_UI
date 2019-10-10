@@ -48,10 +48,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.section1 .wrapper button.ui.transparent, .section2 .wrapper button.ui.transparent, .section3 .wrapper button.ui.transparent, .section4 .wrapper button.ui.transparent, .section5 .wrapper button.ui.transparent, .section6 .wrapper button.ui.transparent, .section7 .wrapper button.ui.transparent, .section8 .wrapper button.ui.transparent, .section9 .wrapper button.ui.transparent, .section10 .wrapper button.ui.transparent, .section11 .wrapper button.ui.transparent, .section12 .wrapper button.ui.transparent, .section13 .wrapper button.ui.transparent, .section14 .wrapper button.ui.transparent, .section15 .wrapper button.ui.transparent {
+.section1 .wrapper .wrap button.ui.transparent, .section1 .wrapper .wrap button.ui.primary, .section2 .wrapper .wrap button.ui.transparent, .section2 .wrapper .wrap button.ui.primary, .section3 .wrapper .wrap button.ui.transparent, .section3 .wrapper .wrap button.ui.primary, .section4 .wrapper .wrap button.ui.transparent, .section4 .wrapper .wrap button.ui.primary, .section5 .wrapper .wrap button.ui.transparent, .section5 .wrapper .wrap button.ui.primary, .section6 .wrapper .wrap button.ui.transparent, .section6 .wrapper .wrap button.ui.primary, .section7 .wrapper .wrap button.ui.transparent, .section7 .wrapper .wrap button.ui.primary, .section8 .wrapper .wrap button.ui.transparent, .section8 .wrapper .wrap button.ui.primary, .section9 .wrapper .wrap button.ui.transparent, .section9 .wrapper .wrap button.ui.primary, .section10 .wrapper .wrap button.ui.transparent, .section10 .wrapper .wrap button.ui.primary, .section11 .wrapper .wrap button.ui.transparent, .section11 .wrapper .wrap button.ui.primary, .section12 .wrapper .wrap button.ui.transparent, .section12 .wrapper .wrap button.ui.primary, .section13 .wrapper .wrap button.ui.transparent, .section13 .wrapper .wrap button.ui.primary, .section14 .wrapper .wrap button.ui.transparent, .section14 .wrapper .wrap button.ui.primary, .section15 .wrapper .wrap button.ui.transparent, .section15 .wrapper .wrap button.ui.primary {
   cursor: pointer;
   padding: 10px 31px;
-  display: block;
   border-radius: 3px;
   font-size: 14px;
   font-weight: 600;
@@ -64,10 +63,10 @@ table {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   transition-property: background-color, opacity; }
-  .section1 .wrapper button.ui.transparent:focus, .section2 .wrapper button.ui.transparent:focus, .section3 .wrapper button.ui.transparent:focus, .section4 .wrapper button.ui.transparent:focus, .section5 .wrapper button.ui.transparent:focus, .section6 .wrapper button.ui.transparent:focus, .section7 .wrapper button.ui.transparent:focus, .section8 .wrapper button.ui.transparent:focus, .section9 .wrapper button.ui.transparent:focus, .section10 .wrapper button.ui.transparent:focus, .section11 .wrapper button.ui.transparent:focus, .section12 .wrapper button.ui.transparent:focus, .section13 .wrapper button.ui.transparent:focus, .section14 .wrapper button.ui.transparent:focus, .section15 .wrapper button.ui.transparent:focus {
-    padding: 9px 31px;
+  .section1 .wrapper .wrap button.ui.transparent:focus, .section1 .wrapper .wrap button.ui.primary:focus, .section2 .wrapper .wrap button.ui.transparent:focus, .section2 .wrapper .wrap button.ui.primary:focus, .section3 .wrapper .wrap button.ui.transparent:focus, .section3 .wrapper .wrap button.ui.primary:focus, .section4 .wrapper .wrap button.ui.transparent:focus, .section4 .wrapper .wrap button.ui.primary:focus, .section5 .wrapper .wrap button.ui.transparent:focus, .section5 .wrapper .wrap button.ui.primary:focus, .section6 .wrapper .wrap button.ui.transparent:focus, .section6 .wrapper .wrap button.ui.primary:focus, .section7 .wrapper .wrap button.ui.transparent:focus, .section7 .wrapper .wrap button.ui.primary:focus, .section8 .wrapper .wrap button.ui.transparent:focus, .section8 .wrapper .wrap button.ui.primary:focus, .section9 .wrapper .wrap button.ui.transparent:focus, .section9 .wrapper .wrap button.ui.primary:focus, .section10 .wrapper .wrap button.ui.transparent:focus, .section10 .wrapper .wrap button.ui.primary:focus, .section11 .wrapper .wrap button.ui.transparent:focus, .section11 .wrapper .wrap button.ui.primary:focus, .section12 .wrapper .wrap button.ui.transparent:focus, .section12 .wrapper .wrap button.ui.primary:focus, .section13 .wrapper .wrap button.ui.transparent:focus, .section13 .wrapper .wrap button.ui.primary:focus, .section14 .wrapper .wrap button.ui.transparent:focus, .section14 .wrapper .wrap button.ui.primary:focus, .section15 .wrapper .wrap button.ui.transparent:focus, .section15 .wrapper .wrap button.ui.primary:focus {
+    padding: 9px 30px;
     border: 2px solid rgba(255, 255, 255, 0); }
-  .section1 .wrapper button.ui.transparent:active, .section2 .wrapper button.ui.transparent:active, .section3 .wrapper button.ui.transparent:active, .section4 .wrapper button.ui.transparent:active, .section5 .wrapper button.ui.transparent:active, .section6 .wrapper button.ui.transparent:active, .section7 .wrapper button.ui.transparent:active, .section8 .wrapper button.ui.transparent:active, .section9 .wrapper button.ui.transparent:active, .section10 .wrapper button.ui.transparent:active, .section11 .wrapper button.ui.transparent:active, .section12 .wrapper button.ui.transparent:active, .section13 .wrapper button.ui.transparent:active, .section14 .wrapper button.ui.transparent:active, .section15 .wrapper button.ui.transparent:active {
+  .section1 .wrapper .wrap button.ui.transparent:active, .section1 .wrapper .wrap button.ui.primary:active, .section2 .wrapper .wrap button.ui.transparent:active, .section2 .wrapper .wrap button.ui.primary:active, .section3 .wrapper .wrap button.ui.transparent:active, .section3 .wrapper .wrap button.ui.primary:active, .section4 .wrapper .wrap button.ui.transparent:active, .section4 .wrapper .wrap button.ui.primary:active, .section5 .wrapper .wrap button.ui.transparent:active, .section5 .wrapper .wrap button.ui.primary:active, .section6 .wrapper .wrap button.ui.transparent:active, .section6 .wrapper .wrap button.ui.primary:active, .section7 .wrapper .wrap button.ui.transparent:active, .section7 .wrapper .wrap button.ui.primary:active, .section8 .wrapper .wrap button.ui.transparent:active, .section8 .wrapper .wrap button.ui.primary:active, .section9 .wrapper .wrap button.ui.transparent:active, .section9 .wrapper .wrap button.ui.primary:active, .section10 .wrapper .wrap button.ui.transparent:active, .section10 .wrapper .wrap button.ui.primary:active, .section11 .wrapper .wrap button.ui.transparent:active, .section11 .wrapper .wrap button.ui.primary:active, .section12 .wrapper .wrap button.ui.transparent:active, .section12 .wrapper .wrap button.ui.primary:active, .section13 .wrapper .wrap button.ui.transparent:active, .section13 .wrapper .wrap button.ui.primary:active, .section14 .wrapper .wrap button.ui.transparent:active, .section14 .wrapper .wrap button.ui.primary:active, .section15 .wrapper .wrap button.ui.transparent:active, .section15 .wrapper .wrap button.ui.primary:active {
     padding: 10px 31px; }
 
 .section1 .wrapper .input input, .section2 .wrapper .input input, .section3 .wrapper .input input, .section4 .wrapper .input input, .section5 .wrapper .input input, .section6 .wrapper .input input, .section7 .wrapper .input input, .section8 .wrapper .input input, .section9 .wrapper .input input, .section10 .wrapper .input input, .section11 .wrapper .input input, .section12 .wrapper .input input, .section13 .wrapper .input input, .section14 .wrapper .input input, .section15 .wrapper .input input, .section1 .wrapper .input label, .section2 .wrapper .input label, .section3 .wrapper .input label, .section4 .wrapper .input label, .section5 .wrapper .input label, .section6 .wrapper .input label, .section7 .wrapper .input label, .section8 .wrapper .input label, .section9 .wrapper .input label, .section10 .wrapper .input label, .section11 .wrapper .input label, .section12 .wrapper .input label, .section13 .wrapper .input label, .section14 .wrapper .input label, .section15 .wrapper .input label, .section1 .wrapper .input select, .section2 .wrapper .input select, .section3 .wrapper .input select, .section4 .wrapper .input select, .section5 .wrapper .input select, .section6 .wrapper .input select, .section7 .wrapper .input select, .section8 .wrapper .input select, .section9 .wrapper .input select, .section10 .wrapper .input select, .section11 .wrapper .input select, .section12 .wrapper .input select, .section13 .wrapper .input select, .section14 .wrapper .input select, .section15 .wrapper .input select, .section1 .wrapper .input textarea, .section2 .wrapper .input textarea, .section3 .wrapper .input textarea, .section4 .wrapper .input textarea, .section5 .wrapper .input textarea, .section6 .wrapper .input textarea, .section7 .wrapper .input textarea, .section8 .wrapper .input textarea, .section9 .wrapper .input textarea, .section10 .wrapper .input textarea, .section11 .wrapper .input textarea, .section12 .wrapper .input textarea, .section13 .wrapper .input textarea, .section14 .wrapper .input textarea, .section15 .wrapper .input textarea {
@@ -293,25 +292,49 @@ i.ui {
     width: 30%; }
     .section1 .wrapper * {
       margin: auto; }
-    .section1 .wrapper button.ui.transparent {
-      background-color: #ffffff;
-      border: 1px solid #ebebeb;
-      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 1px 0 rgba(179, 179, 179, 0.11), 0 2px 2px 0 rgba(179, 179, 179, 0.11), 0 4px 4px 0 rgba(179, 179, 179, 0.11), 0 8px 16px 0 rgba(179, 179, 179, 0.11);
-      color: #666666; }
-      .section1 .wrapper button.ui.transparent:active {
-        border: 1px solid #d9d9d9; }
-      .section1 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section1 .wrapper button.ui.transparent:hover:enabled, .section1 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #ebebeb; }
-      .section1 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #f2f2f2;
-        background-color: #ebebeb; }
-      .section1 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section1 .wrapper .wrap {
+      display: block; }
+      .section1 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section1 .wrapper .wrap button.ui.transparent {
+        background-color: #ffffff;
+        border: 1px solid #ebebeb;
+        box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #a6a6a6, 0 1px 1px 0 rgba(179, 179, 179, 0.11), 0 2px 2px 0 rgba(179, 179, 179, 0.11), 0 4px 4px 0 rgba(179, 179, 179, 0.11), 0 8px 16px 0 rgba(179, 179, 179, 0.11);
+        color: #666666; }
+        .section1 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #d9d9d9; }
+        .section1 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section1 .wrapper .wrap button.ui.transparent:hover:enabled, .section1 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #ebebeb; }
+        .section1 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #f2f2f2;
+          background-color: #ebebeb; }
+        .section1 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section1 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section1 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section1 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section1 .wrapper .wrap button.ui.primary:hover:enabled, .section1 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section1 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section1 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section1 .wrapper .input {
       margin-top: 20px; }
       .section1 .wrapper .input.transparent input, .section1 .wrapper .input.transparent select, .section1 .wrapper .input.transparent textarea {
@@ -352,25 +375,49 @@ i.ui {
     width: 30%; }
     .section2 .wrapper * {
       margin: auto; }
-    .section2 .wrapper button.ui.transparent {
-      background-color: #ebdfc7;
-      border: 1px solid #e0cea9;
-      box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 1px 0 rgba(195, 159, 86, 0.11), 0 2px 2px 0 rgba(195, 159, 86, 0.11), 0 4px 4px 0 rgba(195, 159, 86, 0.11), 0 8px 16px 0 rgba(195, 159, 86, 0.11);
-      color: #5e4a22; }
-      .section2 .wrapper button.ui.transparent:active {
-        border: 1px solid #d7bf8f; }
-      .section2 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section2 .wrapper button.ui.transparent:hover:enabled, .section2 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #e0cea9; }
-      .section2 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #e4d4b4;
-        background-color: #e0cea9; }
-      .section2 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section2 .wrapper .wrap {
+      display: block; }
+      .section2 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section2 .wrapper .wrap button.ui.transparent {
+        background-color: #ebdfc7;
+        border: 1px solid #e0cea9;
+        box-shadow: inset 0px 1px 0px white, inset 0 -1px 1px 0 #bc9443, 0 1px 1px 0 rgba(195, 159, 86, 0.11), 0 2px 2px 0 rgba(195, 159, 86, 0.11), 0 4px 4px 0 rgba(195, 159, 86, 0.11), 0 8px 16px 0 rgba(195, 159, 86, 0.11);
+        color: #5e4a22; }
+        .section2 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #d7bf8f; }
+        .section2 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section2 .wrapper .wrap button.ui.transparent:hover:enabled, .section2 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #e0cea9; }
+        .section2 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #e4d4b4;
+          background-color: #e0cea9; }
+        .section2 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section2 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section2 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section2 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section2 .wrapper .wrap button.ui.primary:hover:enabled, .section2 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section2 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section2 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section2 .wrapper .input {
       margin-top: 20px; }
       .section2 .wrapper .input.transparent input, .section2 .wrapper .input.transparent select, .section2 .wrapper .input.transparent textarea {
@@ -411,25 +458,49 @@ i.ui {
     width: 30%; }
     .section3 .wrapper * {
       margin: auto; }
-    .section3 .wrapper button.ui.transparent {
-      background-color: #bfb6a3;
-      border: 1px solid #aea38b;
-      box-shadow: inset 0px 1px 0px #e9e6df, inset 0 -1px 1px 0 #685d48, 0 1px 1px 0 rgba(119, 107, 82, 0.11), 0 2px 2px 0 rgba(119, 107, 82, 0.11), 0 4px 4px 0 rgba(119, 107, 82, 0.11), 0 8px 16px 0 rgba(119, 107, 82, 0.11);
-      color: #1c1a14; }
-      .section3 .wrapper button.ui.transparent:active {
-        border: 1px solid #a09276; }
-      .section3 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section3 .wrapper button.ui.transparent:hover:enabled, .section3 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #aea38b; }
-      .section3 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #b5aa94;
-        background-color: #aea38b; }
-      .section3 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section3 .wrapper .wrap {
+      display: block; }
+      .section3 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section3 .wrapper .wrap button.ui.transparent {
+        background-color: #bfb6a3;
+        border: 1px solid #aea38b;
+        box-shadow: inset 0px 1px 0px #e9e6df, inset 0 -1px 1px 0 #685d48, 0 1px 1px 0 rgba(119, 107, 82, 0.11), 0 2px 2px 0 rgba(119, 107, 82, 0.11), 0 4px 4px 0 rgba(119, 107, 82, 0.11), 0 8px 16px 0 rgba(119, 107, 82, 0.11);
+        color: #1c1a14; }
+        .section3 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #a09276; }
+        .section3 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section3 .wrapper .wrap button.ui.transparent:hover:enabled, .section3 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #aea38b; }
+        .section3 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #b5aa94;
+          background-color: #aea38b; }
+        .section3 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section3 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section3 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section3 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section3 .wrapper .wrap button.ui.primary:hover:enabled, .section3 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section3 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section3 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section3 .wrapper .input {
       margin-top: 20px; }
       .section3 .wrapper .input.transparent input, .section3 .wrapper .input.transparent select, .section3 .wrapper .input.transparent textarea {
@@ -470,25 +541,49 @@ i.ui {
     width: 30%; }
     .section4 .wrapper * {
       margin: auto; }
-    .section4 .wrapper button.ui.transparent {
-      background-color: #454545;
-      border: 1px solid #313131;
-      color: white;
-      box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
-      .section4 .wrapper button.ui.transparent:active {
-        border: 1px solid #1f1f1f; }
-      .section4 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section4 .wrapper button.ui.transparent:hover:enabled, .section4 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #646464; }
-      .section4 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #525252;
-        background-color: #646464; }
-      .section4 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section4 .wrapper .wrap {
+      display: block; }
+      .section4 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section4 .wrapper .wrap button.ui.transparent {
+        background-color: #454545;
+        border: 1px solid #313131;
+        color: white;
+        box-shadow: inset 0px 1px 0px #787878, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section4 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #1f1f1f; }
+        .section4 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section4 .wrapper .wrap button.ui.transparent:hover:enabled, .section4 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #646464; }
+        .section4 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #525252;
+          background-color: #646464; }
+        .section4 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section4 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section4 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section4 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section4 .wrapper .wrap button.ui.primary:hover:enabled, .section4 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section4 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section4 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section4 .wrapper .input {
       margin-top: 20px; }
       .section4 .wrapper .input.transparent input, .section4 .wrapper .input.transparent select, .section4 .wrapper .input.transparent textarea {
@@ -531,25 +626,49 @@ i.ui {
     width: 30%; }
     .section5 .wrapper * {
       margin: auto; }
-    .section5 .wrapper button.ui.transparent {
-      background-color: #bf4122;
-      border: 1px solid #9c351c;
-      color: white;
-      box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 1px 0 rgba(61, 21, 11, 0.11), 0 2px 2px 0 rgba(61, 21, 11, 0.11), 0 4px 4px 0 rgba(61, 21, 11, 0.11), 0 8px 16px 0 rgba(61, 21, 11, 0.11); }
-      .section5 .wrapper button.ui.transparent:active {
-        border: 1px solid #7e2b16; }
-      .section5 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section5 .wrapper button.ui.transparent:hover:enabled, .section5 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #dd6041; }
-      .section5 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #d54826;
-        background-color: #dd6041; }
-      .section5 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section5 .wrapper .wrap {
+      display: block; }
+      .section5 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section5 .wrapper .wrap button.ui.transparent {
+        background-color: #bf4122;
+        border: 1px solid #9c351c;
+        color: white;
+        box-shadow: inset 0px 1px 0px #e37d64, inset 0 -1px 1px 0 #270d07, 0 1px 1px 0 rgba(61, 21, 11, 0.11), 0 2px 2px 0 rgba(61, 21, 11, 0.11), 0 4px 4px 0 rgba(61, 21, 11, 0.11), 0 8px 16px 0 rgba(61, 21, 11, 0.11); }
+        .section5 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #7e2b16; }
+        .section5 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section5 .wrapper .wrap button.ui.transparent:hover:enabled, .section5 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #dd6041; }
+        .section5 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #d54826;
+          background-color: #dd6041; }
+        .section5 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section5 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section5 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section5 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section5 .wrapper .wrap button.ui.primary:hover:enabled, .section5 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section5 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section5 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section5 .wrapper .input {
       margin-top: 20px; }
       .section5 .wrapper .input.transparent input, .section5 .wrapper .input.transparent select, .section5 .wrapper .input.transparent textarea {
@@ -592,25 +711,49 @@ i.ui {
     width: 30%; }
     .section6 .wrapper * {
       margin: auto; }
-    .section6 .wrapper button.ui.transparent {
-      background-color: #cf4232;
-      border: 1px solid #af3729;
-      color: white;
-      box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 1px 0 rgba(84, 26, 20, 0.11), 0 2px 2px 0 rgba(84, 26, 20, 0.11), 0 4px 4px 0 rgba(84, 26, 20, 0.11), 0 8px 16px 0 rgba(84, 26, 20, 0.11); }
-      .section6 .wrapper button.ui.transparent:active {
-        border: 1px solid #922e22; }
-      .section6 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section6 .wrapper button.ui.transparent:hover:enabled, .section6 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #db7064; }
-      .section6 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #d45547;
-        background-color: #db7064; }
-      .section6 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section6 .wrapper .wrap {
+      display: block; }
+      .section6 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section6 .wrapper .wrap button.ui.transparent {
+        background-color: #cf4232;
+        border: 1px solid #af3729;
+        color: white;
+        box-shadow: inset 0px 1px 0px #e28e85, inset 0 -1px 1px 0 #40140f, 0 1px 1px 0 rgba(84, 26, 20, 0.11), 0 2px 2px 0 rgba(84, 26, 20, 0.11), 0 4px 4px 0 rgba(84, 26, 20, 0.11), 0 8px 16px 0 rgba(84, 26, 20, 0.11); }
+        .section6 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #922e22; }
+        .section6 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section6 .wrapper .wrap button.ui.transparent:hover:enabled, .section6 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #db7064; }
+        .section6 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #d45547;
+          background-color: #db7064; }
+        .section6 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section6 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section6 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section6 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section6 .wrapper .wrap button.ui.primary:hover:enabled, .section6 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section6 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section6 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section6 .wrapper .input {
       margin-top: 20px; }
       .section6 .wrapper .input.transparent input, .section6 .wrapper .input.transparent select, .section6 .wrapper .input.transparent textarea {
@@ -653,25 +796,49 @@ i.ui {
     width: 30%; }
     .section7 .wrapper * {
       margin: auto; }
-    .section7 .wrapper button.ui.transparent {
-      background-color: #eb7f23;
-      border: 1px solid #d26b13;
-      box-shadow: inset 0px 1px 0px #f4b581, inset 0 -1px 1px 0 #542b08, 0 1px 1px 0 rgba(107, 55, 10, 0.11), 0 2px 2px 0 rgba(107, 55, 10, 0.11), 0 4px 4px 0 rgba(107, 55, 10, 0.11), 0 8px 16px 0 rgba(107, 55, 10, 0.11);
-      color: black; }
-      .section7 .wrapper button.ui.transparent:active {
-        border: 1px solid #b15a10; }
-      .section7 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section7 .wrapper button.ui.transparent:hover:enabled, .section7 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #d26b13; }
-      .section7 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #e07214;
-        background-color: #d26b13; }
-      .section7 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section7 .wrapper .wrap {
+      display: block; }
+      .section7 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section7 .wrapper .wrap button.ui.transparent {
+        background-color: #eb7f23;
+        border: 1px solid #d26b13;
+        box-shadow: inset 0px 1px 0px #f4b581, inset 0 -1px 1px 0 #542b08, 0 1px 1px 0 rgba(107, 55, 10, 0.11), 0 2px 2px 0 rgba(107, 55, 10, 0.11), 0 4px 4px 0 rgba(107, 55, 10, 0.11), 0 8px 16px 0 rgba(107, 55, 10, 0.11);
+        color: black; }
+        .section7 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #b15a10; }
+        .section7 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section7 .wrapper .wrap button.ui.transparent:hover:enabled, .section7 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #d26b13; }
+        .section7 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #e07214;
+          background-color: #d26b13; }
+        .section7 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section7 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section7 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section7 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section7 .wrapper .wrap button.ui.primary:hover:enabled, .section7 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section7 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section7 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section7 .wrapper .input {
       margin-top: 20px; }
       .section7 .wrapper .input.transparent input, .section7 .wrapper .input.transparent select, .section7 .wrapper .input.transparent textarea {
@@ -712,25 +879,49 @@ i.ui {
     width: 30%; }
     .section8 .wrapper * {
       margin: auto; }
-    .section8 .wrapper button.ui.transparent {
-      background-color: #fac023;
-      border: 1px solid #efb005;
-      box-shadow: inset 0px 1px 0px #fcdd87, inset 0 -1px 1px 0 #684d02, 0 1px 1px 0 rgba(129, 95, 3, 0.11), 0 2px 2px 0 rgba(129, 95, 3, 0.11), 0 4px 4px 0 rgba(129, 95, 3, 0.11), 0 8px 16px 0 rgba(129, 95, 3, 0.11);
-      color: black; }
-      .section8 .wrapper button.ui.transparent:active {
-        border: 1px solid #cc9605; }
-      .section8 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section8 .wrapper button.ui.transparent:hover:enabled, .section8 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #efb005; }
-      .section8 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #f9b90a;
-        background-color: #efb005; }
-      .section8 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section8 .wrapper .wrap {
+      display: block; }
+      .section8 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section8 .wrapper .wrap button.ui.transparent {
+        background-color: #fac023;
+        border: 1px solid #efb005;
+        box-shadow: inset 0px 1px 0px #fcdd87, inset 0 -1px 1px 0 #684d02, 0 1px 1px 0 rgba(129, 95, 3, 0.11), 0 2px 2px 0 rgba(129, 95, 3, 0.11), 0 4px 4px 0 rgba(129, 95, 3, 0.11), 0 8px 16px 0 rgba(129, 95, 3, 0.11);
+        color: black; }
+        .section8 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #cc9605; }
+        .section8 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section8 .wrapper .wrap button.ui.transparent:hover:enabled, .section8 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #efb005; }
+        .section8 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #f9b90a;
+          background-color: #efb005; }
+        .section8 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section8 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section8 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section8 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section8 .wrapper .wrap button.ui.primary:hover:enabled, .section8 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section8 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section8 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section8 .wrapper .input {
       margin-top: 20px; }
       .section8 .wrapper .input.transparent input, .section8 .wrapper .input.transparent select, .section8 .wrapper .input.transparent textarea {
@@ -771,25 +962,49 @@ i.ui {
     width: 30%; }
     .section9 .wrapper * {
       margin: auto; }
-    .section9 .wrapper button.ui.transparent {
-      background-color: #068675;
-      border: 1px solid #045f53;
-      color: white;
-      box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
-      .section9 .wrapper button.ui.transparent:active {
-        border: 1px solid #033d35; }
-      .section9 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section9 .wrapper button.ui.transparent:hover:enabled, .section9 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #09c1a8; }
-      .section9 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #079e8a;
-        background-color: #09c1a8; }
-      .section9 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section9 .wrapper .wrap {
+      display: block; }
+      .section9 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section9 .wrapper .wrap button.ui.transparent {
+        background-color: #068675;
+        border: 1px solid #045f53;
+        color: white;
+        box-shadow: inset 0px 1px 0px #0ae8ca, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section9 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #033d35; }
+        .section9 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section9 .wrapper .wrap button.ui.transparent:hover:enabled, .section9 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #09c1a8; }
+        .section9 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #079e8a;
+          background-color: #09c1a8; }
+        .section9 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section9 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section9 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section9 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section9 .wrapper .wrap button.ui.primary:hover:enabled, .section9 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section9 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section9 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section9 .wrapper .input {
       margin-top: 20px; }
       .section9 .wrapper .input.transparent input, .section9 .wrapper .input.transparent select, .section9 .wrapper .input.transparent textarea {
@@ -832,25 +1047,49 @@ i.ui {
     width: 30%; }
     .section10 .wrapper * {
       margin: auto; }
-    .section10 .wrapper button.ui.transparent {
-      background-color: #6b202e;
-      border: 1px solid #4c1720;
-      color: white;
-      box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
-      .section10 .wrapper button.ui.transparent:active {
-        border: 1px solid #300e15; }
-      .section10 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section10 .wrapper button.ui.transparent:hover:enabled, .section10 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #9a2e42; }
-      .section10 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #7f2636;
-        background-color: #9a2e42; }
-      .section10 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section10 .wrapper .wrap {
+      display: block; }
+      .section10 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section10 .wrapper .wrap button.ui.transparent {
+        background-color: #6b202e;
+        border: 1px solid #4c1720;
+        color: white;
+        box-shadow: inset 0px 1px 0px #ba3750, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section10 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #300e15; }
+        .section10 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section10 .wrapper .wrap button.ui.transparent:hover:enabled, .section10 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #9a2e42; }
+        .section10 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #7f2636;
+          background-color: #9a2e42; }
+        .section10 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section10 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section10 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section10 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section10 .wrapper .wrap button.ui.primary:hover:enabled, .section10 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section10 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section10 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section10 .wrapper .input {
       margin-top: 20px; }
       .section10 .wrapper .input.transparent input, .section10 .wrapper .input.transparent select, .section10 .wrapper .input.transparent textarea {
@@ -893,25 +1132,49 @@ i.ui {
     width: 30%; }
     .section11 .wrapper * {
       margin: auto; }
-    .section11 .wrapper button.ui.transparent {
-      background-color: #165873;
-      border: 1px solid #0f3e51;
-      color: white;
-      box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
-      .section11 .wrapper button.ui.transparent:active {
-        border: 1px solid #0a2733; }
-      .section11 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section11 .wrapper button.ui.transparent:hover:enabled, .section11 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #207fa6; }
-      .section11 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #1a6888;
-        background-color: #207fa6; }
-      .section11 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section11 .wrapper .wrap {
+      display: block; }
+      .section11 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section11 .wrapper .wrap button.ui.transparent {
+        background-color: #165873;
+        border: 1px solid #0f3e51;
+        color: white;
+        box-shadow: inset 0px 1px 0px #269ac9, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section11 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #0a2733; }
+        .section11 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section11 .wrapper .wrap button.ui.transparent:hover:enabled, .section11 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #207fa6; }
+        .section11 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1a6888;
+          background-color: #207fa6; }
+        .section11 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section11 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section11 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section11 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section11 .wrapper .wrap button.ui.primary:hover:enabled, .section11 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section11 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section11 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section11 .wrapper .input {
       margin-top: 20px; }
       .section11 .wrapper .input.transparent input, .section11 .wrapper .input.transparent select, .section11 .wrapper .input.transparent textarea {
@@ -954,25 +1217,49 @@ i.ui {
     width: 30%; }
     .section12 .wrapper * {
       margin: auto; }
-    .section12 .wrapper button.ui.transparent {
-      background-color: #124c59;
-      border: 1px solid #0b2f37;
-      color: #eef9fc;
-      box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
-      .section12 .wrapper button.ui.transparent:active {
-        border: 1px solid #051619; }
-      .section12 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section12 .wrapper button.ui.transparent:hover:enabled, .section12 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #1c778c; }
-      .section12 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #165e6e;
-        background-color: #1c778c; }
-      .section12 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section12 .wrapper .wrap {
+      display: block; }
+      .section12 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section12 .wrapper .wrap button.ui.transparent {
+        background-color: #124c59;
+        border: 1px solid #0b2f37;
+        color: #eef9fc;
+        box-shadow: inset 0px 1px 0px #2394ae, inset 0 -1px 1px 0 black, 0 1px 1px 0 rgba(0, 0, 0, 0.11), 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 8px 16px 0 rgba(0, 0, 0, 0.11); }
+        .section12 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #051619; }
+        .section12 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section12 .wrapper .wrap button.ui.transparent:hover:enabled, .section12 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #1c778c; }
+        .section12 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #165e6e;
+          background-color: #1c778c; }
+        .section12 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section12 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section12 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section12 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section12 .wrapper .wrap button.ui.primary:hover:enabled, .section12 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section12 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section12 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section12 .wrapper .input {
       margin-top: 20px; }
       .section12 .wrapper .input.transparent input, .section12 .wrapper .input.transparent select, .section12 .wrapper .input.transparent textarea {
@@ -1015,25 +1302,49 @@ i.ui {
     width: 30%; }
     .section13 .wrapper * {
       margin: auto; }
-    .section13 .wrapper button.ui.transparent {
-      background-color: #428c5c;
-      border: 1px solid #35704a;
-      color: white;
-      box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 1px 0 rgba(17, 36, 24, 0.11), 0 2px 2px 0 rgba(17, 36, 24, 0.11), 0 4px 4px 0 rgba(17, 36, 24, 0.11), 0 8px 16px 0 rgba(17, 36, 24, 0.11); }
-      .section13 .wrapper button.ui.transparent:active {
-        border: 1px solid #29583a; }
-      .section13 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section13 .wrapper button.ui.transparent:hover:enabled, .section13 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #5ab179; }
-      .section13 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #4a9d67;
-        background-color: #5ab179; }
-      .section13 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #1a5fc7;
-        box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+    .section13 .wrapper .wrap {
+      display: block; }
+      .section13 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section13 .wrapper .wrap button.ui.transparent {
+        background-color: #428c5c;
+        border: 1px solid #35704a;
+        color: white;
+        box-shadow: inset 0px 1px 0px #76be8f, inset 0 -1px 1px 0 #09130c, 0 1px 1px 0 rgba(17, 36, 24, 0.11), 0 2px 2px 0 rgba(17, 36, 24, 0.11), 0 4px 4px 0 rgba(17, 36, 24, 0.11), 0 8px 16px 0 rgba(17, 36, 24, 0.11); }
+        .section13 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #29583a; }
+        .section13 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section13 .wrapper .wrap button.ui.transparent:hover:enabled, .section13 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #5ab179; }
+        .section13 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #4a9d67;
+          background-color: #5ab179; }
+        .section13 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
+      .section13 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section13 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section13 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section13 .wrapper .wrap button.ui.primary:hover:enabled, .section13 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section13 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section13 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section13 .wrapper .input {
       margin-top: 20px; }
       .section13 .wrapper .input.transparent input, .section13 .wrapper .input.transparent select, .section13 .wrapper .input.transparent textarea {
@@ -1076,25 +1387,49 @@ i.ui {
     width: 30%; }
     .section14 .wrapper * {
       margin: auto; }
-    .section14 .wrapper button.ui.transparent {
-      background-color: #4ea64b;
-      border: 1px solid #418a3e;
-      box-shadow: inset 0px 1px 0px #8ecb8c, inset 0 -1px 1px 0 #142b13, 0 1px 1px 0 rgba(28, 61, 27, 0.11), 0 2px 2px 0 rgba(28, 61, 27, 0.11), 0 4px 4px 0 rgba(28, 61, 27, 0.11), 0 8px 16px 0 rgba(28, 61, 27, 0.11);
-      color: black; }
-      .section14 .wrapper button.ui.transparent:active {
-        border: 1px solid #357133; }
-      .section14 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section14 .wrapper button.ui.transparent:hover:enabled, .section14 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #418a3e; }
-      .section14 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #469443;
-        background-color: #418a3e; }
-      .section14 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section14 .wrapper .wrap {
+      display: block; }
+      .section14 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section14 .wrapper .wrap button.ui.transparent {
+        background-color: #4ea64b;
+        border: 1px solid #418a3e;
+        box-shadow: inset 0px 1px 0px #8ecb8c, inset 0 -1px 1px 0 #142b13, 0 1px 1px 0 rgba(28, 61, 27, 0.11), 0 2px 2px 0 rgba(28, 61, 27, 0.11), 0 4px 4px 0 rgba(28, 61, 27, 0.11), 0 8px 16px 0 rgba(28, 61, 27, 0.11);
+        color: black; }
+        .section14 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #357133; }
+        .section14 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section14 .wrapper .wrap button.ui.transparent:hover:enabled, .section14 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #418a3e; }
+        .section14 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #469443;
+          background-color: #418a3e; }
+        .section14 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section14 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section14 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section14 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section14 .wrapper .wrap button.ui.primary:hover:enabled, .section14 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section14 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section14 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section14 .wrapper .input {
       margin-top: 20px; }
       .section14 .wrapper .input.transparent input, .section14 .wrapper .input.transparent select, .section14 .wrapper .input.transparent textarea {
@@ -1135,25 +1470,49 @@ i.ui {
     width: 30%; }
     .section15 .wrapper * {
       margin: auto; }
-    .section15 .wrapper button.ui.transparent {
-      background-color: #add96c;
-      border: 1px solid #9bd14c;
-      box-shadow: inset 0px 1px 0px #daeebd, inset 0 -1px 1px 0 #52741e, 0 1px 1px 0 rgba(96, 137, 35, 0.11), 0 2px 2px 0 rgba(96, 137, 35, 0.11), 0 4px 4px 0 rgba(96, 137, 35, 0.11), 0 8px 16px 0 rgba(96, 137, 35, 0.11);
-      color: #0b0f04; }
-      .section15 .wrapper button.ui.transparent:active {
-        border: 1px solid #8ac533; }
-      .section15 .wrapper button.ui.transparent:disabled {
-        opacity: 0.5;
-        cursor: default;
-        box-shadow: none; }
-      .section15 .wrapper button.ui.transparent:hover:enabled, .section15 .wrapper button.ui.transparent:focus:enabled {
-        background-color: #9bd14c; }
-      .section15 .wrapper button.ui.transparent:active:enabled {
-        box-shadow: inset 0 -1px 1px 0 #a2d458;
-        background-color: #9bd14c; }
-      .section15 .wrapper button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
-        border: 2px solid #0066ff;
-        box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+    .section15 .wrapper .wrap {
+      display: block; }
+      .section15 .wrapper .wrap * {
+        display: inline;
+        margin-left: 10px; }
+      .section15 .wrapper .wrap button.ui.transparent {
+        background-color: #add96c;
+        border: 1px solid #9bd14c;
+        box-shadow: inset 0px 1px 0px #daeebd, inset 0 -1px 1px 0 #52741e, 0 1px 1px 0 rgba(96, 137, 35, 0.11), 0 2px 2px 0 rgba(96, 137, 35, 0.11), 0 4px 4px 0 rgba(96, 137, 35, 0.11), 0 8px 16px 0 rgba(96, 137, 35, 0.11);
+        color: #0b0f04; }
+        .section15 .wrapper .wrap button.ui.transparent:active {
+          border: 1px solid #8ac533; }
+        .section15 .wrapper .wrap button.ui.transparent:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section15 .wrapper .wrap button.ui.transparent:hover:enabled, .section15 .wrapper .wrap button.ui.transparent:focus:enabled {
+          background-color: #9bd14c; }
+        .section15 .wrapper .wrap button.ui.transparent:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #a2d458;
+          background-color: #9bd14c; }
+        .section15 .wrapper .wrap button.ui.transparent:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #0066ff;
+          box-shadow: 0 0 0 2px rgba(165, 201, 227, 0.8); }
+      .section15 .wrapper .wrap button.ui.primary {
+        background-color: #0a90ef;
+        border: 1px solid #0878c8;
+        color: white;
+        box-shadow: inset 0px 1px 0px #66bcf9, inset 0 -1px 1px 0 #032944, 0 1px 1px 0 rgba(4, 56, 92, 0.11), 0 2px 2px 0 rgba(4, 56, 92, 0.11), 0 4px 4px 0 rgba(4, 56, 92, 0.11), 0 8px 16px 0 rgba(4, 56, 92, 0.11); }
+        .section15 .wrapper .wrap button.ui.primary:active {
+          border: 1px solid #0764a6; }
+        .section15 .wrapper .wrap button.ui.primary:disabled {
+          opacity: 0.5;
+          cursor: default;
+          box-shadow: none; }
+        .section15 .wrapper .wrap button.ui.primary:hover:enabled, .section15 .wrapper .wrap button.ui.primary:focus:enabled {
+          background-color: #3fabf7; }
+        .section15 .wrapper .wrap button.ui.primary:active:enabled {
+          box-shadow: inset 0 -1px 1px 0 #1d9cf6;
+          background-color: #3fabf7; }
+        .section15 .wrapper .wrap button.ui.primary:focus:enabled:not([data-whatintent='mouse']):not([data-whatinput='mouse']) {
+          border: 2px solid #1a5fc7;
+          box-shadow: 0 0 0 2px rgba(82, 163, 222, 0.8); }
     .section15 .wrapper .input {
       margin-top: 20px; }
       .section15 .wrapper .input.transparent input, .section15 .wrapper .input.transparent select, .section15 .wrapper .input.transparent textarea {
