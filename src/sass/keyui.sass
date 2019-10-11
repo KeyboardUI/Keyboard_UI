@@ -48,6 +48,12 @@
 @function contrast($n)
     @return round((red($n)*290) + (green($n)*587) + (blue($n)*114)/1000)
 
+@function color($n)
+    @if abs(contrast($n)) < 112980
+        @return lighten($n, 75%)
+    @else
+        @return darken($n, 60%)
+
 //
     --------------------------
             BASIC
@@ -68,7 +74,7 @@
             border: 2px solid #ff4e27
             box-shadow: 0 0 0 2px #ffe0da
 
-@mixin color($n) 
+@mixin textColor($n) 
     @if abs(contrast($n)) < 112980
         color: lighten($n, 75%)
     @else
@@ -80,6 +86,7 @@
 
 
 @mixin transparent-btn($n)
+    @include textColor($n)
     background-color: $n
     border: 1px solid darken($n, 8%)
     &:active
@@ -89,7 +96,6 @@
         cursor: default
         box-shadow: none
     @if abs(contrast($n)) < 112980
-        color: lighten($n, 75%)
         box-shadow: inset 0px 1px 0px lighten($n, 20%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 1px 0 darken(rgba($n, 0.11), 30%), 0 2px 2px 0 darken(rgba($n, 0.11), 30%), 0 4px 4px 0 darken(rgba($n, 0.11), 30%), 0 8px 16px 0 darken(rgba($n, 0.11), 30%)
         &:hover:enabled, &:focus:enabled
             background-color: lighten($n, 12%)
@@ -100,7 +106,6 @@
             @include outline($n, "default")
     @else
         box-shadow: inset 0px 1px 0px lighten($n, 20%), inset 0 -1px 1px 0 darken($n, 35%), 0 1px 1px 0 darken(rgba($n, 0.11), 30%), 0 2px 2px 0 darken(rgba($n, 0.11), 30%), 0 4px 4px 0 darken(rgba($n, 0.11), 30%), 0 8px 16px 0 darken(rgba($n, 0.11), 30%)
-        color: darken($n, 60%)
         &:hover:enabled, &:focus:enabled
             background-color: darken($n, 8%)
         &:active:enabled
@@ -118,12 +123,12 @@
     font-family: $font
     outline: none
     user-select: none
-    -webkit-transition: all .15s ease-in-out
-    -moz-transition: all .15s ease-in-out
-    -ms-transition: all .15s ease-in-out
-    -o-transition: all .15s ease-in-out
-    transition: all .15s ease-in-out
-    transition-property: background-color, opacity
+    -webkit-transition: all .08s ease-in-out
+    -moz-transition: all .08s ease-in-out
+    -ms-transition: all .08s ease-in-out
+    -o-transition: all .08s ease-in-out
+    transition: all .08s ease-in-out
+    transition-property: background-color, opacity, box-shadow
     &:focus
         padding: 11px 30px
         border: 2px solid rgba(255,255,255,0) //this is unbelievably hackish, what happened here?
@@ -136,38 +141,19 @@
     --------------------------
 
 @mixin transparent-input($n)
-    input, select, textarea
-        border: 1px solid darken($n, 15%)
-        background-color: lighten($n, 15%)
-        box-shadow: 0 0px 3px darken($n, 10%) inset
+    input
+        @include transparent-input-base($n)
         &:focus:not(.error)
             @include outline($n, "default")
             padding: 7px
-        @if abs(contrast($n)) < 112980
-            //dark
-            -webkit-text-fill-color: lighten($n, 65%)
-            &:hover, &:focus
-                -webkit-text-fill-color: lighten($n, 100%)
-                background-color: lighten($n, 5%)
-        @else
-            -webkit-text-fill-color: darken($n, 55%)
-            &:hover, &:focus
-                background-color: lighten($n, 5%)
     label, label + *
-        @if abs(contrast($n)) < 112980
-            color: lighten($n, 75%)
-        @else
-            color: darken($n, 60%)
+        @include textColor($n)
 
-@mixin transparent-input2($n)
+@mixin transparent-input-base($n)
     border: 1px solid darken($n, 15%)
     background-color: lighten($n, 15%)
-    box-shadow: 0 0px 3px darken($n, 10%) inset
-    &:focus
-        @include outline($n, "default")
-        padding: 7px
+    box-shadow: 0 0px 3px darken($n, 10%) inset      
     @if abs(contrast($n)) < 112980
-        //dark
         -webkit-text-fill-color: lighten($n, 65%)
         &:hover, &:focus
             -webkit-text-fill-color: lighten($n, 100%)
@@ -187,12 +173,12 @@
     & + *:not(input)
         font-family: $font
         font-size: 14px
+
 %input
     $transition: box-shadow, opacity, background-color
-    input, label, select, textarea
+    label, label + *:not(input)
         font-family: $font
         display: block
-    label, label + *:not(input)
         line-height: 25px
         margin-left: 3px
     label
@@ -201,33 +187,13 @@
         + *:not(input)
             font-family: $font
             font-size: 14px
-    input, select, textarea
-        margin-top: 5px
-        width: 100%
-        -webkit-text-fill-color: #8a8ea0
-        border-radius: 3px
-        padding: 8px
-        position: relative
-        z-index: 1
-        box-sizing: border-box
-        font-size: 14px
-        outline: none
-        -webkit-transition: all .15s ease-in-out
-        -moz-transition: all .15s ease-in-out
-        -ms-transition: all .15s ease-in-out
-        -o-transition: all .15s ease-in-out
-        transition: all .15s ease-in-out
-        transition-property: $transition
-        &:focus
-            &::placeholder
-                opacity: 1
-        &::placeholder
-            opacity: 0.6
+    input
+        @extend %input_base
     input[type=submit], select[type=submit]
         -webkit-text-fill-color: #515876
         color: #515876  
 
-%input2
+%input_base
     $transition: box-shadow, opacity, background-color
     font-family: $font
     display: block
@@ -247,6 +213,8 @@
     transition: all .15s ease-in-out
     transition-property: $transition
     &:focus
+        @include outline($def, "default")
+        padding: 7px
         &::placeholder
             opacity: 1
     &::placeholder
@@ -303,18 +271,17 @@
 @mixin transparent-pag($n)
     background-color: $n
     input
-        @include transparent-input2($n)
+        @include transparent-input-base($n)
     &:focus:not(.error)
         @include outline($n, "default")
     background-color: $n
+    @include textColor($n)
     @if abs(contrast($n)) < 112980
-        color: lighten($n, 75%)
         button
             i
                 border-right: 0.2em solid lighten($n, 55%) !important
                 border-top: 0.2em solid lighten($n, 55%) !important
     @else
-        color: darken($n, 60%)
         button
             i
                 border-right: 0.2em solid darken($n, 40%) !important
@@ -333,7 +300,7 @@
         -moz-appearance: textfield
         appearance: textfield
         margin: 0
-        @extend %input2
+        @extend %input_base
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button  
         -webkit-appearance: none
@@ -386,19 +353,55 @@
     --------------------------
             SELECT
     --------------------------
-// .ui.select
-//     &:focus
-//         @include outline($def)
-//     select, option
-//         cursor: pointer
-
+@mixin transparent-select($n)
+    label, label + *:not(input)
+        @include textColor($n)
+    select 
+        @include textColor($n)
+        @include transparent-btn($n)
+        -webkit-text-fill-color: color($n)
+        cursor: pointer
+        padding: 8px 10px
+        width: 100%
+        border-radius: 3px
+        font-size: 14px
+        font-weight: 400
+        font-family: $font
+        outline: none
+        user-select: none
+        -webkit-transition: all .15s ease-in-out
+        -moz-transition: all .15s ease-in-out
+        -ms-transition: all .15s ease-in-out
+        -o-transition: all .15s ease-in-out
+        transition: all .15s ease-in-out
+        transition-property: background-color, opacity
+        &:focus
+            padding: 7px 9px
+            border: 2px solid rgba(255,255,255,0)
+        &:active
+            padding: 7px 9px
+        
+%select
+    $transition: box-shadow, opacity, background-color
+    label, label + *:not(input)
+        font-family: $font
+        display: block
+        line-height: 25px
+        margin-left: 3px
+    label
+        font-weight: 600
+        font-size: 14px
+        + *:not(input)
+            font-family: $font
+            font-size: 14px
+    select
+        @extend %input_base
 
 //
     --------------------------
             CHECKBOXES
     --------------------------
-.ui.checkbox
-    position: relative
+@mixin transparent-checkbox($n)
     input[type="checkbox"]
         position: absolute
         opacity: 0
@@ -408,19 +411,20 @@
         width: 21px
         height: 21px
         margin: 0
-        z-index: 1
+        z-index: 3
         + label
-            text-indent: 28px
-            text-align: justify
+            padding-left: 28px
+            @include textColor($n)
             display: block
             font-weight: 500
             &::before
-                @include transparent-input($def)
+                @include transparent-input-base($n)
                 position: absolute
+                left: 0px
                 top: 2px
-                left: 0
                 width: 17px
                 height: 17px
+                padding: 1px
                 content: ''
                 border-radius: 3px
             &::after
@@ -428,19 +432,21 @@
                 opacity: 0
                 background-color: transparent
                 position: absolute
-                top: 4px
                 left: 7px
+                top: 4px
                 width: 4px
-                border-bottom: 4px solid #0066ff
+                border-bottom: 3px solid $blue
                 height: 10px
-                border-right: 4px solid $blue
+                border-right: 3px solid $blue
                 transform: rotate(45deg)
                 -o-transform: rotate(45deg)
                 -ms-transform: rotate(45deg)
                 -webkit-transform: rotate(45deg)
         &:focus
             + label::before
-                @include outline($def, "")
+                @include outline($n, "default")
+                left: -1px
+                top: 1px
         &:checked
             + label::after
                 opacity: 1
@@ -448,18 +454,18 @@
     --------------------------
             ERRORS
     --------------------------
-.ui .error
-    position: relative
-    p
-        color: red !important
-        text-align: initial
-        text-indent: initial
-        padding: 0 3px 8px 3px
-    animation: append .15s ease-in-out
-    @keyframes append
-        0%
-            opacity: 0
-            height: 0
-        100%
-            opacity: 1
-            height: 30px
+// .ui .error
+//     position: relative
+//     p
+//         color: red !important
+//         text-align: initial
+//         text-indent: initial
+//         padding: 0 3px 8px 3px
+//     animation: append .15s ease-in-out
+//     @keyframes append
+//         0%
+//             opacity: 0
+//             height: 0
+//         100%
+//             opacity: 1
+//             height: 30px
