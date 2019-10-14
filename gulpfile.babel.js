@@ -24,7 +24,8 @@ const config = {
   out: {
     css: "./css",
     js: "./js"
-  }
+  },
+  build: "./dist"
 };
 
 const browser = done => {
@@ -53,19 +54,19 @@ const serve = done => {
 
 const observe = () => {
   gulp
-    .watch(config.src.sass, series(reload, pugTest, testSass, srcComp, browser))
+    .watch(config.src.sass, series(pugTest, testSass, srcComp, browser, reload))
     .on("change", browserSync.reload);
   gulp
-    .watch(config.test.pug, series(reload, pugTest, testSass, srcComp, browser))
+    .watch(config.test.pug, series(pugTest, testSass, srcComp, browser, reload))
     .on("change", browserSync.reload);
   gulp
     .watch(
       config.test.sass,
-      series(reload, pugTest, testSass, srcComp, browser)
+      series(pugTest, testSass, srcComp, browser, reload)
     )
     .on("change", browserSync.reload);
   gulp
-    .watch(config.src.js, series(reload, pugTest, testSass, srcComp, browser))
+    .watch(config.src.js, series(pugTest, testSass, srcComp, browser, reload))
     .on("change", browserSync.reload);
 };
 
@@ -91,6 +92,14 @@ const testSass = done => {
   done();
 };
 
+const build = done => {
+  src(config.src.sass).pipe(dest(config.build));
+  browserify(config.src.js, { debug: true })
+    .transform(babel)
+    .bundle()
+    .pipe(fs.createWriteStream("./dist/keyui.js"));
+  done();
+};
 const dev = series(pugTest, testSass, srcComp);
 const watch = series(serve, dev, observe);
-export { dev, testSass, srcComp, watch, browser };
+export { dev, testSass, srcComp, watch, browser, build };

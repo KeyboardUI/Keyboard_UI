@@ -13,6 +13,14 @@ html(lang="en")
                     .wrap
                         button.ui.transparent Transparent
                         button.ui.primary Primary
+                    .ui.select.transparent
+                        label Basic select dropdown
+                        div This is regulard select input
+                        select
+                            option Option 1
+                            option Option 2
+                            option Option 3
+                            option Option 4
                     .ui.input.transparent
                         label Regular input with label
                         div And this is some tip
@@ -35,5 +43,8 @@ html(lang="en")
                             span 10
                             button(type="button")
                                 i.ui.arrow.r
+                    .ui.input.checkbox
+                        input(type="checkbox" tabindex="0" checked)
+                        label Checkbox
 
         script(type="module" src="./js/keyui.js")

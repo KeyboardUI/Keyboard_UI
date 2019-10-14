@@ -8,7 +8,7 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
         height: 690px
         background-color: nth($sections, $i)
         .text
-            @include color(nth($sections, $i))
+            @include textColor(nth($sections, $i))
             font-size: 14px
             line-height: 25px
             font-weight: 600
@@ -41,6 +41,11 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
                     @extend %input_disabled
                 &.error
                     @include error-input(nth($sections, $i))
+            .select
+                margin-top: 20px
+                @extend %select
+                &.transparent
+                    @include transparent-select(nth($sections, $i))
             .box
                 position: relative
                 margin-top: 30px
@@ -57,6 +62,9 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
                         @include arrow(nth($sections, $i), "right")
                     &.l
                         @include arrow(nth($sections, $i), "left")
+            .ui.checkbox
+                position: relative
+                @include transparent-checkbox(nth($sections, $i))
 %section
     position: relative
     // button.ui.transparent
