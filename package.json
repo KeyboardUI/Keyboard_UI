@@ -1,12 +1,12 @@
 {
   "name": "keyboard-ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Keyboard inspired UI kit!",
-  "main": "index.js",
+  "main": "dist/keyui.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wisniewski94/Keyboard-UI.git"
+    "url": "git+https://github.com/KeyboardUI/Keyboard_UI.git"
   },
   "keywords": [
     "ui",
@@ -17,12 +17,15 @@
     "kit",
     "elements"
   ],
-  "author": "Wiktor Wisniewski",
+  "author": {
+    "name": "Wiktor Wisniewski",
+    "email": "wiktor.wisniewski94@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wisniewski94/Keyboard-UI/issues"
+    "url": "https://github.com/KeyboardUI/Keyboard_UI/issues"
   },
-  "homepage": "https://github.com/wisniewski94/Keyboard-UI#readme",
+  "homepage": "https://github.com/KeyboardUI/Keyboard-UI#readme",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -36,5 +39,13 @@
     "gulp-sass": "^4.0.2",
     "patch-package": "^6.2.0",
     "what-input": "^5.2.6"
-  }
+  },
+  "files": [
+    "/dist",
+    "/patches",
+    "/src",
+    ".babelrc",
+    ".gitignore",
+    "gulpfile.babel.js"
+  ]
 }

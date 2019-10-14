@@ -24,7 +24,8 @@ const config = {
   out: {
     css: "./css",
     js: "./js"
-  }
+  },
+  build: "./dist"
 };
 
 const browser = done => {
@@ -91,6 +92,14 @@ const testSass = done => {
   done();
 };
 
+const build = done => {
+  src(config.src.sass).pipe(dest(config.build));
+  browserify(config.src.js, { debug: true })
+    .transform(babel)
+    .bundle()
+    .pipe(fs.createWriteStream("./dist/keyui.js"));
+  done();
+};
 const dev = series(pugTest, testSass, srcComp);
 const watch = series(serve, dev, observe);
-export { dev, testSass, srcComp, watch, browser };
+export { dev, testSass, srcComp, watch, browser, build };
