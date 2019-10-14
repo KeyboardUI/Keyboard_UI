@@ -54,19 +54,19 @@ const serve = done => {
 
 const observe = () => {
   gulp
-    .watch(config.src.sass, series(reload, pugTest, testSass, srcComp, browser))
+    .watch(config.src.sass, series(pugTest, testSass, srcComp, browser, reload))
     .on("change", browserSync.reload);
   gulp
-    .watch(config.test.pug, series(reload, pugTest, testSass, srcComp, browser))
+    .watch(config.test.pug, series(pugTest, testSass, srcComp, browser, reload))
     .on("change", browserSync.reload);
   gulp
     .watch(
       config.test.sass,
-      series(reload, pugTest, testSass, srcComp, browser)
+      series(pugTest, testSass, srcComp, browser, reload)
     )
     .on("change", browserSync.reload);
   gulp
-    .watch(config.src.js, series(reload, pugTest, testSass, srcComp, browser))
+    .watch(config.src.js, series(pugTest, testSass, srcComp, browser, reload))
     .on("change", browserSync.reload);
 };
 
