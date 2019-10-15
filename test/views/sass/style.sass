@@ -1,4 +1,4 @@
-@import "../../../src/sass/keyui"
+@use "../../../src/sass/keyui"
 
 $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #068675 #6b202e #165873 #124c59 #428c5c #4ea64b #add96c
 
@@ -8,7 +8,7 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
         height: 690px
         background-color: nth($sections, $i)
         .text
-            @include textColor(nth($sections, $i))
+            @include keyui.textColor(nth($sections, $i))
             font-size: 14px
             line-height: 25px
             font-weight: 600
@@ -27,25 +27,25 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
                     display: inline
                     margin-left: 10px
                 button.ui.transparent
-                    @include transparent-btn(nth($sections, $i))
+                    @include keyui.transparent-btn(nth($sections, $i))
                     @extend %btn
                 button.ui.primary
-                    @include transparent-btn(#0a90ef)
+                    @include keyui.transparent-btn(#0a90ef)
                     @extend %btn
             .input
                 margin-top: 20px
                 @extend %input
                 &.transparent
-                    @include transparent-input(nth($sections, $i))
+                    @include keyui.transparent-input(nth($sections, $i))
                 &.disabled
                     @extend %input_disabled
                 &.error
-                    @include error-input(nth($sections, $i))
+                    @include keyui.error-input(nth($sections, $i))
             .select
                 margin-top: 20px
                 @extend %select
                 &.transparent
-                    @include transparent-select(nth($sections, $i))
+                    @include keyui.transparent-select(nth($sections, $i))
             .box
                 position: relative
                 margin-top: 30px
@@ -55,16 +55,16 @@ $sections: #ffffff #ebdfc7 #bfb6a3 #454545 #bf4122 #cf4232 #eb7f23 #fac023 #0686
                 left: 50%
                 margin-right: -50%
                 transform: translate(-50%, -50%)
-                @include transparent-pag(nth($sections, $i))
+                @include keyui.transparent-pag(nth($sections, $i))
                 @extend %pag
                 i.ui.arrow
                     &.r
-                        @include arrow(nth($sections, $i), "right")
+                        @include keyui.arrow(nth($sections, $i), "right")
                     &.l
-                        @include arrow(nth($sections, $i), "left")
+                        @include keyui.arrow(nth($sections, $i), "left")
             .ui.checkbox
                 position: relative
-                @include transparent-checkbox(nth($sections, $i))
+                @include keyui.transparent-checkbox(nth($sections, $i))
 %section
     position: relative
     // button.ui.transparent
