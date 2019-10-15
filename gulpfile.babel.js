@@ -1,5 +1,5 @@
 import gulp, { series, src, dest } from "gulp";
-import sass from "gulp-sass";
+import sass from "gulp-dart-sass";
 import pug from "gulp-pug";
 import browserSync from "browser-sync";
 import browserify from "browserify";
@@ -72,6 +72,7 @@ const observe = () => {
 
 const srcComp = done => {
   src(config.src.sass)
+    .pipe(sass.sync().on("error", sass.logError))
     .pipe(dest(config.out.css))
     .pipe(browserSync.stream());
   done();
