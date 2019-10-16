@@ -1,12 +1,22 @@
-![logo](keyboard_ui.jpg)
+![logo](docskeyboard_ui.jpg)
 
 UI Kit that fits to your Interface.
 
 ## Project Idea
 
-![preview](prev.png)
+![preview](docs/prev.png)
 
-This project aims at creating UI Kit that will adjust to user's interface.
+Project main goals:
+
+- user-defined class names
+- accessible contrast colors
+- accessible for all devices
+- support keyboard
+- excellent UI/UX - high quality graphics
+- no images
+- modular without a need to use CLI configuration tools
+- 100% SASS
+- ease of modification
 
 ## Configuration
 
@@ -18,35 +28,42 @@ Fork or download kit from GitHub. Install dependencies using:
 $ npm i
 ```
 
-View example `.html` files inside `./test/out` catalog.
+From npm:
+
+```
+$ npm i keyboard-ui
+```
+
+Run example by forking this repo and run `gulp watch`
 
 ### Structure
 
 ```
 .
-├── css                     # Compiled sass files
-├── js
-├── js                      # Project source files
+├── dist                    # This catalog is used by npm users. `gulp build` files go here. Do not modify this other way.
+├── docs                    # Documentation
+├── src                     # Project source files. Development goes here.
+├── patches                 # Some modules needed modifications. After running `npm i` and `gulp watch`,
+|                             `gulp build` these are being applied.
 ├── test                    # Used for development tests
-│   ├── views               # Use this to configure test html file. Run gulp test to build project.
-│   └── out                 # views output
+│   ├── views               # Use this to configure test html file. Run `gulp watch` to run test on localhost.
+│   └── out                 # Output of `gulp watch`
 └── ...
 ```
 
 ### Tasks
 
-| Task        | Description                                                                         |
-| ----------- | ----------------------------------------------------------------------------------- |
-| `gulp sass` | Compile sass files into `./css` folder                                              |
-| `gulp pug`  | Compile pug files into `./test/out` folder                                          |
-| `gulp test` | Compile test pug sass files into `./test/out` folder. **Use this for development.** |
+| Task         | Description                         |
+| ------------ | ----------------------------------- |
+| `gulp watch` | Test project on localhost           |
+| `gulp build` | Compile files into `./dist` catalog |
 
 ## Contribute
 
 This UI KIt is made by community and for community. If you want to help develop this project you can do it by:
 
-[Report a bug](https://github.com/wisniewski94/Keyboard_UI/issues)
+[Report a bug](https://github.com/KeyboardUI/Keyboard_UI/issues)
 
-[Ask for a feature](https://github.com/wisniewski94/Keyboard_UI/issues)
+[Ask for a feature](https://github.com/KeyboardUI/Keyboard_UI/issues)
 
-[Submit a pull request](https://github.com/wisniewski94/Keyboard_UI/pulls)
+[Submit a pull request](https://github.com/KeyboardUI/Keyboard_UI/pulls)
