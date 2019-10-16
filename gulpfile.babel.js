@@ -21,10 +21,6 @@ const config = {
     css: "./test/out/css",
     out: "./test/out"
   },
-  out: {
-    css: "./css",
-    js: "./js"
-  },
   build: "./dist"
 };
 
@@ -54,28 +50,17 @@ const serve = done => {
 
 const observe = () => {
   gulp
-    .watch(config.src.sass, series(pugTest, testSass, srcComp, browser, reload))
+    .watch(config.src.sass, series(pugTest, testSass, browser, reload))
     .on("change", browserSync.reload);
   gulp
-    .watch(config.test.pug, series(pugTest, testSass, srcComp, browser, reload))
+    .watch(config.test.pug, series(pugTest, testSass, browser, reload))
     .on("change", browserSync.reload);
   gulp
-    .watch(
-      config.test.sass,
-      series(pugTest, testSass, srcComp, browser, reload)
-    )
+    .watch(config.test.sass, series(pugTest, testSass, browser, reload))
     .on("change", browserSync.reload);
   gulp
-    .watch(config.src.js, series(pugTest, testSass, srcComp, browser, reload))
+    .watch(config.src.js, series(pugTest, testSass, browser, reload))
     .on("change", browserSync.reload);
-};
-
-const srcComp = done => {
-  src(config.src.sass)
-    .pipe(sass.sync().on("error", sass.logError))
-    .pipe(dest(config.out.css))
-    .pipe(browserSync.stream());
-  done();
 };
 
 const pugTest = done => {
@@ -101,6 +86,6 @@ const build = done => {
     .pipe(fs.createWriteStream("./dist/keyui.js"));
   done();
 };
-const dev = series(pugTest, testSass, srcComp);
+const dev = series(pugTest, testSass);
 const watch = series(serve, dev, observe);
-export { dev, testSass, srcComp, watch, browser, build };
+export { dev, testSass, watch, browser, build };
