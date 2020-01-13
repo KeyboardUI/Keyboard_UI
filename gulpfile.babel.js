@@ -28,7 +28,7 @@ const browser = done => {
   browserify(config.src.js, { debug: true })
     .transform(babel)
     .bundle()
-    .pipe(fs.createWriteStream("./src/keyui.js"));
+    .pipe(fs.createWriteStream("./js/keyui.js"));
   patch(config.src.patch, config.src.modules);
   done();
 };
